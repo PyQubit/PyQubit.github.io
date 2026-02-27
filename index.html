@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!-- ================= SEO & GEO OPTIMIZATION ================= -->
-    <title>محمد مهدی امیدوار | Mohammad Mehdi Omidvar - PyQubit AI</title>
+    <title>محمد مهدی امیدوار | Mohammad Mahdi Omidvar - PyQubit AI</title>
     <link rel="shortcut icon" href="1.png" type="image/png">
     <meta name="description" content="پورتفولیو رسمی محمد مهدی امیدوار (PyQubit). متخصص هوش مصنوعی، یادگیری ماشین، پایتون و علوم داده. Official portfolio of Mohammad Mehdi Omidvar, AI Engineer.">
     <meta name="keywords" content="محمد مهدی امیدوار, Mohammad Mehdi Omidvar, pyqubit, امیدوار, PyQubit, محمد مهدی امیدوار هوش مصنوعی, pyqubit امیدوار, برنامه نویس, AI Engineer">
@@ -21,7 +21,7 @@
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:title" content="محمد مهدی امیدوار | Mohammad Mehdi Omidvar (PyQubit)">
+    <meta property="og:title" content="محمد مهدی امیدوار | Mohammad Mahdi Omidvar (PyQubit)">
     <meta property="og:description" content="توسعه‌دهنده ارشد هوش مصنوعی و پایتون. تبدیل الگوریتم‌های پیچیده به راه‌حل‌های هوشمند تجاری. | AI Expert">
     
     <!-- Schema.org JSON-LD -->
@@ -29,11 +29,11 @@
     {
       "@context": "https://schema.org",
       "@type": "Person",
-      "name": "Mohammad Mehdi Omidvar",
+      "name": "Mohammad Mahdi Omidvar",
       "alternateName": ["محمد مهدی امیدوار", "PyQubit", "محمد مهدی امیدوار PyQubit"],
       "jobTitle": "Artificial Intelligence Engineer",
       "knowsAbout":["Machine Learning", "Python", "Data Science", "Computer Vision", "Deep Learning"],
-      "url": "https://pyqubit.com", 
+      "url": "https://pyqubit.github.io", 
       "nationality": "Iranian"
     }
     </script>
@@ -117,7 +117,10 @@
 
         /* --- LAYOUT UTILS --- */
         .container { padding: 140px 5% 60px; max-width: 1400px; margin: 0 auto; position: relative; z-index: 1; }
-        section { margin-bottom: 130px; opacity: 0; transform: translateY(40px); transition: opacity 0.8s ease-out, transform 0.8s ease-out; }
+        section { margin-bottom: 80px; opacity: 0; transform: translateY(20px); transition: opacity 0.8s ease-out, transform 0.8s ease-out; }
+        @media (max-width: 768px) {
+        section { opacity: 1; transform: none; margin-bottom: 50px; }
+        }
         section.visible { opacity: 1; transform: translateY(0); }
         
         .section-header { margin-bottom: 50px; border-left: 4px solid var(--primary); padding-left: 20px; }
@@ -204,10 +207,11 @@
         .cert-info p { color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; }
 
         /* --- ARTICLES SECTION (10 Items) --- */
-        .articles-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 40px; }
+        .articles-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; } 
         .article-card { background: rgba(20, 20, 25, 0.8); border: 1px solid var(--glass-border); border-radius: 20px; overflow: hidden; transition: 0.4s; display: flex; flex-direction: column; cursor: pointer; }
         .article-card:hover { transform: translateY(-12px); border-color: var(--secondary); box-shadow: 0 20px 40px rgba(0, 210, 255, 0.15); }
-        .art-img-box { height: 220px; overflow: hidden; position: relative; }
+       .art-img-box { height: 220px; overflow: hidden; position: relative; }
+        @media (max-width: 768px) { .art-img-box { height: 180px; } }
         .art-img-box img { width: 100%; height: 100%; object-fit: cover; transition: 0.6s; }
         .article-card:hover .art-img-box img { transform: scale(1.1) rotate(1deg); }
         .art-img-box::after { content: ''; position: absolute; inset: 0; background: linear-gradient(to top, rgba(20,20,25,1) 0%, transparent 60%); }
@@ -257,7 +261,12 @@
             .menu-toggle { display: block; }
             .hero h1 { font-size: 2.5rem; }
             .stat-box { min-width: 100%; padding: 25px; }
-            .articles-grid, .cert-grid, .deep-dive-grid { grid-template-columns: 1fr; }
+            .articles-grid, .cert-grid, .deep-dive-grid { 
+            grid-template-columns: 1fr !important; 
+            width: 100%;
+            gap: 20px;
+            }
+            .article-card { width: 100%; margin: 0 auto; }
             .container { padding-top: 110px; }
             .modal-container { width: 95%; height: 95vh; }
             .modal-header-img { height: 200px; }
@@ -274,10 +283,10 @@
     <!-- Navigation -->
     <nav>
         <div class="brand-container" onclick="window.scrollTo(0,0)">
-            <img src="1.jpg" alt="Mohammad Mehdi Omidvar PyQubit Logo" class="site-logo-img" onerror="this.src='https://ui-avatars.com/api/?name=Py+Qubit&background=FFD700&color=000'">
+            <img src="1.jpg" alt="Mohammad Mahdi Omidvar PyQubit Logo" class="site-logo-img" onerror="this.src='https://ui-avatars.com/api/?name=Py+Qubit&background=FFD700&color=000'">
             <div class="brand-text">
                 <h1>PyQubit</h1>
-                <p>Mohammad Mehdi Omidvar</p>
+                <p>Mohammad Mahdi Omidvar</p>
             </div>
         </div>
 
@@ -311,7 +320,7 @@
         <section id="hero" class="hero">
             <div class="hero-content">
                 <span class="hero-badge"><i class="fas fa-bolt"></i> <span data-i18n="hero_role">Lead AI Engineer & Python Expert</span></span>
-                <h1 data-i18n="hero_title">Mohammad Mehdi<br><span class="gradient-text">Omidvar</span></h1>
+                <h1 data-i18n="hero_title">Mohammad Mahdi<br><span class="gradient-text">Omidvar</span></h1>
                 <p data-i18n="hero_desc">Turning complex mathematical algorithms into highly scalable, intelligent software solutions. Empowering businesses through Data Science, AI, and robust Python backends. Gold Medalist on the global stage.</p>
                 <div style="display: flex; gap: 20px; flex-wrap: wrap;">
                     <a href="#contact" class="cta-btn"><span data-i18n="btn_contact">Get in Touch</span> <i class="fas fa-arrow-right"></i></a>
@@ -322,7 +331,7 @@
             </div>
             <div class="hero-visual">
                 <div class="hero-img-container">
-                    <img src="2.png" alt="Mohammad Mehdi Omidvar - PyQubit" class="banner-img" onerror="this.src='https://images.unsplash.com/photo-1555949963-aa79dcee981c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'">
+                    <img src="2.png" alt="Mohammad Mahdi Omidvar - PyQubit" class="banner-img" onerror="this.src='https://images.unsplash.com/photo-1555949963-aa79dcee981c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'">
                 </div>
             </div>
         </section>

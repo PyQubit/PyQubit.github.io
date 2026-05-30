@@ -344,11 +344,11 @@
             
             <div class="stats-wrapper">
                 <div class="stat-box">
-                    <h2><span>+</span>40</h2>
+                    <h2><span>+</span>20</h2>
                     <p data-i18n="stat_projects">Commercial Projects</p>
                 </div>
                 <div class="stat-box">
-                    <h2><span>></span>10</h2>
+                    <h2><span>></span>5</h2>
                     <p data-i18n="stat_startups">Startup Collaborations</p>
                 </div>
                 <div class="stat-box">
@@ -359,19 +359,19 @@
 
             <div class="modern-skills">
                 <div class="skill-category">
-                    <h3 data-i18n="sk_cat_ai"><i class="fas fa-brain"></i> AI & Machine Learning</h3>
+                    <h3 data-i18n="sk_cat_ai"><i class="fas fa-brain"></i> AI & Machine Learning & Deep Learning</h3>
                     
                     <div class="skill-bar-group">
-                        <div class="skill-info"><span>TensorFlow / PyTorch</span> <span class="data-perc">95%</span></div>
-                        <div class="progress-bg"><div class="progress-fill fill-primary" data-width="95%"></div></div>
+                        <div class="skill-info"><span>TensorFlow / PyTorch / scikit learn</span> <span class="data-perc">98%</span></div>
+                        <div class="progress-bg"><div class="progress-fill fill-primary" data-width="98%"></div></div>
                     </div>
                     <div class="skill-bar-group">
-                        <div class="skill-info"><span>Computer Vision (OpenCV/YOLO)</span> <span class="data-perc">90%</span></div>
-                        <div class="progress-bg"><div class="progress-fill fill-primary" data-width="90%"></div></div>
+                        <div class="skill-info"><span>Computer Vision / signal processing</span> <span class="data-perc">97%</span></div>
+                        <div class="progress-bg"><div class="progress-fill fill-primary" data-width="97%"></div></div>
                     </div>
                     <div class="skill-bar-group">
-                        <div class="skill-info"><span>NLP & Transformers</span> <span class="data-perc">88%</span></div>
-                        <div class="progress-bg"><div class="progress-fill fill-primary" data-width="88%"></div></div>
+                        <div class="skill-info"><span>NLP & Transformers</span> <span class="data-perc">94%</span></div>
+                        <div class="progress-bg"><div class="progress-fill fill-primary" data-width="94%"></div></div>
                     </div>
                 </div>
 
@@ -379,16 +379,16 @@
                     <h3 data-i18n="sk_cat_dev"><i class="fas fa-laptop-code"></i> Software Engineering</h3>
                     
                     <div class="skill-bar-group">
-                        <div class="skill-info"><span>Python (Advanced)</span> <span class="data-perc">98%</span></div>
+                        <div class="skill-info"><span>Python(Advanced)</span> <span class="data-perc">98%</span></div>
                         <div class="progress-bg"><div class="progress-fill fill-secondary" data-width="98%"></div></div>
                     </div>
                     <div class="skill-bar-group">
-                        <div class="skill-info"><span>Backend (Django/FastAPI)</span> <span class="data-perc">92%</span></div>
+                        <div class="skill-info"><span>Backend(Django/FastAPI)</span> <span class="data-perc">92%</span></div>
                         <div class="progress-bg"><div class="progress-fill fill-secondary" data-width="92%"></div></div>
                     </div>
                     <div class="skill-bar-group">
-                        <div class="skill-info"><span>Data Science (Pandas/SQL)</span> <span class="data-perc">90%</span></div>
-                        <div class="progress-bg"><div class="progress-fill fill-secondary" data-width="90%"></div></div>
+                        <div class="skill-info"><span>Data Science</span> <span class="data-perc">99%</span></div>
+                        <div class="progress-bg"><div class="progress-fill fill-secondary" data-width="99%"></div></div>
                     </div>
                 </div>
             </div>
@@ -717,136 +717,254 @@
         });
 
         // --- 5. TRANSLATIONS (INCLUDING VERY LONG HUMAN-LIKE ARTICLES) ---
-        const translations = {
-            en: {
-                nav_home: "Home", nav_skills: "Skills", nav_deep: "Expertise", nav_achieve: "Achievements", nav_projects: "Projects", nav_certs: "Certificates", nav_articles: "Articles",
-                hero_role: "Lead AI Engineer & Python Expert", hero_title: "Mohammad Mehdi<br><span class='gradient-text'>Omidvar</span>", hero_desc: "Turning complex mathematical algorithms into highly scalable, intelligent software solutions. Empowering businesses through Data Science, AI, and robust Python backends. Gold Medalist on the global stage.",
-                btn_contact: "Get in Touch", btn_articles: "Read My Articles",
-                
-                title_skills: "Technical Skills & Impact", stat_projects: "Commercial Projects", stat_startups: "Startup Collaborations", stat_medal: "Global Gold Medalist",
-                sk_cat_ai: "AI & Machine Learning", sk_cat_dev: "Software Engineering",
-                
-                title_deep: "Deep Dive & Expertise",
-                dd_1_title: "AI & Back-end Develop", dd_1_desc: "Integrating powerful AI models seamlessly into robust backend architectures. Utilizing frameworks like Django, Flask, and FastAPI to create highly scalable, secure, and lightning-fast APIs. This ensures complex inferences run smoothly in production, serving thousands of requests reliably.",
-                dd_2_title: "Machine Learning & Deep Learning", dd_2_desc: "Designing and optimizing complex neural networks from scratch. Proficient in classical algorithms and advanced Deep Learning architectures. Expertise in handling massive datasets using TensorFlow and PyTorch to solve predictive modeling and classification problems accurately.",
-                dd_3_title: "Computer Vision & Audio Processing", dd_3_desc: "Extracting meaningful data from visual and audio streams. Implementing state-of-the-art object detection (YOLO), facial recognition, and image segmentation. Skilled in building real-time multi-modal monitoring systems for security and automated surveillance.",
-                dd_4_title: "Data Science & Feature Engineering", dd_4_desc: "Transforming raw, chaotic data into actionable business intelligence. Expertise in meticulous data cleaning, exploratory analysis (EDA), and advanced feature engineering using Pandas and Scikit-learn to drastically improve model performance and uncover hidden trends.",
-                dd_5_title: "Reinforcement Learning", dd_5_desc: "Developing autonomous agents that learn optimal behaviors through trial and error. Applying advanced RL algorithms such as Q-Learning and PPO to solve complex control problems, simulating environments for algorithmic trading and robotics control.",
-                dd_6_title: "NLP & Transformers", dd_6_desc: "Mastering Natural Language Processing using modern Transformer architectures. Fine-tuning Large Language Models (LLMs) for specific industry tasks. Skilled in sentiment analysis, entity extraction, and building intelligent, human-like conversational agents.",
-                dd_7_title: "Telegram Bot Development", dd_7_desc: "Creating highly interactive, AI-powered Telegram bots for customer support, automated sales, and data scraping. Utilizing libraries like Aiogram to handle async operations, integrating directly with databases and AI backends to provide instant services.",
+const translations = {
+    en: {
+        // ----- Navigation -----
+        nav_home: "Home",
+        nav_skills: "Skills",
+        nav_deep: "Expertise",
+        nav_achieve: "Achievements",
+        nav_projects: "Projects",
+        nav_certs: "Certificates",
+        nav_articles: "Articles",
 
-                title_achieve: "Achievements", achieve_sub: "Gold Medalist - AI Section", achieve_desc: "Awarded the Gold Medal for the 'AI Emotion-to-Art Project'. The competition was held on August 24, 2025, in Georgia, USA. This revolutionary project utilized multi-modal emotion recognition to generate real-time art.", team_label: "Team Members:", team_list: "Mohammad Mehdi Omidvar, Mahyar Alizadeh, Arad Chizari, Sogol Tarnabi",
-                
-                title_projects: "Flagship Project", btn_code: "View Code", proj_overview: "Overview", proj_desc_long: "A revolutionary AI system capable of interpreting human emotions from multiple modalities (Text, Voice, and Image) and translating them into unique, symbolic artwork in real-time. This project secured the global Gold Medal.", proj_features: "Key Features", feat_1: "Multi-modal Emotion Recognition Architecture.", feat_2: "Real-time asynchronous Speech-to-Text inference.", feat_3: "Generative Art synthesis using advanced diffusion models.",
-                
-                title_certs: "Professional Certificates",
-                cert_1_title: "Basic Python", cert_1_desc: "Comprehensive introduction to Python programming syntax and core logic.<br>Mastering loops, functions, and fundamental data structures.",
-                cert_2_title: "Advanced Python", cert_2_desc: "In-depth exploration of Object-Oriented Programming, decorators, and generators.<br>Focus on writing clean, scalable, and highly optimized code.",
-                cert_3_title: "AI Algorithms", cert_3_desc: "Deep dive into search strategies, heuristic optimization, and foundational AI math.<br>Implementation of core machine intelligence algorithms from scratch.",
-                cert_4_title: "Deep Learning", cert_4_desc: "Advanced training in neural networks, CNNs, RNNs, and Transformers.<br>Hands-on architectural design using TensorFlow and Keras.",
-                cert_5_title: "Data Science", cert_5_desc: "Mastering statistical modeling, data manipulation, and visual storytelling.<br>Extracting powerful insights from massive, unstructured datasets.",
-                cert_6_title: "Advanced API", cert_6_desc: "Designing secure, RESTful, and scalable backend communication interfaces.<br>Deploying high-performance API endpoints for AI models.",
+        // ----- Hero Section -----
+        hero_role: "Lead AI Engineer & Python Architect",
+        hero_title: "Mohammad Mehdi<br><span class='gradient-text'>Omidvar</span>",
+        hero_desc: "Transforming complex mathematical algorithms into intelligent, production-grade software. I help businesses scale with AI, data science, and high-performance Python backends. Gold medalist on the global stage.",
+        btn_contact: "Get in Touch",
+        btn_articles: "Read My Articles",
 
-                title_articles: "Insights & Articles", btn_read_more: "Read Full Article",
-                
-                // --- LONG ENGLISH ARTICLES ---
-                art_1_title: "The Unstoppable Rise of Python", art_1_excerpt: "Why is everyone, from junior devs to Google engineers, obsessed with Python? Let's explore its magic.",
-                art_1_full: "<p>Have you ever wondered why Python, a language created in the late 1980s, is currently dominating the tech landscape? It's not just a trend; it's a fundamental shift in how we approach problem-solving in computer science.</p><p>Unlike languages that force you to write fifty lines of boilerplate code just to print 'Hello World', Python respects your time. Its syntax reads almost like plain English. But don't let this simplicity fool you. Beneath its friendly surface lies an absolute powerhouse.</p><blockquote>'Python is the duct tape of the modern internet. It holds everything together.'</blockquote><p>Today, Python is the undisputed king of Artificial Intelligence and Machine Learning. Frameworks like TensorFlow, PyTorch, and Keras are built to be accessed via Python. Startups use Django and FastAPI to build lightning-fast web backends. Financial institutions use Pandas to crunch millions of rows of data in seconds. Whether you are automating a boring Excel task, scraping data from the web, or training a neural network to detect cancer in X-rays, Python is the tool of choice. It bridges the gap between human logic and machine execution seamlessly.</p>",
-                
-                art_2_title: "Data Science: Predicting the Future", art_2_excerpt: "In a world drowning in data, Data Scientists are the modern-day wizards turning noise into gold.",
-                art_2_full: "<p>We generate quintillions of bytes of data every single day. Every click, every swipe, every purchase, and every heartbeat recorded by a smartwatch adds to a massive global ocean of information. But raw data is useless. It’s just noise. This is where Data Science steps in.</p><p>Think of a Data Scientist as a detective. By applying rigorous statistical methods, writing complex algorithms, and using machine learning models, they find hidden patterns that the human eye could never see.</p><p>How does Netflix know exactly what movie you want to watch tonight? How do logistics companies route thousands of trucks to save millions in fuel? How do doctors predict a patient's risk of heart disease years before symptoms appear? The answer is always data. By cleaning up messy datasets, engineering new features, and building predictive models, Data Science removes the guesswork from business and life, allowing us to literally predict and shape the future.</p>",
-                
-                art_3_title: "Quantum Computers: Breaking the Limits", art_3_excerpt: "Forget 1s and 0s. Quantum computing is about to change the very fabric of computational power.",
-                art_3_full: "<p>Since the dawn of computing, machines have spoken a simple language: binary. A bit is either a 0 or a 1. A switch is either off or on. But what if a switch could be off, on, and everything in between at the exact same time? Welcome to Quantum Computing.</p><p>Using principles from quantum mechanics, these computers use 'Qubits'. Thanks to a phenomenon called superposition, a qubit can represent multiple states simultaneously. Add 'entanglement' to the mix, and you have a machine whose processing power scales exponentially, not linearly.</p><blockquote>'A quantum computer doesn't just try paths in a maze one by one; it floods the maze and finds the exit instantly.'</blockquote><p>While still in their infancy, quantum computers threaten to break current cryptographic systems (like RSA encryption) in seconds. But their positive potential is mind-blowing. They could simulate complex molecular interactions to discover new life-saving drugs in days rather than decades, or perfectly model global climate change. We are standing at the edge of the next computational revolution.</p>",
-                
-                art_4_title: "The Spooky World of Quantum Physics", art_4_excerpt: "Einstein called it 'spooky action at a distance.' Let's dive into the bizarre reality of the subatomic world.",
-                art_4_full: "<p>If you think you understand how the universe works based on your daily life, quantum physics is here to humble you. At the subatomic level—the realm of electrons and photons—the standard rules of classical physics completely break down.</p><p>Consider Quantum Entanglement. If two particles become entangled, altering the state of one instantly alters the state of the other, even if they are billions of light-years apart. It happens faster than the speed of light, defying Einstein's theory of relativity. Einstein himself was so uncomfortable with this that he famously called it 'spooky action at a distance.'</p><p>Then there is the observer effect, where particles act like waves of probability until someone actually looks at them, forcing them to choose a definite state. Understanding these bizarre concepts isn't just for philosophers; it is the exact science we are currently harnessing to build ultra-secure quantum internets and hyper-accurate atomic clocks. The universe is far stranger, and far more connected, than we ever imagined.</p>",
-                
-                art_5_title: "Why Everyone Should Learn to Code", art_5_excerpt: "You don't need to be a software engineer to benefit from coding. It's a life skill that changes how you think.",
-                art_5_full: "<p>There is a massive misconception that programming is only for people who want to build apps or work at Facebook. This couldn't be further from the truth. Coding is the new literacy. Just like learning to read opened up the world in the 19th century, learning to code opens up the digital world today.</p><p>When you learn to program, you aren't just memorizing syntax; you are rewiring your brain. You learn 'Algorithmic Thinking'—the ability to take a massive, overwhelming problem, break it down into tiny, logical, manageable steps, and solve them one by one. This is a superpower in any career.</p><p>Imagine an accountant writing a simple 10-line Python script that automates a task that used to take them 4 hours every Friday. Or a biologist writing a script to automatically sort thousands of cell images. Coding shifts you from being a passive consumer of technology to an active creator. It gives you the power to command the machines around you.</p>",
-                
-                art_6_title: "How Data Science is Reshaping Economics", art_6_excerpt: "Wall Street meets Silicon Valley. Discover how algorithms are predicting the global economy.",
-                art_6_full: "<p>Historically, economics was a theoretical science. Economists would look at delayed quarterly reports, make assumptions based on historical models, and try to guess where the market was heading. It was often like trying to drive a car while only looking in the rearview mirror. Data Science has completely shattered that model.</p><p>Today, quantitative analysts (Quants) and economists use real-time, massive datasets to measure the pulse of the global economy. Instead of waiting for official inflation reports, algorithms scrape millions of prices from online retailers daily to calculate digital inflation in real-time.</p><p>Machine learning models analyze satellite imagery of retail parking lots to predict retail earnings before they are announced. They track shipping containers across the ocean to monitor supply chain health. By applying Data Science to economics, governments and hedge funds can now make hyper-informed decisions, turning the chaotic global market into a quantifiable, somewhat predictable system.</p>",
-                
-                art_7_title: "The Invisible AI in Your Daily Life", art_7_excerpt: "AI isn't just sci-fi robots. It's already living in your pocket, making hundreds of decisions for you every day.",
-                art_7_full: "<p>When most people hear 'Artificial Intelligence', they think of Terminator or highly advanced sci-fi androids. The truth is much quieter. AI has already deeply infiltrated our daily lives, and it operates so smoothly that we barely notice it.</p><p>When you unlock your phone with your face, a deep learning neural network maps the 3D contours of your features in milliseconds. When you type an email, Natural Language Processing models predict your next words. When you use Google Maps, real-time graph algorithms and predictive AI route you around traffic jams before you even encounter them.</p><blockquote>'The best AI is the one you don't even realize you are using.'</blockquote><p>Your streaming services use complex recommendation engines to keep you watching. Your bank uses AI anomaly detection to instantly block fraudulent credit card charges. We have outsourced a massive amount of our daily cognitive load to these invisible algorithms, making our lives safer, faster, and incredibly convenient.</p>",
-                
-                art_8_title: "Algorithmic Trading: Machines on Wall Street", art_8_excerpt: "Human traders are becoming obsolete. Welcome to the era of emotionless, hyper-fast AI trading.",
-                art_8_full: "<p>The image of frantic stockbrokers yelling on a trading floor is dead. Today, the stock market is a silent, invisible battlefield where lines of code go to war. Welcome to Algorithmic Trading.</p><p>In the financial markets, emotions—fear and greed—are a trader's worst enemy. AI doesn't feel fear. Algorithms can analyze thousands of stocks, process decades of historical data, and execute complex trades in microseconds—a fraction of the time it takes a human to blink.</p><p>But it goes beyond just speed. Modern trading bots use Natural Language Processing to read global news articles and Twitter feeds the second they are published. If a CEO tweets something controversial, the AI instantly gauges the negative sentiment and shorts the stock before human traders have even finished reading the sentence. In this high-stakes game of algorithmic chess, data is the weapon and AI is the grandmaster.</p>",
-                
-                art_9_title: "Reinforcement Learning in Robotics", art_9_excerpt: "How do you teach a robot to do a backflip? You don't program it; you let it learn through trial and error.",
-                art_9_full: "<p>If you wanted to build a robot that could walk across icy, uneven terrain, how would you program it? If you tried to hardcode every single joint movement and physics calculation, you would fail. The environment is too unpredictable. The modern solution is Reinforcement Learning (RL).</p><p>RL is inspired by behavioral psychology. You don't tell the robot *how* to walk; you simply give it a goal (move forward) and a reward system (points for moving forward, negative points for falling over). Engineers then place the virtual robot in a physics simulation.</p><p>At first, the robot flails wildly and falls instantly. But over millions of iterations, playing out years of simulation in mere hours, it learns. It discovers optimal balancing strategies that human engineers could never have thought of. Once the AI perfects the behavior in the simulation, the 'brain' is transferred to the physical robot. This is exactly how companies like Boston Dynamics create machines that can seamlessly run, jump, and recover from being pushed.</p>",
-                
-                art_10_title: "The Chatbot Revolution in Online Business", art_10_excerpt: "The ultimate employee: works 24/7, speaks 50 languages, never gets angry, and closes sales instantly.",
-                art_10_full: "<p>Customer service used to be the bottleneck of online business. Customers hate waiting on hold, and businesses hate the massive overhead of call centers. The introduction of AI Chatbots has completely revolutionized this dynamic.</p><p>We have moved far beyond the frustrating, robotic 'Press 1 for Sales' bots. Today's chatbots are powered by advanced Large Language Models (LLMs) like GPT or Llama. They understand human context, sarcasm, and nuanced intent.</p><p>A modern chatbot integrated into a company's Telegram or website can instantly resolve complex return processes, cross-sell products based on the user's chat history, and handle thousands of simultaneous customers at 3:00 AM without breaking a sweat. By providing instant gratification and seamless support, these AI agents dramatically boost conversion rates and customer loyalty, proving that the future of business is conversational AI.</p>",
+        // ----- Skills & Stats -----
+        title_skills: "Technical Skills & Impact",
+        stat_projects: "Commercial Projects",
+        stat_startups: "Startup Collaborations",
+        stat_medal: "Global Gold Medalist",
+        sk_cat_ai: "AI & Machine Learning",
+        sk_cat_dev: "Software Engineering",
 
-                footer_connect: "Connect with PyQubit", footer_desc: "Mohammad Mehdi Omidvar is always open to discussing new AI projects, creative ideas, or opportunities to be part of your visions.", footer_rights: "All Rights Reserved."
-            },
-            fa: {
-                nav_home: "خانه", nav_skills: "مهارت‌ها", nav_deep: "تخصص", nav_achieve: "افتخارات", nav_projects: "پروژه‌ها", nav_certs: "مدارک", nav_articles: "مقالات",
-                hero_role: "مهندس ارشد هوش مصنوعی و متخصص پایتون", hero_title: "محمد مهدی<br><span class='gradient-text'>امیدوار</span>", hero_desc: "تبدیل الگوریتم‌های پیچیده ریاضی به نرم‌افزارهای هوشمند و مقیاس‌پذیر. خلق ارزش برای کسب‌وکارها با علم داده، هوش مصنوعی و بک‌اند قدرتمند پایتون. برنده مدال طلای جهانی.",
-                btn_contact: "ارتباط با من", btn_articles: "مطالعه مقالات",
-                
-                title_skills: "مهارت‌های فنی و دستاوردها", stat_projects: "پروژه تجاری موفق", stat_startups: "همکاری با استارتاپ‌ها", stat_medal: "مدال طلای جهانی",
-                sk_cat_ai: "هوش مصنوعی و یادگیری ماشین", sk_cat_dev: "توسعه نرم‌افزار و مهندسی",
-                
-                title_deep: "تحلیل عمیق تخصص‌ها",
-                dd_1_title: "هوش مصنوعی و توسعه بک‌اند", dd_1_desc: "ادغام یکپارچه مدل‌های قدرتمند هوش مصنوعی در معماری‌های بک‌اند قوی. استفاده از فریم‌ورک‌هایی نظیر Django، Flask و FastAPI برای ایجاد APIهای بسیار مقیاس‌پذیر، ایمن و فوق‌سریع. این تخصص اجازه می‌دهد تا استنتاج‌های پیچیده در محیط‌های پروداکشن به روانی اجرا شوند.",
-                dd_2_title: "یادگیری ماشین و یادگیری عمیق", dd_2_desc: "طراحی، آموزش و بهینه‌سازی شبکه‌های عصبی پیچیده از پایه. تسلط بر الگوریتم‌های کلاسیک و معماری‌های پیشرفته دیپ لرنینگ. تخصص در پردازش مجموعه داده‌های عظیم با استفاده از TensorFlow و PyTorch برای حل مسائل پیش‌بینی و طبقه‌بندی با بالاترین دقت ممکن.",
-                dd_3_title: "بینایی ماشین و پردازش صوت", dd_3_desc: "استخراج داده‌های معنادار از تصاویر، استریم‌های ویدئویی و فایل‌های صوتی. پیاده‌سازی تشخیص اشیاء (YOLO)، تشخیص چهره و سگمنتیشن تصاویر. توانایی ساخت سیستم‌های مانیتورینگ چندوجهی بلادرنگ برای امنیت و سیستم‌های نظارتی هوشمند.",
-                dd_4_title: "علوم داده و مهندسی ویژگی‌ها", dd_4_desc: "تبدیل داده‌های خام و بدون ساختار به هوش تجاری قابل اقدام. تخصص در پاکسازی دقیق داده‌ها، تحلیل اکتشافی (EDA) و مهندسی ویژگی‌ها با Pandas و Scikit-learn جهت بهبود چشمگیر عملکرد مدل‌ها و کشف الگوهای پنهان آماری.",
-                dd_5_title: "یادگیری تقویتی (RL)", dd_5_desc: "توسعه ایجنت‌های خودمختار که رفتارهای بهینه را از طریق آزمون و خطا می‌آموزند. به‌کارگیری الگوریتم‌های پیشرفته مانند Q-Learning و PPO برای حل مسائل کنترلی پیچیده، شبیه‌سازی محیط‌ها برای الگو تریدینگ و کنترل رباتیک.",
-                dd_6_title: "پردازش زبان طبیعی (NLP)", dd_6_desc: "تسلط کامل بر پردازش زبان طبیعی با استفاده از معماری‌های مدرن ترنسفورمر. فاین‌تیون کردن مدل‌های زبانی بزرگ (LLMs) برای وظایف خاص صنعتی. مهارت در تحلیل احساسات، استخراج موجودیت‌ها و ساخت ایجنت‌های مکالمه‌ای کاملاً هوشمند و انسان‌نما.",
-                dd_7_title: "توسعه ربات‌های تلگرامی", dd_7_desc: "ساخت ربات‌های تلگرامی بسیار تعاملی و مبتنی بر هوش مصنوعی برای پشتیبانی مشتریان، فروش خودکار و استخراج داده. استفاده از کتابخانه‌هایی چون Aiogram برای مدیریت عملیات غیرهمگام و ادغام مستقیم با دیتابیس‌ها برای ارائه خدمات آنی.",
+        // ----- Deep Expertise -----
+        title_deep: "Deep Dive & Core Expertise",
+        dd_1_title: "AI Integration & Backend Engineering",
+        dd_1_desc: "Seamlessly embedding AI models into robust backend architectures. Using Django, FastAPI, and Flask to build scalable, secure, high-speed APIs that serve thousands of inference requests reliably in production.",
+        dd_2_title: "Machine & Deep Learning",
+        dd_2_desc: "Designing and optimizing neural networks from scratch. Proficient in classical ML and advanced deep learning architectures. Expert in handling massive datasets with TensorFlow and PyTorch for accurate predictions and classifications.",
+        dd_3_title: "Computer Vision & Audio Processing",
+        dd_3_desc: "Extracting meaningful insights from visual and audio streams. Implementing object detection (YOLO), facial recognition, and image segmentation. Experienced in building real-time multimodal monitoring systems for security and automation.",
+        dd_4_title: "Data Science & Feature Engineering",
+        dd_4_desc: "Turning raw, chaotic data into actionable business intelligence. Skilled in data cleaning, exploratory analysis (EDA), and advanced feature engineering with Pandas and Scikit-learn to boost model performance and uncover hidden patterns.",
+        dd_5_title: "Reinforcement Learning",
+        dd_5_desc: "Building autonomous agents that learn optimal behavior through trial and error. Applying Q-Learning, PPO, and other RL algorithms to solve complex control problems, including trading simulations and robotic control systems.",
+        dd_6_title: "NLP & Transformers",
+        dd_6_desc: "Mastering Natural Language Processing with modern transformer architectures. Fine-tuning LLMs for domain-specific tasks like sentiment analysis, entity extraction, and building intelligent conversational agents.",
+        dd_7_title: "Telegram Bot Development",
+        dd_7_desc: "Developing high-interaction, AI-powered Telegram bots for support, automation, and sales. Using Aiogram for async operations and integrating directly with databases and AI backends for real-time services.",
 
-                title_achieve: "افتخارات جهانی", achieve_sub: "مدال طلای مسابقات جهانی - بخش هوش مصنوعی", achieve_desc: "کسب مدال طلای افتخارآفرین در مسابقات INNOVERSE ۲۰۲۵ برای پروژه «تبدیل احساس به هنر با هوش مصنوعی». این رقابت‌ها در آگوست ۲۰۲۵ در ایالت جورجیای آمریکا برگزار شد. این سیستم انقلابی قادر است احساسات انسانی را به صورت چندوجهی تفسیر کرده و در لحظه آثار هنری بی‌نظیری خلق کند.", team_label: "اعضای تیم:", team_list: "محمد مهدی امیدوار، مهیار علیزاده، آراد چیذری، سوگل ترنابی",
-                
-                title_projects: "پروژه شاخص", btn_code: "مشاهده سورس کد", proj_overview: "نمای کلی پروژه", proj_desc_long: "سیستمی انقلابی و پیشگام در هوش مصنوعی که قادر است احساسات پیچیده انسانی را از چندین مودالیتی مختلف (متن، لحن صدا و حالت چهره) درک کرده و آن‌ها را در کسری از ثانیه به آثار هنری نمادین، زیبا و منحصر به فرد تبدیل کند. این پروژه برنده مدال طلای جهانی شد.", proj_features: "ویژگی‌های کلیدی", feat_1: "معماری پیشرفته تشخیص احساسات چندوجهی (Multi-modal).", feat_2: "پردازش غیرهمگام و بلادرنگ تبدیل صوت به متن با Whisper.", feat_3: "تولید هنر مولد (Generative Art) با استفاده از مدل‌های دیفیوژن.",
-                
-                title_certs: "گواهینامه‌های تخصصی",
-                cert_1_title: "پایتون مقدماتی", cert_1_desc: "مقدمه‌ای جامع بر سینتکس و منطق برنامه‌نویسی پایتون.<br>تسلط کامل بر حلقه‌ها، توابع و ساختارهای داده‌ای بنیادین.",
-                cert_2_title: "پایتون پیشرفته", cert_2_desc: "بررسی عمیق برنامه‌نویسی شی‌گرا، دکوریتورها و ژنراتورها.<br>تمرکز بر نوشتن کدهای تمیز، مقیاس‌پذیر و به‌شدت بهینه‌شده.",
-                cert_3_title: "الگوریتم‌های هوش مصنوعی", cert_3_desc: "آموزش عمیق استراتژی‌های جستجو و ریاضیات هوش مصنوعی.<br>پیاده‌سازی الگوریتم‌های یادگیری ماشین از پایه و صفر.",
-                cert_4_title: "یادگیری عمیق (Deep Learning)", cert_4_desc: "آموزش پیشرفته شبکه‌های عصبی، CNN، RNN و ترنسفورمرها.<br>طراحی عملی معماری‌های پیچیده با استفاده از TensorFlow.",
-                cert_5_title: "علوم داده (Data Science)", cert_5_desc: "تسلط بر مدل‌سازی آماری، دستکاری داده‌ها و داستان‌سرایی بصری.<br>استخراج بینش‌های قدرتمند از مجموعه‌داده‌های عظیم.",
-                cert_6_title: "توسعه API پیشرفته", cert_6_desc: "طراحی رابط‌های ارتباطی بک‌اند ایمن، RESTful و مقیاس‌پذیر.<br>دیپلوی کردن اندپوینت‌های API با عملکرد بالا برای هوش مصنوعی.",
+        // ----- Achievements -----
+        title_achieve: "Global Achievement",
+        achieve_sub: "Gold Medalist – AI Category",
+        achieve_desc: "Awarded the Gold Medal for the 'AI Emotion-to-Art Project' at the INNOVERSE 2025 competition in Georgia, USA. This groundbreaking project uses multimodal emotion recognition to generate real-time symbolic art.",
+        team_label: "Team Members:",
+        team_list: "Mohammad Mehdi Omidvar, Mahyar Alizadeh, Arad Chizari, Sogol Tarnabi",
 
-                title_articles: "مقالات و یادداشت‌ها", btn_read_more: "مطالعه کامل مقاله",
+        // ----- Flagship Project -----
+        title_projects: "Flagship Project",
+        btn_code: "View Code",
+        proj_overview: "Overview",
+        proj_desc_long: "A revolutionary AI system that interprets human emotions from text, voice, and facial expressions, then translates them into unique symbolic artwork in real time. This project won the global gold medal at INNOVERSE 2025.",
+        proj_features: "Key Features",
+        feat_1: "Multimodal emotion recognition architecture.",
+        feat_2: "Real-time asynchronous speech-to-text inference.",
+        feat_3: "Generative art synthesis with advanced diffusion models.",
 
-                // --- LONG PERSIAN ARTICLES ---
-                art_1_title: "صعود توقف‌ناپذیر زبان پایتون", art_1_excerpt: "چرا همه، از برنامه‌نویسان تازه‌کار تا مهندسان ارشد گوگل، شیفته پایتون شده‌اند؟ بیایید جادوی آن را بررسی کنیم.",
-                art_1_full: "<p>آیا تا به حال فکر کرده‌اید که چرا پایتون، زبانی که در اواخر دهه ۱۹۸۰ متولد شد، امروز بر دنیای تکنولوژی سلطنت می‌کند؟ این فقط یک ترند زودگذر نیست؛ بلکه یک تغییر بنیادین در نحوه رویکرد ما به حل مسئله در علوم کامپیوتر است.</p><p>برخلاف زبان‌هایی که شما را مجبور می‌کنند برای چاپ یک «سلام دنیا» ساده، ده‌ها خط کد بنویسید، پایتون به زمان شما احترام می‌گذارد. سینتکس آن تقریباً شبیه به خواندن زبان انگلیسی ساده است. اما اجازه ندهید این سادگی شما را فریب دهد؛ در زیر این ظاهر دوستانه، یک غول پردازشی نهفته است.</p><blockquote>«پایتون، نوار چسبِ اینترنت مدرن است؛ همه‌چیز را در کنار هم نگه می‌دارد.»</blockquote><p>امروزه، پایتون پادشاه بلامنازع هوش مصنوعی و یادگیری ماشین است. غول‌هایی مثل TensorFlow و PyTorch برای ارتباط با پایتون ساخته شده‌اند. استارتاپ‌ها با استفاده از Django و FastAPI بک‌اند‌های فوق‌سریع می‌سازند. موسسات مالی با کمک Pandas میلیون‌ها ردیف داده را در چند ثانیه تحلیل می‌کنند. چه بخواهید یک کار خسته‌کننده اکسل را خودکار کنید و چه یک شبکه عصبی برای تشخیص سرطان آموزش دهید، پایتون بهترین ابزار شماست؛ زبانی که شکاف بین منطق انسانی و اجرای ماشینی را از بین برده است.</p>",
-                
-                art_2_title: "علم داده: پیش‌گویی آینده با اعداد", art_2_excerpt: "در دنیایی که در داده‌ها غرق شده، دانشمندان داده جادوگرانی هستند که این سر و صداها را به طلا تبدیل می‌کنند.",
-                art_2_full: "<p>ما هر روز کوینتیلیون‌ها بایت داده تولید می‌کنیم. هر کلیک، هر جستجو، هر خرید و حتی هر ضربان قلبی که توسط ساعت‌های هوشمند ثبت می‌شود، به یک اقیانوس عظیم جهانی از اطلاعات می‌پیوندد. اما داده‌های خام به تنهایی بی‌فایده‌اند؛ آن‌ها فقط یک سر و صدای مبهم هستند. اینجاست که «علم داده» یا Data Science وارد میدان می‌شود.</p><p>یک دانشمند داده را به چشم یک کارآگاه مدرن ببینید. آن‌ها با اعمال روش‌های دقیق آماری، نوشتن الگوریتم‌های پیچیده و استفاده از مدل‌های یادگیری ماشین، الگوهای پنهانی را کشف می‌کنند که چشم انسان هرگز قادر به دیدنشان نیست.</p><p>چگونه نتفلیکس دقیقاً می‌داند امشب دلتان می‌خواهد چه فیلمی ببینید؟ چگونه شرکت‌های حمل‌ونقل هزاران کامیون را طوری مسیریابی می‌کنند که میلیون‌ها دلار در مصرف سوخت صرفه‌جویی شود؟ چگونه پزشکان خطر حمله قلبی یک بیمار را سال‌ها قبل از بروز علائم پیش‌بینی می‌کنند؟ پاسخ همیشه «داده» است. علم داده با پاکسازی مجموعه‌های نامنظم، مهندسی ویژگی‌های جدید و ساخت مدل‌های پیش‌بینی، حدس و گمان را از کسب‌وکار و زندگی حذف می‌کند و به ما اجازه می‌دهد آینده را به معنای واقعی کلمه پیش‌بینی کنیم.</p>",
-                
-                art_3_title: "کامپیوترهای کوانتومی: در هم شکستن مرزها", art_3_excerpt: "صفر و یک‌ها را فراموش کنید. محاسبات کوانتومی در آستانه تغییر تار و پود قدرت پردازشی بشر است.",
-                art_3_full: "<p>از سپیده‌دم پیدایش کامپیوترها، ماشین‌ها با یک زبان ساده صحبت کرده‌اند: باینری. یک بیت یا صفر است یا یک؛ یک کلید یا خاموش است یا روشن. اما چه می‌شد اگر یک کلید می‌توانست به طور همزمان هم خاموش باشد، هم روشن و هم تمام حالت‌های بین این دو؟ به دنیای «محاسبات کوانتومی» خوش آمدید.</p><p>این کامپیوترها با استفاده از اصول مکانیک کوانتومی، از «کیوبیت‌ها» (Qubits) استفاده می‌کنند. به لطف پدیده‌ای به نام برهم‌نهی (Superposition)، یک کیوبیت می‌تواند چندین حالت را به طور همزمان نشان دهد. حالا پدیده «درهم‌تنیدگی» را هم به آن اضافه کنید تا ماشینی داشته باشید که قدرت پردازش آن نه به صورت خطی، بلکه به صورت نمایی و وحشتناک افزایش می‌یابد.</p><blockquote>«یک کامپیوتر کوانتومی مسیرهای یک ماز را یکی‌یکی امتحان نمی‌کند؛ بلکه کل ماز را همزمان با آب پر می‌کند تا در یک لحظه خروجی را بیابد.»</blockquote><p>هرچند این تکنولوژی هنوز در مراحل ابتدایی است، اما کامپیوترهای کوانتومی این پتانسیل را دارند که سیستم‌های رمزنگاری فعلی (مثل RSA) را در چند ثانیه بشکنند. اما روی مثبت آن‌ها شگفت‌انگیزتر است: آن‌ها می‌توانند تعاملات پیچیده مولکولی را شبیه‌سازی کنند تا داروهای نجات‌بخش جدید را به جای چند دهه، در چند روز کشف کنند. ما دقیقاً در لبه پرتگاه انقلاب بزرگ بعدی محاسبات ایستاده‌ایم.</p>",
-                
-                art_4_title: "دنیای مورمورکننده فیزیک کوانتوم", art_4_excerpt: "انیشتین آن را «عمل شبح‌وار از راه دور» نامید. بیایید به واقعیت عجیب دنیای زیراتمی سفر کنیم.",
-                art_4_full: "<p>اگر فکر می‌کنید بر اساس تجربیات زندگی روزمره‌تان می‌دانید که جهان چگونه کار می‌کند، فیزیک کوانتوم اینجاست تا این غرور را در هم بشکند. در سطح زیراتمی - قلمرو الکترون‌ها و فوتون‌ها - قوانین استاندارد فیزیک کلاسیک به طور کامل فرو می‌ریزند.</p><p>پدیده «درهم‌تنیدگی کوانتومی» (Quantum Entanglement) را در نظر بگیرید. اگر دو ذره با هم درهم‌تنیده شوند، تغییر حالت یکی از آن‌ها به طور آنی حالت دیگری را تغییر می‌دهد، حتی اگر میلیاردها سال نوری از هم فاصله داشته باشند! این اتفاق سریع‌تر از سرعت نور رخ می‌دهد و نظریه نسبیت انیشتین را به چالش می‌کشد. انیشتین خودش آن‌قدر از این پدیده ناراحت بود که در جمله‌ای معروف آن را «عمل شبح‌وار از راه دور» توصیف کرد.</p><p>یا پدیده «اثر ناظر» (Observer Effect)؛ جایی که ذرات تا زمانی که کسی واقعاً به آن‌ها نگاه نکرده باشد، مانند امواجِ احتمال رفتار می‌کنند و با نگاه کردن ما، مجبور می‌شوند یک حالت قطعی به خود بگیرند. درک این مفاهیم عجیب فقط برای بحث‌های فلسفی نیست؛ این دقیقاً همان علمی است که ما امروز در حال مهار آن هستیم تا اینترنت‌های کوانتومی غیرقابل هک و ساعت‌های اتمی فوق‌دقیق بسازیم. جهان ما بسیار عجیب‌تر و بسیار متصل‌تر از آن چیزی است که تصورش را می‌کردیم.</p>",
-                
-                art_5_title: "چرا همه باید برنامه‌نویسی یاد بگیرند؟", art_5_excerpt: "برای بهره‌مندی از برنامه‌نویسی نیازی نیست مهندس نرم‌افزار باشید. این مهارتی است که نحوه تفکر شما را تغییر می‌دهد.",
-                art_5_full: "<p>یک تصور غلط و بزرگ وجود دارد که برنامه‌نویسی فقط مخصوص کسانی است که می‌خواهند اپلیکیشن بسازند یا در گوگل کار کنند. هیچ‌چیز از این حقیقت دورتر نیست. کدنویسی، «سوادِ» عصر جدید است. همان‌طور که یادگیری خواندن و نوشتن در قرن نوزدهم درهای جهان را به روی انسان باز کرد، یادگیری کدنویسی امروز درهای دنیای دیجیتال را می‌گشاید.</p><p>وقتی برنامه‌نویسی یاد می‌گیرید، فقط سینتکس و قواعد یک زبان را حفظ نمی‌کنید؛ شما در حال سیم‌کشی مجدد مغزتان هستید. شما «تفکر الگوریتمی» را می‌آموزید؛ یعنی توانایی گرفتن یک مشکل بزرگ و فلج‌کننده، و شکستن آن به مراحل کوچک، منطقی و قابل مدیریت برای حل قدم به قدم آن. این یک قدرت فوق‌العاده در هر شغلی است.</p><p>یک حسابدار را تصور کنید که یک اسکریپت ساده ۱۰ خطی با پایتون می‌نویسد تا کاری را که هر جمعه ۴ ساعت وقتش را می‌گرفت، کاملاً خودکار کند. یا یک زیست‌شناس که کدی برای مرتب‌سازی خودکار هزاران تصویر سلولی می‌نویسد. برنامه‌نویسی، شما را از یک «مصرف‌کننده منفعل» تکنولوژی، به یک «خالق فعال» تبدیل می‌کند و به شما قدرت می‌دهد تا به ماشین‌های اطرافتان فرمان دهید.</p>",
-                
-                art_6_title: "چگونه علم داده در حال بازسازی اقتصاد است", art_6_excerpt: "وقتی وال استریت با سیلیکون ولی ملاقات می‌کند؛ چگونه الگوریتم‌ها اقتصاد جهانی را پیش‌بینی می‌کنند.",
-                art_6_full: "<p>از لحاظ تاریخی، اقتصاد یک علم تئوری بود. اقتصاددانان به گزارش‌های سه‌ماهه که همیشه با تاخیر منتشر می‌شدند نگاه می‌کردند، بر اساس مدل‌های تاریخی فرضیاتی می‌ساختند و سعی می‌کردند حدس بزنند بازار به کدام سمت می‌رود. این کار اغلب شبیه به رانندگی کردن با نگاه به آینه بغل بود. اما «علم داده» (Data Science) این مدل را کاملاً در هم شکسته است.</p><p>امروزه، تحلیل‌گران کمی (Quants) و اقتصاددانان نوین از مجموعه‌داده‌های عظیم و بلادرنگ برای اندازه‌گیری ضربان اقتصاد جهانی استفاده می‌کنند. به جای انتظار برای گزارش‌های رسمی تورم، الگوریتم‌ها روزانه میلیون‌ها قیمت را از خرده‌فروشان آنلاین استخراج می‌کنند تا تورم دیجیتال را در لحظه محاسبه کنند.</p><p>مدل‌های یادگیری ماشین، تصاویر ماهواره‌ای از پارکینگ‌های فروشگاه‌های زنجیره‌ای را تحلیل می‌کنند تا سود آن‌ها را قبل از اعلام رسمی پیش‌بینی کنند! آن‌ها کانتینرهای حمل‌ونقل را در سراسر اقیانوس‌ها ردیابی می‌کنند تا سلامت زنجیره تامین را بسنجند. با اعمال علم داده در اقتصاد، دولت‌ها و صندوق‌های سرمایه‌گذاری اکنون می‌توانند تصمیماتی به شدت آگاهانه بگیرند و بازار آشفته جهانی را به یک سیستم قابل اندازه‌گیری و تا حدودی قابل پیش‌بینی تبدیل کنند.</p>",
-                
-                art_7_title: "هوش مصنوعی نامرئی در زندگی روزمره شما", art_7_excerpt: "هوش مصنوعی فقط ربات‌های فیلم‌های علمی‌تخیلی نیست. همین الان در جیب شماست و روزانه صدها تصمیم برایتان می‌گیرد.",
-                art_7_full: "<p>وقتی اکثر مردم کلمه «هوش مصنوعی» را می‌شنوند، به یاد ترمیناتور یا اندرویدهای فوق‌پیشرفته فیلم‌های علمی‌تخیلی می‌افتند. اما حقیقت بسیار بی‌سروصداتر است. هوش مصنوعی همین الان به شکلی عمیق در زندگی روزمره ما نفوذ کرده و آن‌قدر نرم و روان عمل می‌کند که ما به سختی متوجه حضورش می‌شویم.</p><p>وقتی قفل گوشی خود را با چهره‌تان باز می‌کنید، یک شبکه عصبی دیپ لرنینگ در چند میلی‌ثانیه نقشه‌ای سه‌بعدی از خطوط چهره شما می‌سازد. وقتی ایمیل می‌نویسید، مدل‌های پردازش زبان طبیعی کلمات بعدی شما را حدس می‌زنند. وقتی از مسیریاب‌ها (مثل Waze) استفاده می‌کنید، الگوریتم‌های گراف بلادرنگ شما را از ترافیک‌هایی که هنوز حتی به آن‌ها نرسیده‌اید دور می‌کنند.</p><blockquote>«بهترین هوش مصنوعی، آن است که حتی متوجه نشوید در حال استفاده از آن هستید.»</blockquote><p>سرویس‌های استریم فیلم از موتورهای پیشنهادگر پیچیده استفاده می‌کنند تا شما را پای تلویزیون میخکوب کنند. بانک شما از هوش مصنوعی تشخیص ناهنجاری (Anomaly Detection) برای مسدود کردن آنی تراکنش‌های تقلبی کارت اعتباری‌تان بهره می‌برد. ما بخش عظیمی از بار شناختی روزانه خود را به این الگوریتم‌های نامرئی واگذار کرده‌ایم تا زندگی‌مان امن‌تر، سریع‌تر و به‌شدت راحت‌تر شود.</p>",
-                
-                art_8_title: "الگو تریدینگ: جنگ ماشین‌ها در وال استریت", art_8_excerpt: "تریدرهای انسانی در حال انقراض هستند. به عصر معاملات بی‌احساس و فوق‌سریع هوش مصنوعی خوش آمدید.",
-                art_8_full: "<p>تصویر دلالان سهام که در کف تالار بورس با عصبانیت فریاد می‌زنند، مرده است. امروزه، بازار سهام یک میدان نبرد بی‌صدا و نامرئی است که در آن خطوط کد به جنگ یکدیگر می‌روند. به دنیای معاملات الگوریتمی (Algo Trading) خوش آمدید.</p><p>در بازارهای مالی، احساسات - یعنی ترس و طمع - بدترین دشمن یک معامله‌گر هستند. اما هوش مصنوعی ترسی حس نمی‌کند. الگوریتم‌ها می‌توانند هزاران نماد سهام را تحلیل کنند، دهه‌ها داده تاریخی را پردازش کنند و معاملات پیچیده را در چند میکروثانیه (کسری از زمانی که یک انسان برای پلک زدن نیاز دارد) انجام دهند.</p><p>اما ماجرا فراتر از سرعت است. ربات‌های معامله‌گر مدرن از پردازش زبان طبیعی (NLP) برای خواندن مقالات خبری جهانی و توییت‌ها در همان ثانیه‌ای که منتشر می‌شوند استفاده می‌کنند. اگر مدیرعامل یک شرکت توییت جنجالی بزند، هوش مصنوعی فوراً بار احساسی منفی آن را می‌سنجد و قبل از اینکه تریدرهای انسانی حتی خواندن جمله را تمام کنند، روی آن سهم پوزیشن Short (فروش) باز می‌کند. در این بازی شطرنجِ پرخطر الگوریتمی، داده‌ها سلاح هستند و هوش مصنوعی، استادبزرگ این بازی است.</p>",
-                
-                art_9_title: "یادگیری تقویتی در علم رباتیک", art_9_excerpt: "چگونه به یک ربات یاد می‌دهید پشتک بزند؟ شما او را برنامه‌نویسی نمی‌کنید؛ می‌گذارید با آزمون و خطا یاد بگیرد.",
-                art_9_full: "<p>اگر بخواهید رباتی بسازید که بتواند روی یک زمین یخ‌زده و ناهموار راه برود، چگونه برنامه‌اش را می‌نویسید؟ اگر سعی کنید حرکت تک‌تک مفاصل و محاسبات فیزیکی را خط به خط کدنویسی کنید (Hardcode)، قطعاً شکست خواهید خورد. محیط اطراف بیش از حد غیرقابل پیش‌بینی است. راه‌حل مدرن این مشکل، «یادگیری تقویتی» (Reinforcement Learning) است.</p><p>یادگیری تقویتی از روانشناسی رفتارگرا الهام گرفته شده است. شما به ربات نمی‌گویید *چگونه* راه برود؛ فقط یک هدف (حرکت به جلو) و یک سیستم پاداش (گرفتن امتیاز برای حرکت به جلو، کسر امتیاز برای زمین خوردن) به او می‌دهید. سپس مهندسان ربات مجازی را در یک شبیه‌ساز فیزیکی قرار می‌دهند.</p><p>در ابتدا، ربات دست و پا می‌زند و فوراً به زمین می‌خورد. اما پس از میلیون‌ها بار تکرار - یعنی انجام سال‌ها شبیه‌سازی در تنها چند ساعت - ربات یاد می‌گیرد. او استراتژی‌های حفظ تعادلی را کشف می‌کند که مهندسان انسانی هرگز به ذهنشان خطور نمی‌کرد. وقتی هوش مصنوعی این رفتار را در شبیه‌ساز به کمال رساند، این «مغز» به ربات فیزیکی منتقل می‌شود. این دقیقاً همان روشی است که شرکت‌هایی مثل Boston Dynamics برای ساخت ماشین‌هایی استفاده می‌کنند که می‌توانند به نرمی بدوند، بپرند و حتی در صورت هل داده شدن تعادلشان را حفظ کنند.</p>",
-                
-                art_10_title: "انقلاب چت‌بات‌ها در کسب‌وکارهای آنلاین", art_10_excerpt: "کارمند ایده‌آل: ۲۴ ساعته کار می‌کند، به ۵۰ زبان مسلط است، هرگز عصبانی نمی‌شود و فروش را آنی می‌بندد.",
-                art_10_full: "<p>بخش پشتیبانی مشتریان (Customer Service) همیشه گلوگاه کسب‌وکارهای آنلاین بوده است. مشتریان از ماندن پشت خطوط انتظار متنفرند و کسب‌وکارها هم از هزینه‌های سرسام‌آور مراکز تماس بیزارند. معرفی چت‌بات‌های هوش مصنوعی این پویایی را به کلی دگرگون کرده است.</p><p>ما مدت‌هاست از ربات‌های خسته‌کننده و اعصاب‌خردکنی که می‌گفتند «برای ارتباط با فروش عدد ۱ را وارد کنید» عبور کرده‌ایم. چت‌بات‌های امروزی توسط مدل‌های زبانی بزرگ (LLM) پیشرفته‌ای مانند GPT قدرت می‌گیرند. آن‌ها زمینه صحبت (Context)، طعنه و نیت پنهان کاربر را کاملاً درک می‌کنند.</p><p>یک چت‌بات مدرن که در تلگرام یا وب‌سایت یک شرکت ادغام شده، می‌تواند فرآیندهای پیچیده مرجوعی کالا را در لحظه حل و فصل کند، بر اساس تاریخچه چت مشتری محصولات شخصی‌سازی‌شده به او پیشنهاد دهد (Cross-selling)، و همزمان با هزاران مشتری در ساعت ۳ صبح صحبت کند بدون اینکه حتی قطره‌ای عرق بریزد! این ایجنت‌های هوش مصنوعی با ارائه رضایت آنی و پشتیبانی بی‌نقص، نرخ تبدیل (Conversion Rates) و وفاداری مشتریان را به شدت افزایش می‌دهند و ثابت می‌کنند که آینده کسب‌وکارها، در دستان هوش مصنوعیِ مکالمه‌محور است.</p>",
+        // ----- Certificates -----
+        title_certs: "Professional Certificates",
+        cert_1_title: "Basic Python",
+        cert_1_desc: "Solid foundation in Python syntax and logic.<br>Mastering loops, functions, and core data structures.",
+        cert_2_title: "Advanced Python",
+        cert_2_desc: "Deep dive into OOP, decorators, and generators.<br>Writing clean, scalable, and optimized production code.",
+        cert_3_title: "AI Algorithms",
+        cert_3_desc: "Search strategies, heuristics, and AI mathematics.<br>Implementing core ML algorithms from scratch.",
+        cert_4_title: "Deep Learning",
+        cert_4_desc: "Advanced neural networks: CNNs, RNNs, Transformers.<br>Hands-on architecture design with TensorFlow and Keras.",
+        cert_5_title: "Data Science",
+        cert_5_desc: "Statistical modeling, data wrangling, and storytelling.<br>Extracting powerful insights from complex datasets.",
+        cert_6_title: "Advanced API Development",
+        cert_6_desc: "Secure, RESTful, scalable backend interfaces.<br>Deploying high-performance API endpoints for AI models.",
 
-                footer_connect: "ارتباط با محمد مهدی امیدوار", footer_desc: "من همیشه مشتاق شنیدن ایده‌های خلاقانه، پروژه‌های جدید هوش مصنوعی و فرصت‌های خلق ارزش برای کسب‌وکار شما هستم.", footer_rights: "تمامی حقوق محفوظ است."
-            }
-        };
+        // ----- Articles -----
+        title_articles: "Insights & Articles",
+        btn_read_more: "Read Full Article",
+
+        art_1_title: "The Unstoppable Rise of Python",
+        art_1_excerpt: "Why is everyone—from junior devs to Google engineers—so obsessed with Python? Let's explore its magic.",
+        art_1_full: "<p>Have you ever wondered why Python, a language born in the late 1980s, now dominates the tech world? This isn't a passing trend—it's a fundamental shift in how we solve problems with code.</p><p>Unlike languages that force you to write dozens of lines just to print 'Hello World', Python respects your time. Its syntax reads like plain English. But don't let the simplicity fool you. Beneath it lies a true powerhouse.</p><blockquote>'Python is the duct tape of the modern internet. It holds everything together.'</blockquote><p>Today, Python is the undisputed king of AI and machine learning. Frameworks like TensorFlow, PyTorch, and Keras speak Python natively. Startups use Django and FastAPI to build lightning-fast backends. Financial firms crunch millions of data rows with Pandas in seconds. Whether you're automating Excel, scraping the web, or training a neural network to detect cancer, Python is the ultimate tool—bridging human logic and machine execution seamlessly.</p>",
+
+        art_2_title: "Data Science: Predicting the Future",
+        art_2_excerpt: "In a world drowning in data, data scientists are the modern alchemists turning noise into gold.",
+        art_2_full: "<p>We generate quintillions of bytes of data every day. Every click, swipe, purchase, and heartbeat recorded by a smartwatch adds to a massive global ocean of information. But raw data is just noise—until data science steps in.</p><p>Think of a data scientist as a detective. Using statistical rigor, complex algorithms, and machine learning, they uncover patterns the human eye could never see.</p><p>How does Netflix know exactly what you want to watch tonight? How do logistics companies save millions in fuel? How do doctors predict heart disease years before symptoms appear? The answer is always data. Data science removes guesswork from business and life, letting us predict—and shape—the future.</p>",
+
+        art_3_title: "Quantum Computers: Breaking the Limits",
+        art_3_excerpt: "Forget 1s and 0s. Quantum computing is about to change the very fabric of computational power.",
+        art_3_full: "<p>Since the dawn of computing, machines have spoken binary: a bit is either 0 or 1. But what if a switch could be both off, on, and everything in between at the same time? Welcome to quantum computing.</p><p>These machines use 'qubits'. Thanks to superposition, a qubit can represent multiple states simultaneously. Add entanglement, and processing power scales exponentially.</p><blockquote>'A quantum computer doesn't try paths one by one—it floods the maze and finds the exit instantly.'</blockquote><p>Still in its infancy, quantum computing threatens to break today's encryption in seconds. But the upside is staggering: simulating molecules to discover life-saving drugs in days instead of decades, or perfectly modeling climate change. We're standing on the edge of the next computational revolution.</p>",
+
+        art_4_title: "The Spooky World of Quantum Physics",
+        art_4_excerpt: "Einstein called it 'spooky action at a distance.' Let's dive into the bizarre reality of the subatomic world.",
+        art_4_full: "<p>If you think you understand the universe based on daily life, quantum physics is here to humble you. At the subatomic level, the rules of classical physics break down completely.</p><p>Take quantum entanglement. If two particles become entangled, changing one instantly changes the other—even if they're billions of light-years apart. Faster than light. Einstein was so uncomfortable with this that he called it 'spooky action at a distance.'</p><p>Then there's the observer effect: particles act like waves of probability until someone looks at them, forcing them into a definite state. Understanding this isn't just philosophy—it's the science behind quantum internet and hyper-accurate atomic clocks. The universe is stranger and more connected than we ever imagined.</p>",
+
+        art_5_title: "Why Everyone Should Learn to Code",
+        art_5_excerpt: "You don't need to be a software engineer to benefit from coding. It's a life skill that changes how you think.",
+        art_5_full: "<p>There's a huge misconception that programming is only for people who want to build apps or work at big tech companies. Nothing could be further from the truth. Coding is the new literacy.</p><p>When you learn to code, you're not just memorizing syntax—you're rewiring your brain. You learn algorithmic thinking: breaking massive problems into tiny, logical, manageable steps. That's a superpower in any career.</p><p>Imagine an accountant writing a 10-line Python script to automate a 4-hour Friday task. Or a biologist sorting thousands of cell images with a few lines of code. Coding shifts you from being a passive consumer of technology to an active creator. You gain the power to command the machines around you.</p>",
+
+        art_6_title: "How Data Science is Reshaping Economics",
+        art_6_excerpt: "Wall Street meets Silicon Valley. Discover how algorithms are predicting the global economy.",
+        art_6_full: "<p>Economics used to be a theoretical science. Economists looked at delayed quarterly reports and made guesses based on historical models—like driving while looking in the rearview mirror. Data science has shattered that model.</p><p>Today, quants and economists use real-time, massive datasets to measure the pulse of the global economy. Instead of waiting for official inflation reports, algorithms scrape millions of online prices daily to calculate real-time digital inflation.</p><p>Machine learning models analyze satellite images of retail parking lots to predict earnings before they're announced. They track shipping containers across oceans to monitor supply chains. By applying data science to economics, governments and hedge funds can make hyper-informed decisions, turning chaos into a quantifiable system.</p>",
+
+        art_7_title: "The Invisible AI in Your Daily Life",
+        art_7_excerpt: "AI isn't just sci-fi robots. It's already in your pocket, making hundreds of decisions for you every day.",
+        art_7_full: "<p>When most people hear 'artificial intelligence', they think of Terminator or sci-fi androids. The truth is much quieter. AI has already deeply infiltrated our daily lives—and it's so smooth we barely notice it.</p><p>When you unlock your phone with your face, a deep neural network maps the 3D contours of your features in milliseconds. When you type an email, NLP models predict your next words. When you use Google Maps, real-time algorithms route you around traffic jams before you even hit them.</p><blockquote>'The best AI is the one you don't even realize you're using.'</blockquote><p>Streaming services use recommendation engines to keep you watching. Your bank uses AI anomaly detection to instantly block fraudulent charges. We've outsourced a huge amount of daily cognitive load to these invisible algorithms—making our lives safer, faster, and incredibly convenient.</p>",
+
+        art_8_title: "Algorithmic Trading: Machines on Wall Street",
+        art_8_excerpt: "Human traders are becoming obsolete. Welcome to the era of emotionless, hyper-fast AI trading.",
+        art_8_full: "<p>The image of frantic stockbrokers yelling on the trading floor is dead. Today, the stock market is a silent, invisible battlefield where lines of code go to war. Welcome to algorithmic trading.</p><p>In financial markets, fear and greed are a trader's worst enemy. AI feels no fear. Algorithms can analyze thousands of stocks, process decades of data, and execute trades in microseconds—faster than a human can blink.</p><p>But it's not just speed. Modern trading bots use NLP to read global news and Twitter feeds the second they're published. If a CEO tweets something controversial, the AI instantly gauges negative sentiment and shorts the stock before human traders have finished reading the sentence. In this high-stakes game, data is the weapon and AI is the grandmaster.</p>",
+
+        art_9_title: "Reinforcement Learning in Robotics",
+        art_9_excerpt: "How do you teach a robot to do a backflip? You don't program it—you let it learn through trial and error.",
+        art_9_full: "<p>If you wanted to build a robot that could walk across icy, uneven terrain, how would you program it? If you hardcoded every joint movement, you'd fail. The environment is too unpredictable. The modern solution is reinforcement learning (RL).</p><p>RL is inspired by behavioral psychology. You don't tell the robot *how* to walk—you give it a goal (move forward) and a reward system (points for moving forward, penalties for falling). Then you place it in a physics simulation.</p><p>At first, the robot flails and falls instantly. But after millions of iterations—simulating years of trial and error in hours—it learns. It discovers balancing strategies that human engineers could never imagine. Once perfected in simulation, the 'brain' is transferred to the physical robot. This is how companies like Boston Dynamics create machines that run, jump, and recover from being pushed.</p>",
+
+        art_10_title: "The Chatbot Revolution in Online Business",
+        art_10_excerpt: "The ultimate employee: works 24/7, speaks 50 languages, never gets angry, and closes sales instantly.",
+        art_10_full: "<p>Customer service used to be the bottleneck of online business. Customers hate waiting on hold, and businesses hate the overhead of call centers. AI chatbots have completely revolutionized this dynamic.</p><p>We've moved far beyond frustrating 'Press 1 for Sales' bots. Today's chatbots are powered by advanced LLMs like GPT or Llama. They understand context, sarcasm, and nuanced intent.</p><p>A modern chatbot integrated into a company's website or Telegram can instantly resolve complex returns, cross-sell products based on chat history, and handle thousands of simultaneous customers at 3:00 AM without breaking a sweat. By providing instant gratification and seamless support, these AI agents dramatically boost conversion rates and customer loyalty—proving that the future of business is conversational AI.</p>",
+
+        // ----- Footer -----
+        footer_connect: "Connect with Mohammad Mehdi Omidvar",
+        footer_desc: "I'm always open to discussing new AI projects, creative ideas, or opportunities to bring your vision to life.",
+        footer_rights: "All Rights Reserved."
+    },
+    fa: {
+        // ----- ناوبری -----
+        nav_home: "خانه",
+        nav_skills: "مهارت‌ها",
+        nav_deep: "تخصص",
+        nav_achieve: "افتخارات",
+        nav_projects: "پروژه‌ها",
+        nav_certs: "مدارک",
+        nav_articles: "مقالات",
+
+        // ----- بخش قهرمان -----
+        hero_role: "مهندس ارشد هوش مصنوعی و معماری پایتون",
+        hero_title: "محمد مهدی<br><span class='gradient-text'>امیدوار</span>",
+        hero_desc: "تبدیل الگوریتم‌های پیچیده ریاضی به نرم‌افزارهای هوشمند و آماده تولید. کمک به کسب‌وکارها برای رشد با هوش مصنوعی، علم داده و بک‌اندهای قدرتمند پایتون. برنده مدال طلای جهانی.",
+        btn_contact: "ارتباط با من",
+        btn_articles: "مطالعه مقالات",
+
+        // ----- مهارت‌ها و آمار -----
+        title_skills: "مهارت‌های فنی و دستاوردها",
+        stat_projects: "پروژه تجاری موفق",
+        stat_startups: "همکاری با استارتاپ‌ها",
+        stat_medal: "مدال طلای جهانی",
+        sk_cat_ai: "هوش مصنوعی و یادگیری ماشین",
+        sk_cat_dev: "توسعه نرم‌افزار و مهندسی",
+
+        // ----- تخصص عمیق -----
+        title_deep: "تحلیل عمیق تخصص‌ها",
+        dd_1_title: "ادغام هوش مصنوعی و مهندسی بک‌اند",
+        dd_1_desc: "جاسازی یکپارچه مدل‌های هوش مصنوعی در معماری‌های قوی بک‌اند. استفاده از Django، FastAPI و Flask برای ساخت APIهای مقیاس‌پذیر، امن و فوق‌سریع که قادر به پاسخگویی به هزاران درخواست همزمان به صورت قابل اعتماد هستند.",
+        dd_2_title: "یادگیری ماشین و یادگیری عمیق",
+        dd_2_desc: "طراحی و بهینه‌سازی شبکه‌های عصبی از پایه. تسلط بر الگوریتم‌های کلاسیک یادگیری ماشین و معماری‌های پیشرفته دیپ لرنینگ. تخصص در پردازش مجموعه‌داده‌های عظیم با TensorFlow و PyTorch.",
+        dd_3_title: "بینایی کامپیوتر و پردازش صوت",
+        dd_3_desc: "استخراج بینش‌های معنادار از تصاویر، ویدئو و صوت. پیاده‌سازی تشخیص اشیاء (YOLO)، تشخیص چهره و سگمنتیشن. تجربه در ساخت سیستم‌های مانیتورینگ چندحالته برای امنیت و اتوماسیون.",
+        dd_4_title: "علم داده و مهندسی ویژگی",
+        dd_4_desc: "تبدیل داده‌های خام و نامنظم به هوش تجاری قابل اقدام. مهارت در پاکسازی داده، تحلیل اکتشافی و مهندسی ویژگی پیشرفته با Pandas و Scikit-learn برای بهبود عملکرد مدل و کشف الگوهای پنهان.",
+        dd_5_title: "یادگیری تقویتی",
+        dd_5_desc: "ساخت عامل‌های خودمختار که رفتار بهینه را از طریق آزمون و خطا می‌آموزند. استفاده از الگوریتم‌های Q-Learning، PPO و سایر الگوریتم‌های RL برای حل مسائل کنترلی پیچیده از جمله شبیه‌سازی معاملات و سیستم‌های کنترل رباتیک.",
+        dd_6_title: "پردازش زبان طبیعی و ترنسفورمرها",
+        dd_6_desc: "تسلط کامل بر پردازش زبان طبیعی با معماری‌های مدرن ترنسفورمر. فاین‌تیون مدل‌های زبانی بزرگ برای وظایف خاص مانند تحلیل احساسات، استخراج موجودیت‌ها و ساخت عامل‌های گفتگوی هوشمند.",
+        dd_7_title: "توسعه ربات تلگرام",
+        dd_7_desc: "توسعه ربات‌های تعاملی و مبتنی بر هوش مصنوعی برای پشتیبانی، اتوماسیون و فروش. استفاده از Aiogram برای عملیات غیرهمگام و اتصال مستقیم به پایگاه داده و بک‌اندهای هوش مصنوعی برای ارائه خدمات لحظه‌ای.",
+
+        // ----- دستاوردها -----
+        title_achieve: "افتخار جهانی",
+        achieve_sub: "مدال طلا – بخش هوش مصنوعی",
+        achieve_desc: "کسب مدال طلا برای «پروژه تبدیل احساس به هنر با هوش مصنوعی» در مسابقات INNOVERSE ۲۰۲۵ در جورجیای آمریکا. این پروژه انقلابی از تشخیص احساسات چندحالته برای خلق هنر نمادین لحظه‌ای استفاده می‌کند.",
+        team_label: "اعضای تیم:",
+        team_list: "محمد مهدی امیدوار، مهیار علیزاده، آراد چیذری، سوگل ترنابی",
+
+        // ----- پروژه شاخص -----
+        title_projects: "پروژه شاخص",
+        btn_code: "مشاهده سورس کد",
+        proj_overview: "نمای کلی",
+        proj_desc_long: "یک سیستم هوش مصنوعی انقلابی که احساسات انسانی را از متن، صدا و چهره تفسیر کرده و در لحظه به آثار هنری نمادین تبدیل می‌کند. این پروژه برنده مدال طلای جهانی INNOVERSE ۲۰۲۵ شد.",
+        proj_features: "ویژگی‌های کلیدی",
+        feat_1: "معماری تشخیص احساسات چندحالته",
+        feat_2: "پردازش غیرهمگام و لحظه‌ای تبدیل گفتار به متن",
+        feat_3: "تولید هنر مولد با مدل‌های دیفیوژن پیشرفته",
+
+        // ----- گواهینامه‌ها -----
+        title_certs: "گواهینامه‌های تخصصی",
+        cert_1_title: "پایتون مقدماتی",
+        cert_1_desc: "بنیان محکم در سینتکس و منطق پایتون.<br>تسلط بر حلقه‌ها، توابع و ساختارهای داده اصلی.",
+        cert_2_title: "پایتون پیشرفته",
+        cert_2_desc: "بررسی عمیق شی‌گرایی، دکوراتورها و ژنراتورها.<br>نوشتن کد تمیز، مقیاس‌پذیر و بهینه برای تولید.",
+        cert_3_title: "الگوریتم‌های هوش مصنوعی",
+        cert_3_desc: "راهبردهای جستجو، هیوریستیک و ریاضیات هوش مصنوعی.<br>پیاده‌سازی الگوریتم‌های اصلی یادگیری ماشین از صفر.",
+        cert_4_title: "یادگیری عمیق",
+        cert_4_desc: "شبکه‌های عصبی پیشرفته: CNN، RNN، ترنسفورمر.<br>طراحی عملی معماری با TensorFlow و Keras.",
+        cert_5_title: "علم داده",
+        cert_5_desc: "مدل‌سازی آماری، دستکاری داده و داستان‌سرایی بصری.<br>استخراج بینش‌های قدرتمند از مجموعه‌داده‌های پیچیده.",
+        cert_6_title: "توسعه پیشرفته API",
+        cert_6_desc: "رابط‌های بک‌اند امن، RESTful و مقیاس‌پذیر.<br>دیپلوی اندپوینت‌های API با عملکرد بالا برای مدل‌های هوش مصنوعی.",
+
+        // ----- مقالات -----
+        title_articles: "مقالات و یادداشت‌ها",
+        btn_read_more: "مطالعه کامل مقاله",
+
+        art_1_title: "صعود توقف‌ناپذیر زبان پایتون",
+        art_1_excerpt: "چرا همه، از برنامه‌نویسان تازه‌کار تا مهندسان گوگل، شیفته پایتون شده‌اند؟ بیایید جادوی آن را بررسی کنیم.",
+        art_1_full: "<p>آیا تا به حال فکر کرده‌اید که چرا پایتون، زبانی که در اواخر دهه ۱۹۸۰ متولد شد، امروز بر دنیای تکنولوژی سلطنت می‌کند؟ این فقط یک ترند گذرا نیست—بلکه یک تغییر بنیادین در نحوه حل مسئله با کدنویسی است.</p><p>برخلاف زبان‌هایی که شما را مجبور می‌کنند برای چاپ یک «سلام دنیا» ده‌ها خط بنویسید، پایتون به زمان شما احترام می‌گذارد. سینتکس آن شبیه به خواندن انگلیسی ساده است. اما اجازه ندهید این سادگی شما را فریب دهد—در زیر آن، یک قدرت مطلق نهفته است.</p><blockquote>«پایتون نوار چسب اینترنت مدرن است؛ همه‌چیز را در کنار هم نگه می‌دارد.»</blockquote><p>امروزه پایتون پادشاه بی‌منازع هوش مصنوعی و یادگیری ماشین است. فریم‌ورک‌هایی مثل TensorFlow، PyTorch و Keras با پایتون صحبت می‌کنند. استارتاپ‌ها با Django و FastAPI بک‌اندهای فوق‌سریع می‌سازند. شرکت‌های مالی با Pandas میلیون‌ها ردیف داده را در چند ثانیه پردازش می‌کنند. فرقی نمی‌کند اتوماسیون اکسل، وب اسکرپینگ یا آموزش شبکه عصبی برای تشخیص سرطان—پایتون بهترین ابزار است؛ پلی بین منطق انسانی و اجرای ماشینی.</p>",
+
+        art_2_title: "علم داده: پیش‌بینی آینده",
+        art_2_excerpt: "در دنیایی که در داده غرق شده، دانشمندان داده کیمیاگران مدرنی هستند که سر و صدا را به طلا تبدیل می‌کنند.",
+        art_2_full: "<p>ما هر روز کوینتیلیون‌ها بایت داده تولید می‌کنیم. هر کلیک، هر سوایپ، هر خرید و هر ضربان قلب ثبت‌شده توسط ساعت هوشمند به اقیانوس عظیم جهانی اطلاعات اضافه می‌شود. اما داده خام فقط سر و صدا است—تا زمانی که علم داده وارد میدان شود.</p><p>به یک دانشمند داده به چشم یک کارآگاه نگاه کنید. با دقت آماری، الگوریتم‌های پیچیده و یادگیری ماشین، الگوهایی را کشف می‌کنند که چشم انسان هرگز نمی‌تواند ببیند.</p><p>چگونه نتفلیکس دقیقاً می‌داند امشب چه فیلمی می‌خواهید ببینید؟ چگونه شرکت‌های لجستیک میلیون‌ها دلار در سوخت صرفه‌جویی می‌کنند؟ چگونه پزشکان سال‌ها قبل از بروز علائم، بیماری قلبی را پیش‌بینی می‌کنند؟ پاسخ همیشه داده است. علم داده حدس و گمان را از کسب‌وکار و زندگی حذف می‌کند—و به ما اجازه می‌دهد آینده را پیش‌بینی و شکل دهیم.</p>",
+
+        art_3_title: "کامپیوترهای کوانتومی: شکستن مرزها",
+        art_3_excerpt: "صفر و یک‌ها را فراموش کنید. محاسبات کوانتومی در آستانه تغییر تار و پود قدرت پردازشی است.",
+        art_3_full: "<p>از سپیده‌دم کامپیوتر، ماشین‌ها به زبان باینری صحبت کرده‌اند: یک بیت یا صفر است یا یک. اما اگر یک کلید می‌توانست همزمان خاموش، روشن و همه حالت‌های بین این دو باشد، چه؟ به دنیای محاسبات کوانتومی خوش آمدید.</p><p>این ماشین‌ها از «کیوبیت» استفاده می‌کنند. به لطف برهم‌نهی، یک کیوبیت می‌تواند چندین حالت را همزمان نمایش دهد. حالا درهم‌تنیدگی را اضافه کنید—قدرت پردازش به صورت نمایی رشد می‌کند.</p><blockquote>«کامپیوتر کوانتومی مسیرها را یکی‌یکی امتحان نمی‌کند—کل پیچ‌وخم ماز را همزمان پر می‌کند و خروجی را فوری پیدا می‌کند.»</blockquote><p>هرچند در مراحل ابتدایی، کامپیوترهای کوانتومی می‌توانند رمزنگاری امروزی را در چند ثانیه بشکنند. اما روی مثبت آن حیرت‌انگیز است: شبیه‌سازی مولکول‌ها برای کشف داروهای نجات‌بخش در چند روز به جای چند دهه، یا مدل‌سازی کامل تغییرات اقلیمی. ما بر لبه پرتگاه انقلاب بعدی محاسبات ایستاده‌ایم.</p>",
+
+        art_4_title: "دنیای شبح‌وار فیزیک کوانتوم",
+        art_4_excerpt: "انیشتین آن را «عمل شبح‌وار از راه دور» نامید. بیایید به واقعیت عجیب دنیای زیراتمی شیرجه بزنیم.",
+        art_4_full: "<p>اگر فکر می‌کنید بر اساس زندگی روزمره جهان را می‌شناسید، فیزیک کوانتوم اینجاست تا متواضع‌تان کند. در سطح زیراتمی، قوانین فیزیک کلاسیک به طور کامل فرو می‌ریزند.</p><p>درهم‌تنیدگی کوانتومی را در نظر بگیرید: اگر دو ذره با هم درهم‌تنیده شوند، تغییر یکی به طور آنی دیگری را تغییر می‌دهد—حتی اگر میلیاردها سال نوری از هم فاصله داشته باشند. سریع‌تر از نور. انیشتین آن‌قدر از این پدیده ناراحت بود که نامیدش «عمل شبح‌وار از راه دور».</p><p>یا اثر ناظر: ذرات مانند امواج احتمال رفتار می‌کنند تا زمانی که کسی به آن‌ها نگاه کند و مجبورشان کند حالت قطعی بگیرند. درک این مفاهیم فقط فلسفه نیست—این علمی است پشت اینترنت کوانتومی و ساعت‌های اتمی فوق‌دقیق. جهان بسیار عجیب‌تر و به‌مراتب مرتبط‌تر از چیزی است که تصور می‌کردیم.</p>",
+
+        art_5_title: "چرا همه باید برنامه‌نویسی یاد بگیرند",
+        art_5_excerpt: "برای بهره‌مندی از برنامه‌نویسی نیازی نیست مهندس نرم‌افزار باشید. این مهارتی است که طرز فکرتان را تغییر می‌دهد.",
+        art_5_full: "<p>یک تصور غلط بزرگ وجود دارد که برنامه‌نویسی فقط برای کسانی است که می‌خواهند اپلیکیشن بسازند یا در شرکت‌های بزرگ فناوری کار کنند. هیچ‌چیزی از این حقیقت دورتر نیست. کدنویسی سواد جدید است.</p><p>وقتی برنامه‌نویسی یاد می‌گیرید، فقط حفظ کردن سینتکس نیست—دارید مغزتان را بازسیم‌کشی می‌کنید. تفکر الگوریتمی را یاد می‌گیرید: شکستن مشکلات بزرگ به گام‌های کوچک، منطقی و قابل مدیریت. این یک ابرقدرت در هر شغلی است.</p><p>یک حسابدار را تصور کنید که با یک اسکریپت ۱۰ خطی پایتون، کاری را که هر جمعه ۴ ساعت وقت می‌گرفت، خودکار می‌کند. یا یک زیست‌شناس که با چند خط کد، هزاران تصویر سلولی را مرتب می‌کند. کدنویسی شما را از یک مصرف‌کننده منفعل تکنولوژی به یک خالق فعال تبدیل می‌کند. قدرت فرماندهی به ماشین‌های اطرافتان را به دست می‌آورید.</p>",
+
+        art_6_title: "چگونه علم داده اقتصاد را بازشکل می‌دهد",
+        art_6_excerpt: "وال استریت با سیلیکون ولی ملاقات می‌کند. کشف کنید چگونه الگوریتم‌ها اقتصاد جهانی را پیش‌بینی می‌کنند.",
+        art_6_full: "<p>اقتصاد قبلاً یک علم نظری بود. اقتصاددانان به گزارش‌های فصلی با تأخیر نگاه می‌کردند و بر اساس مدل‌های تاریخی حدس می‌زدند—مثل رانندگی با نگاه به آینه عقب. علم داده این مدل را درهم شکسته است.</p><p>امروزه، تحلیلگران کمی و اقتصاددانان از مجموعه‌داده‌های عظیم و لحظه‌ای برای اندازه‌گیری ضربان اقتصاد جهانی استفاده می‌کنند. به جای انتظار برای گزارش‌های رسمی تورم، الگوریتم‌ها روزانه میلیون‌ها قیمت آنلاین را می‌کنند تا تورم دیجیتال لحظه‌ای را محاسبه کنند.</p><p>مدل‌های یادگیری ماشین تصاویر ماهواره‌ای از پارکینگ فروشگاه‌ها را تحلیل می‌کنند تا سود را قبل از اعلام رسمی پیش‌بینی کنند. کانتینرهای حمل‌ونقل را در سراسر اقیانوس‌ها ردیابی می‌کنند تا زنجیره تأمین را مانیتور کنند. با اعمال علم داده در اقتصاد، دولت‌ها و هج‌فاندها می‌توانند تصمیمات فوق‌آگاهانه بگیرند—و هرج‌ومرج را به یک سیستم قابل اندازه‌گیری تبدیل کنند.</p>",
+
+        art_7_title: "هوش مصنوعی نامرئی در زندگی روزمره شما",
+        art_7_excerpt: "هوش مصنوعی فقط ربات‌های علمی‌تخیلی نیست. همین حالا در جیب شماست و روزانه صدها تصمیم برایتان می‌گیرد.",
+        art_7_full: "<p>وقتی بیشتر مردم «هوش مصنوعی» را می‌شنوند، به یاد ترمیناتور یا اندرویدهای علمی‌تخیلی می‌افتند. حقیقت بسیار آرام‌تر است. هوش مصنوعی قبلاً به شکلی عمیق در زندگی روزمره ما نفوذ کرده—و آن‌قدر نرم است که به سختی متوجهش می‌شویم.</p><p>وقتی قفل گوشی را با چهره باز می‌کنید، یک شبکه عصبی عمیق در میلی‌ثانیه نقشه سه‌بعدی از خطوط صورتتان را ترسیم می‌کند. وقتی ایمیل می‌نویسید، مدل‌های پردازش زبان طبیعی کلمات بعدی را حدس می‌زنند. وقتی از گوگل مپ استفاده می‌کنید، الگوریتم‌های لحظه‌ای شما را دور ترافیک—قبل از اینکه به آن برسید—مسیریابی می‌کنند.</p><blockquote>«بهترین هوش مصنوعی آن است که حتی متوجه استفاده از آن نشوید.»</blockquote><p>سرویس‌های استریم از موتورهای پیشنهادگر استفاده می‌کنند تا شما را پای تماشا نگه دارند. بانک شما از تشخیص ناهنجاری هوش مصنوعی برای مسدود کردن آنی تراکنش‌های تقلبی استفاده می‌کند. ما بار شناختی عظیمی از زندگی روزمره را به این الگوریتم‌های نامرئی واگذار کرده‌ایم—و زندگی‌مان را امن‌تر، سریع‌تر و به‌شدت راحت‌تر کرده‌ایم.</p>",
+
+        art_8_title: "الگوریتم تریدینگ: ماشین‌ها در وال استریت",
+        art_8_excerpt: "معامله‌گران انسانی در حال منقرض شدن هستند. به عصر معاملات بی‌احساس و فوق‌سریع هوش مصنوعی خوش آمدید.",
+        art_8_full: "<p>تصویر دلالان بورس که در کف تالار فریاد می‌زنند، مرده است. امروز، بازار سهام یک میدان نبرد بی‌صدا و نامرئی است که در آن خطوط کد به جنگ می‌روند. به الگوریتم تریدینگ خوش آمدید.</p><p>در بازارهای مالی، ترس و طمع بدترین دشمن معامله‌گر است. هوش مصنوعی ترسی حس نمی‌کند. الگوریتم‌ها می‌توانند هزاران سهام را تحلیل کنند، دهه‌ها داده را پردازش کنند و معاملات را در میکروثانیه انجام دهند—سریع‌تر از پلک زدن انسان.</p><p>اما فقط سرعت نیست. ربات‌های معامله‌گر مدرن از پردازش زبان طبیعی برای خواندن اخبار جهانی و توییت‌ها در همان ثانیه انتشار استفاده می‌کنند. اگر مدیرعاملی توییت جنجالی بزند، هوش مصنوعی فوراً احساسات منفی را می‌سنجد و قبل از اینکه معامله‌گران انسانی حتی جمله را تمام کنند، روی آن سهم پوزیشن فروش باز می‌کند. در این بازی پرریسک، داده سلاح است و هوش مصنوعی استادبزرگ.</p>",
+
+        art_9_title: "یادگیری تقویتی در رباتیک",
+        art_9_excerpt: "چگونه به ربات یاد می‌دهید پشتک بزند؟ برنامه‌اش نمی‌نویسید—می‌گذارید با آزمون و خطا یاد بگیرد.",
+        art_9_full: "<p>اگر بخواهید رباتی بسازید که روی زمین یخ‌زده و ناهموار راه برود، چگونه برنامه‌اش را می‌نویسید؟ اگر تک‌تک حرکات مفاصل را هاردکد کنید، شکست می‌خورید. محیط بیش از حد غیرقابل پیش‌بینی است. راه‌حل مدرن: یادگیری تقویتی (RL).</p><p>یادگیری تقویتی از روانشناسی رفتارگرا الهام گرفته شده. به ربات نمی‌گویید *چگونه* راه برود—بهش یک هدف می‌دهید (حرکت به جلو) و یک سیستم پاداش (امتیاز برای حرکت به جلو، جریمه برای زمین خوردن). بعد آن را در یک شبیه‌ساز فیزیکی قرار می‌دهید.</p><p>در ابتدا ربات دست و پا می‌زند و فوری زمین می‌خورد. اما بعد از میلیون‌ها تکرار—شبیه‌سازی سال‌ها آزمون و خطا در چند ساعت—یاد می‌گیرد. استراتژی‌های حفظ تعادلی را کشف می‌کند که مهندسان انسانی هرگز تصورش را نمی‌کردند. وقتی در شبیه‌ساز به کمال رسید، «مغز» به ربات فیزیکی منتقل می‌شود. این دقیقاً همان روشی است که شرکت‌هایی مثل Boston Dynamics ماشین‌هایی می‌سازند که می‌دوند، می‌پرند و از هل داده شدن بازیابی می‌شوند.</p>",
+
+        art_10_title: "انقلاب چت‌بات در کسب‌وکار آنلاین",
+        art_10_excerpt: "کارمند ایده‌آل: ۲۴/۷ کار می‌کند، به ۵۰ زبان صحبت می‌کند، هرگز عصبانی نمی‌شود و فروش را آنی می‌بندد.",
+        art_10_full: "<p>پشتیبانی مشتری همیشه گلوگاه کسب‌وکار آنلاین بوده است. مشتریان از معطلی پشت خط متنفرند و کسب‌وکارها از هزینه‌های سنگین مراکز تماس بیزارند. چت‌بات‌های هوش مصنوعی این معادله را کاملاً متحول کرده‌اند.</p><p>از ربات‌های خسته‌کننده «برای فروش عدد یک را فشار دهید» عبور کرده‌ایم. چت‌بات‌های امروزی توسط مدل‌های زبانی بزرگ پیشرفته مثل GPT یا Llama تغذیه می‌شوند. زمینه صحبت، طعنه و نیت‌های ظریف را درک می‌کنند.</p><p>یک چت‌بات مدرن که در وب‌سایت یا تلگرام یک شرکت ادغام شده، می‌تواند فرآیندهای پیچیده مرجوعی را لحظه‌ای حل کند، بر اساس تاریخچه چت محصولات مکمل پیشنهاد دهد و همزمان با هزاران مشتری در ساعت ۳ صبح صحبت کند بدون اینکه عرق بریزد. این عامل‌های هوش مصنوعی با ارائه رضایت لحظه‌ای و پشتیبانی بی‌درز، نرخ تبدیل و وفاداری مشتری را به شدت افزایش می‌دهند—و ثابت می‌کنند که آینده کسب‌وکار، هوش مصنوعی مکالمه‌محور است.</p>",
+
+        // ----- فوتر -----
+        footer_connect: "ارتباط با محمد مهدی امیدوار",
+        footer_desc: "همیشه برای بحث درباره پروژه‌های جدید هوش مصنوعی، ایده‌های خلاقانه یا فرصت‌های تحقق چشم‌انداز شما باز هستم.",
+        footer_rights: "تمامی حقوق محفوظ است."
+    }
+};
 
         let currentLang = 'en';
         function toggleLanguage() {

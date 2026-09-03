@@ -19,7 +19,7 @@
   <meta property="og:title" content="Mohammad Mahdi Omidvar | AI Engineer & Data Scientist">
   <meta property="og:description" content="Building intelligent systems with Python, Machine Learning, Deep Learning, NLP, Computer Vision and Generative AI.">
   <meta property="og:url" content="https://pyqubit.github.io/">
-  <meta property="og:image" content="1.png">
+  <meta property="og:image" content="https://pyqubit.github.io/1.png">
 
   <script type="application/ld+json">
   {
@@ -44,36 +44,6 @@
   </script>
 
   <style>
-      .brand {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    gap: 12px;  /* فاصله بین لوگو و متن */
- }
-
-.brand-logo {
-    width: 42px;
-    height: 42px;
-    border-radius: 50%;
-    object-fit: cover;
-    flex-shrink: 0;  /* جلوگیری از کوچک شدن لوگو */
-}
-
-.brand-text {
-    display: flex;
-    flex-direction: column;
-    line-height: 1.2;
-}
-
-.brand-text strong {
-    font-size: 1.1rem;
-    color: #ffffff;
-}
-
-.brand-text span {
-    font-size: 0.7rem;
-    color: #8899aa;
-}
     :root {
       --primary:#2f80ed;
       --primary-strong:#4f9cf9;
@@ -129,6 +99,7 @@
     nav.scrolled{border-color:var(--border);background:rgba(11,15,20,.9)}
     .nav-inner{min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:20px}
     .brand{display:flex;align-items:center;gap:11px;font-weight:800}
+    .brand-logo{width:40px;height:40px;border-radius:50%;object-fit:cover;flex:0 0 40px;border:1px solid var(--border-strong);background:#080c11}
     .brand-mark{width:38px;height:38px;border:1px solid var(--border-strong);border-radius:11px;display:grid;place-items:center;color:var(--primary-strong);background:var(--primary-soft);font-weight:900}
     .brand-text{line-height:1.15}
     .brand-text strong{display:block;font-size:.98rem}
@@ -180,9 +151,9 @@
     .btn-primary:hover{background:#438ff4;border-color:#438ff4}
     .btn-ghost{background:transparent;color:var(--text-2)}
     .hero-visual{display:flex;justify-content:center}
-    .hero-frame{position:relative;width:min(470px,100%);padding:10px;border-radius:28px;background:linear-gradient(145deg,rgba(47,128,237,.22),rgba(86,204,242,.04));border:1px solid var(--border-strong);box-shadow:var(--shadow)}
+    .hero-frame{position:relative;width:min(560px,100%);padding:10px;border-radius:28px;background:linear-gradient(145deg,rgba(47,128,237,.16),rgba(86,204,242,.03));border:1px solid var(--border-strong);box-shadow:var(--shadow)}
     .hero-frame::before{content:"";position:absolute;inset:14px;border:1px solid rgba(255,255,255,.05);border-radius:21px;pointer-events:none}
-    .hero-frame img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:20px;position:relative;z-index:1}
+    .hero-frame img{width:100%;height:auto;max-height:520px;object-fit:contain;border-radius:20px;position:relative;z-index:1;background:#080c11}
     .hero-mini{position:absolute;right:-12px;bottom:20px;z-index:2;padding:12px 15px;border:1px solid var(--border);background:rgba(10,14,19,.92);backdrop-filter:blur(12px);border-radius:14px;box-shadow:var(--shadow)}
     html[lang="fa"] .hero-mini{right:auto;left:-12px}
     .hero-mini strong{display:block;font-size:1rem;color:var(--warning)}
@@ -351,7 +322,7 @@
       .hero{grid-template-columns:1fr;text-align:center;gap:36px}
       .hero-copy{display:flex;flex-direction:column;align-items:center}
       .hero-visual{order:-1}
-      .hero-frame{width:min(340px,84vw)}
+      .hero-frame{width:min(420px,88vw)}
       .hero-mini{right:-6px}
       html[lang="fa"] .hero-mini{right:auto;left:-6px}
       .about-grid,.award-grid,.learning-grid{grid-template-columns:1fr}
@@ -391,17 +362,12 @@
   <div class="ambient"></div>
   <canvas id="canvas-bg" aria-hidden="true"></canvas>
 
-<nav id="nav">
+  <nav id="nav">
     <div class="container nav-inner">
       <a class="brand" href="#hero" aria-label="PyQubit home">
-        <img src="1.png" alt="PyQubit Logo" class="brand-logo" width="40" height="40">
-        <span class="brand-text">
-          <strong>PyQubit</strong>
-          <span>Mohammad Mahdi Omidvar</span>
-        </span>
+        <img src="https://avatars.githubusercontent.com/u/229774530?s=60&v=4" alt="PyQubit logo" class="brand-logo" width="40" height="40" loading="eager">
+        <span class="brand-text"><strong>PyQubit</strong><span>Mohammad Mahdi Omidvar</span></span>
       </a>
-    </div>
-       </nav>
       <ul class="nav-links">
         <li><a href="#hero"><i class="fa-solid fa-house"></i><span data-i18n="nav_home">Home</span></a></li>
         <li><a href="#about"><i class="fa-solid fa-user"></i><span data-i18n="nav_about">About</span></a></li>
@@ -448,7 +414,8 @@
       </div>
       <div class="hero-visual">
         <div class="hero-frame">
-          <img src="2.png" alt="Mohammad Mahdi Omidvar" loading="eager" onerror="this.style.display='none'">
+          <img src="https://pyqubit.github.io/2.png" alt="Mohammad Mahdi Omidvar — PyQubit portfolio banner" loading="eager">
+          <div class="hero-mini"><strong>🥇 INNOVERSE 2025</strong><span data-i18n="hero_award">Gold Medal — AI Section</span></div>
         </div>
       </div>
     </section>
@@ -655,16 +622,106 @@
         },
         cert_title:{1:'Basic Python',2:'Advanced Python',3:'AI Algorithms',4:'Deep Learning',5:'Data Science',6:'Advanced API Development'},
         articles:{
-          1:{title:'The Unstoppable Rise of Python',excerpt:'Why is everyone—from junior devs to Google engineers—so obsessed with Python? Let\'s explore its magic.',full:[`<p>Have you ever wondered why Python, a language born in the late 1980s, now dominates the tech world? This isn't a passing trend—it's a fundamental shift in how we solve problems with code.</p>`,`<p>Unlike languages that force you to write dozens of lines just to print “Hello World”, Python respects your time. Its syntax reads like plain English, while beneath it lies a powerful ecosystem.</p>`,`<blockquote>Python is a practical bridge between human logic and machine execution.</blockquote>`,`<p>Today, Python is deeply embedded in AI and machine learning. Frameworks such as TensorFlow, PyTorch and Keras use Python throughout their ecosystems, while Django and FastAPI support production backend systems.</p>`]},
-          2:{title:'Data Science: Predicting the Future',excerpt:'In a world drowning in data, data scientists are the modern alchemists turning noise into insight.',full:[`<p>We generate enormous amounts of information every day. Raw data becomes valuable when structured analysis reveals patterns, relationships, and useful signals.</p>`,`<p>Think of a data scientist as a detective: statistical reasoning, visualization, machine learning, and careful experimentation work together to explain what the data is saying.</p>`,`<p>From recommendations and logistics to forecasting and decision support, data science reduces guesswork and makes complex systems more measurable.</p>`]},
-          3:{title:'Quantum Computers: Breaking the Limits',excerpt:'Forget only thinking in 1s and 0s. Quantum computing explores a fundamentally different computational model.',full:[`<p>Classical computing represents information with bits. Quantum computing instead uses qubits and leverages quantum phenomena such as superposition and entanglement.</p>`,`<p>These ideas do not mean every problem becomes exponentially faster, but they open new computational approaches for selected classes of problems.</p>`,`<blockquote>Quantum computing is a different computational model, not simply a faster classical computer.</blockquote>`,`<p>Potential applications include chemistry simulation, optimization, cryptography, and scientific discovery. The field is still developing, but the underlying concepts are already reshaping computer science research.</p>`]},
-          4:{title:'The Spooky World of Quantum Physics',excerpt:'Einstein’s famous phrase points to one of the strangest ideas in modern physics: quantum entanglement.',full:[`<p>Quantum physics describes nature at microscopic scales where intuition from everyday life stops being reliable.</p>`,`<p>Quantum entanglement creates correlations between systems that cannot be explained by classical local variables alone. This has been experimentally tested and now underpins areas such as quantum information science.</p>`,`<p>Understanding these ideas is useful not only philosophically but technologically, because they contribute to quantum communication and precision measurement.</p>`]},
-          5:{title:'Why Everyone Should Learn to Code',excerpt:'You do not need to become a software engineer to benefit from learning how to code.',full:[`<p>Programming is a way of expressing solutions as precise, repeatable procedures. That mindset is useful far beyond software development.</p>`,`<p>When you learn to code, you practice decomposition: breaking large problems into smaller, logical steps and testing each part.</p>`,`<p>An analyst can automate repetitive reporting. A scientist can process datasets. A student can prototype an idea. Coding turns technology from something you only consume into something you can shape.</p>`]},
-          6:{title:'How Data Science is Reshaping Economics',excerpt:'Data science has made economic measurement more granular, faster, and increasingly data-driven.',full:[`<p>Economic analysis traditionally relied heavily on periodic reports and historical indicators. Modern data pipelines can complement these sources with high-frequency signals.</p>`,`<p>Researchers and analysts can study prices, shipping activity, satellite imagery, and many other datasets to build indicators and forecasts.</p>`,`<p>The result is not perfect prediction, but a richer evidence base for decisions and policy analysis.</p>`]},
-          7:{title:'The Invisible AI in Your Daily Life',excerpt:'AI is already embedded in phones, maps, recommendations, security systems, and everyday software.',full:[`<p>Many people encounter artificial intelligence without explicitly noticing it. Face recognition, autocomplete, recommendation engines, fraud detection, and route optimization all rely on models that learn from data.</p>`,`<p>The best-designed AI often feels invisible because the interface remains simple while the system behind it handles complex inference.</p>`,`<blockquote>The most useful AI is often the AI that fits naturally into an existing workflow.</blockquote>`,`<p>This quiet integration is one reason AI engineering is as much a software-design problem as a model-selection problem.</p>`]},
-          8:{title:'Algorithmic Trading: Machines on Wall Street',excerpt:'Algorithmic trading shows how software can analyze market data and execute predefined strategies at high speed.',full:[`<p>Modern financial markets depend heavily on automated systems. Algorithms can process large volumes of market information and execute trades according to programmed rules.</p>`,`<p>Machine learning may be used for forecasting, classification, sentiment analysis, or anomaly detection, but financial prediction remains difficult and uncertain.</p>`,`<p>In practice, robust systems require careful evaluation, risk management, monitoring, and strong controls rather than relying on speed alone.</p>`]},
-          9:{title:'Reinforcement Learning in Robotics',excerpt:'How can robots learn complex behaviors? Reinforcement learning offers one route through simulated trial and error.',full:[`<p>Reinforcement learning frames a problem as an agent interacting with an environment and receiving rewards. The agent learns a policy that aims to maximize cumulative reward.</p>`,`<p>Simulation allows millions of interactions without damaging physical hardware. Once a policy is reliable, engineers can investigate how to transfer it to a real robot.</p>`,`<p>This approach is valuable for locomotion and control, but the gap between simulation and reality still requires careful engineering.</p>`]},
-          10:{title:'The Chatbot Revolution in Online Business',excerpt:'Conversational AI has changed how websites, apps, and messaging platforms can deliver support and automation.',full:[`<p>Traditional support systems often depend on queues and rigid menus. Modern language models can handle more flexible natural-language interactions.</p>`,`<p>When connected to business tools, a chatbot can answer questions, retrieve information, guide users, and automate repetitive workflows.</p>`,`<p>The real engineering challenge is not just generating text: it is grounding responses, controlling tools, protecting user data, evaluating quality, and monitoring production behavior.</p>`]}
+          1:{title:'The Unstoppable Rise of Python',excerpt:'Why has Python become one of the most influential languages in modern software, data science, and AI? A practical look at the forces behind its growth.',full:[
+            `<p>Python is often described as a simple programming language, but that description misses the reason it became so influential. Its syntax lowers the cost of expressing an idea, while its ecosystem gives developers access to tools for almost every layer of modern computing.</p>`,
+            `<p>For a developer, that combination matters. Less ceremony means more attention can be spent on the problem itself: defining data structures, designing algorithms, testing assumptions, and turning a prototype into something useful. Python code can be read quickly, reviewed by teams, and adapted as requirements change.</p>`,
+            `<h3>Why the ecosystem matters</h3><p>Python's real advantage is not the language alone. Around it sits a mature ecosystem for scientific computing, data analysis, machine learning, web development, automation, testing, and infrastructure. Libraries such as NumPy and Pandas make numerical and tabular work practical; frameworks such as PyTorch and TensorFlow support deep learning; and FastAPI, Flask, and Django help connect computation to real applications.</p>`,
+            `<p>This ecosystem also creates a powerful feedback loop. Researchers can prototype ideas in notebooks, engineers can turn successful experiments into services, and teams can reuse the same language across data preparation, model inference, APIs, and automation.</p>`,
+            `<h3>Python and AI engineering</h3><p>Modern AI systems are rarely just models. A production system may need data validation, feature pipelines, model selection, evaluation, logging, authentication, database access, asynchronous processing, and deployment. Python is widely used across those boundaries, which makes it easier to move from an experiment to a complete system.</p>`,
+            `<p>That does not mean Python is always the fastest language. For specialized workloads, lower-level languages can provide tighter control over memory and compute. Python's strength is often its ability to orchestrate high-performance components while keeping the surrounding application understandable and maintainable.</p>`,
+            `<blockquote>Good tools reduce friction between an idea, an experiment, and a reliable product.</blockquote>`,
+            `<p>The long-term lesson is broader than “learn Python.” The lesson is to choose tools that let you iterate quickly without sacrificing engineering discipline. Python remains powerful because it makes that balance unusually accessible.</p>`
+          ]},
+          2:{title:'Data Science: Turning Data Into Decisions',excerpt:'Data science is not only about models. It is a disciplined process for converting messy information into evidence that can improve decisions.',full:[
+            `<p>Organizations collect enormous amounts of data, yet simply having more data does not automatically produce better decisions. The central challenge is turning raw observations into trustworthy evidence.</p>`,
+            `<p>A practical data science workflow usually begins with a question. What should be predicted? What outcome matters? Which constraints exist? Without a clear problem definition, it is easy to build a technically impressive model that answers the wrong question.</p>`,
+            `<h3>From raw records to usable signals</h3><p>Real datasets contain missing values, inconsistent formats, duplicates, outliers, measurement errors, and changing definitions. Cleaning is therefore not a cosmetic step. It is part of the analytical reasoning itself because every transformation can affect what a model learns.</p>`,
+            `<p>Exploratory data analysis helps expose structure before modeling. Distributions, correlations, category frequencies, temporal patterns, and unexpected relationships can reveal both useful signals and potential leakage. Visualization is especially valuable because it turns abstract statistics into patterns that humans can inspect.</p>`,
+            `<h3>Modeling with context</h3><p>Machine learning is useful when a repeatable relationship exists between available information and the target outcome. Classification, regression, clustering, recommendation, forecasting, and anomaly detection each have different assumptions and evaluation strategies.</p>`,
+            `<p>Evaluation should reflect the actual cost of mistakes. Accuracy can be misleading with imbalanced data; a ranking system may need retrieval or relevance metrics; a forecast may require time-aware validation rather than a random split. Strong data science connects metrics to decisions.</p>`,
+            `<blockquote>The best model is not necessarily the most complex model. It is the model that produces reliable value under real constraints.</blockquote>`,
+            `<p>Ultimately, data science sits between statistics, software engineering, and domain knowledge. Its purpose is not to decorate dashboards with numbers, but to create a better basis for action.</p>`
+          ]},
+          3:{title:'Quantum Computers: A Different Computational Model',excerpt:'Quantum computing is not simply “faster computing.” It changes how information is represented, manipulated, and measured.',full:[
+            `<p>Classical computers represent information with bits that take the value 0 or 1. Quantum computers use qubits, which are physical systems described by quantum states. That difference leads to a new computational model rather than a simple speed upgrade.</p>`,
+            `<p>Superposition allows a qubit to be represented as a combination of basis states. Entanglement creates correlations between quantum systems that have no straightforward classical equivalent. Quantum algorithms are designed to exploit these properties in carefully structured ways.</p>`,
+            `<h3>Why “exponential speedup” needs context</h3><p>It is tempting to say that quantum computers try every possibility at once, but that is an oversimplification. Quantum amplitudes interfere with one another, and useful algorithms must arrange that interference so that desired outcomes become more likely when the system is measured.</p>`,
+            `<p>This is why quantum computing does not make every problem instantly solvable. The field focuses on problem classes where quantum algorithms can provide meaningful advantages or new approaches, including selected simulation, factoring, optimization, and search tasks.</p>`,
+            `<h3>The engineering challenge</h3><p>Building a useful quantum computer is difficult because qubits are sensitive to noise and environmental disturbance. Hardware teams must control physical systems while software teams design algorithms that can operate under real limitations such as finite coherence, gate errors, and measurement noise.</p>`,
+            `<p>That hardware–software relationship makes quantum computing especially interesting from an engineering perspective. The best results require knowledge of physics, algorithms, compilers, error correction, and system architecture.</p>`,
+            `<blockquote>Quantum computing is best understood as a new abstraction layer over physical quantum systems.</blockquote>`,
+            `<p>The future of the field will not be defined by replacing every classical machine. More likely, classical and quantum systems will work together, with each handling the parts of a workload for which it is best suited.</p>`
+          ]},
+          4:{title:'The Strange Logic of Quantum Physics',excerpt:'Quantum physics challenges everyday intuition, but its ideas are not science fiction—they are experimentally tested foundations of modern technology.',full:[
+            `<p>Everyday experience teaches us to think in terms of definite objects with definite positions and properties. Quantum physics requires a different language. At microscopic scales, physical systems are described by states, probabilities, observables, and measurement outcomes.</p>`,
+            `<p>One of the most famous examples is superposition. Before measurement, a quantum system can be represented as a combination of possible states. Measurement then produces a definite outcome according to the probability structure of the state.</p>`,
+            `<h3>Entanglement</h3><p>Entanglement is even more counterintuitive. Two systems can share a joint quantum state so that measurements on one are statistically correlated with measurements on the other. These correlations have been tested experimentally and are central to quantum information science.</p>`,
+            `<p>Entanglement should not be interpreted as sending ordinary messages faster than light. Instead, it reveals that quantum systems cannot always be described accurately as independent classical objects with their own complete local states.</p>`,
+            `<h3>Why this matters for engineering</h3><p>Ideas that once seemed purely theoretical now influence real technologies. Quantum effects are used in precision measurement, atomic clocks, imaging, semiconductor devices, and emerging quantum communication and computing systems.</p>`,
+            `<p>The important lesson is methodological. Science advances when mathematical models make predictions that experiments can test. Quantum mechanics may be difficult to visualize, but its predictions have repeatedly survived rigorous measurement.</p>`,
+            `<blockquote>Strange does not mean arbitrary; it can still be precise, measurable, and useful.</blockquote>`,
+            `<p>For engineers, that distinction matters. We do not need quantum systems to behave intuitively. We need models that accurately describe them and tools that allow us to build reliable technology from those models.</p>`
+          ]},
+          5:{title:'Why Everyone Should Learn to Code',excerpt:'Programming is more than syntax. It is a practical way to develop structured thinking, automation skills, and the ability to build with technology.',full:[
+            `<p>You do not need a job title containing “software engineer” to benefit from programming. Code is a way of turning a process into precise instructions, which makes it useful anywhere repetitive or analytical work exists.</p>`,
+            `<p>The first major benefit is decomposition. A large problem becomes a sequence of smaller problems. Each part can be tested, improved, and combined into a reliable workflow. That habit transfers surprisingly well to research, business, science, and everyday planning.</p>`,
+            `<h3>Automation is a force multiplier</h3><p>Imagine a task that takes an hour each week: cleaning a spreadsheet, renaming files, creating a report, checking a data feed, or transforming documents. A small script can turn that routine into a repeatable operation.</p>`,
+            `<p>Programming also teaches you to think about edge cases. What happens when data is missing? What if the input format changes? What if the process runs twice? These questions are valuable because reliable systems are built around handling failure, not pretending failure will never happen.</p>`,
+            `<h3>From consumer to builder</h3><p>Modern tools make it easier than ever to create software, but knowing how code works gives you more control. You can evaluate tools more critically, automate parts of your workflow, and communicate better with technical teams.</p>`,
+            `<p>Learning to code does not require memorizing hundreds of commands. Start with one language, learn variables, conditions, loops, functions, data structures, files, and testing, then build small projects around real problems.</p>`,
+            `<blockquote>The goal of learning to code is not to type faster. It is to think more precisely about how a solution works.</blockquote>`,
+            `<p>That mindset is useful whether you eventually become a developer, data scientist, researcher, founder, designer, or simply a more capable technology user.</p>`
+          ]},
+          6:{title:'How Data Science is Reshaping Economics',excerpt:'Modern economic analysis increasingly combines traditional indicators with high-frequency data, machine learning, and computational measurement.',full:[
+            `<p>Economic systems move continuously, while many traditional indicators arrive with delays. Data science can complement those indicators by extracting signals from sources that update more frequently.</p>`,
+            `<p>Researchers can analyze prices, shipping activity, job postings, search behavior, satellite imagery, and transaction patterns to construct alternative measures of economic activity. These signals do not replace official statistics, but they can add resolution and context.</p>`,
+            `<h3>Nowcasting instead of waiting</h3><p>A major advantage of high-frequency data is nowcasting: estimating what is happening in the present while waiting for official measurements. Models can combine many weak signals into a useful estimate, provided the data is stable and the methodology is validated.</p>`,
+            `<p>Machine learning can also help identify nonlinear relationships that are difficult to model with simple assumptions. However, economic data is especially vulnerable to structural change, policy shifts, regime changes, and feedback loops.</p>`,
+            `<h3>Prediction is not certainty</h3><p>A forecast is a conditional statement based on information available at a given time. Even a well-calibrated model can fail when the environment changes. Good economic modeling therefore includes uncertainty estimates, stress testing, monitoring, and careful interpretation.</p>`,
+            `<p>There is also a human dimension. Economic indicators affect policy and markets, so methodology, transparency, and responsible communication matter. A model should help decision-makers understand evidence rather than create a false sense of precision.</p>`,
+            `<blockquote>Better data improves economic visibility, but visibility is not the same thing as perfect prediction.</blockquote>`,
+            `<p>The most useful future systems will combine domain expertise with modern data infrastructure, statistical discipline, and models that are continuously evaluated against reality.</p>`
+          ]},
+          7:{title:'The Invisible AI in Your Daily Life',excerpt:'AI is already embedded in search, recommendations, navigation, security, language tools, and many products people use without thinking about the models behind them.',full:[
+            `<p>When people hear “artificial intelligence,” they often imagine a humanoid robot or a futuristic laboratory. In practice, much of the most useful AI is quiet. It sits behind interfaces that feel ordinary.</p>`,
+            `<p>Autocomplete systems predict likely text. Recommendation engines rank content. Navigation systems estimate travel times and alternate routes. Fraud detection models score transactions. Image systems classify or retrieve visual information.</p>`,
+            `<h3>Why invisible systems are powerful</h3><p>Good product integration hides unnecessary complexity. A user usually does not want to choose a model, inspect an embedding vector, or understand an inference pipeline. They want the application to produce a useful result with minimal friction.</p>`,
+            `<p>That changes what AI engineering means. A model may be accurate in isolation and still fail as a product because latency is too high, data is inconsistent, errors are difficult to recover from, or users cannot understand what the system is doing.</p>`,
+            `<h3>The engineering underneath</h3><p>Production AI often requires data preprocessing, model inference, caching, observability, rate limits, security, evaluation, and fallback behavior. The visible interface may be a single button, while the system behind it contains many components.</p>`,
+            `<p>Trust also matters. Users should know when a system is uncertain, when a recommendation is generated, and when a human decision is still required. Responsible AI design is not only about model ethics; it is also about clear interaction and operational safeguards.</p>`,
+            `<blockquote>The best AI feature often feels less like “AI” and more like a better way to accomplish an existing task.</blockquote>`,
+            `<p>The future of AI products will therefore depend as much on product and software engineering as on model performance. Useful intelligence has to fit the workflow around it.</p>`
+          ]},
+          8:{title:'Algorithmic Trading: Where Software Meets Markets',excerpt:'Algorithmic trading illustrates both the power and the limitations of automated decision systems in noisy, adversarial environments.',full:[
+            `<p>Financial markets are highly automated environments. Software continuously receives market data, calculates indicators, applies rules, and manages orders. In many venues, the speed and volume of activity would be impossible to handle manually.</p>`,
+            `<p>Algorithmic systems range from simple rule-based strategies to sophisticated statistical and machine learning pipelines. Some focus on execution quality, some on market making, and others on identifying patterns in historical or real-time data.</p>`,
+            `<h3>Where machine learning can help</h3><p>Machine learning can be used for tasks such as classification, forecasting, anomaly detection, and text-based sentiment analysis. But financial data is noisy, non-stationary, and strongly influenced by other participants responding to similar signals.</p>`,
+            `<p>This creates a common research trap: a strategy that performs well in historical data may fail when deployed. Overfitting, look-ahead bias, data leakage, transaction costs, and changing market regimes can make a backtest look far better than reality.</p>`,
+            `<h3>Engineering is the real constraint</h3><p>A serious system needs robust data pipelines, deterministic execution, monitoring, risk controls, observability, and strong safeguards. Latency may matter in some strategies, but correctness and risk management matter everywhere.</p>`,
+            `<p>For that reason, algorithmic trading is an interesting case study in production AI. It demonstrates that a predictive model is only one component of a larger decision system. Reliability comes from the architecture surrounding the model.</p>`,
+            `<blockquote>In noisy environments, a clever signal is valuable only when the surrounding system can use it safely and consistently.</blockquote>`,
+            `<p>The broader lesson applies outside finance: whenever models influence real decisions, evaluation must reflect the environment in which those decisions will actually occur.</p>`
+          ]},
+          9:{title:'Reinforcement Learning in Robotics',excerpt:'Reinforcement learning gives robots a way to learn policies through interaction, making simulation and reward design central parts of the engineering workflow.',full:[
+            `<p>Traditional robotics often relies on carefully designed control rules. That approach remains important, but some behaviors are difficult to describe explicitly because the environment is uncertain and the number of possible situations is large.</p>`,
+            `<p>Reinforcement learning frames the problem differently. An agent interacts with an environment, takes actions, observes results, and receives rewards. Over many interactions, it learns a policy that aims to maximize cumulative reward.</p>`,
+            `<h3>Why simulation matters</h3><p>Physical experimentation is expensive and sometimes dangerous. A simulator can run thousands or millions of training episodes while tracking variables that would be difficult to measure directly on hardware. This makes simulation a powerful laboratory for exploring behavior.</p>`,
+            `<p>The challenge is reward design. If the objective is poorly specified, an agent may discover a behavior that technically maximizes the reward while violating what humans actually intended. This is why reward functions, constraints, and evaluation criteria need careful design.</p>`,
+            `<h3>From simulation to reality</h3><p>A policy that works in simulation may still fail on a real robot because the physical world contains noise, imperfect sensors, actuator limits, and dynamics that the simulator does not capture. Engineers often use domain randomization, calibration, and staged deployment to reduce that gap.</p>`,
+            `<p>Reinforcement learning also benefits from hybrid systems. Classical controllers, learned policies, safety layers, and perception models can work together rather than forcing one technique to solve every problem.</p>`,
+            `<blockquote>Learning produces behavior; engineering makes that behavior reliable.</blockquote>`,
+            `<p>This combination of learning and control is one reason robotics remains a fascinating frontier for AI engineering. The system has to learn, act, observe, and operate safely in the physical world.</p>`
+          ]},
+          10:{title:'The Chatbot Revolution in Online Business',excerpt:'Modern conversational AI can support users, retrieve information, orchestrate workflows, and automate repetitive service tasks—but only when engineered beyond the chat box.',full:[
+            `<p>Customer support has traditionally relied on forms, ticket queues, phone systems, and rigid decision trees. These methods can work, but they often struggle when users describe problems in unexpected ways.</p>`,
+            `<p>Large language models changed the interaction model by allowing people to communicate with software in natural language. A conversational system can understand requests, maintain context, summarize information, and guide users through multi-step workflows.</p>`,
+            `<h3>From chatbot to system</h3><p>A useful business chatbot is more than a text generator. It may need access to product catalogs, account information, documentation, internal tools, databases, and APIs. The model becomes an orchestration layer inside a larger software system.</p>`,
+            `<p>This introduces engineering challenges. Responses need grounding so the system does not invent facts. Tool access must be constrained so that the model cannot perform unintended actions. Sensitive information needs protection, and every important workflow should have validation and logging.</p>`,
+            `<h3>Quality and evaluation</h3><p>Traditional software tests are still important, but conversational systems also require evaluation for factuality, relevance, refusal behavior, tool correctness, latency, and user satisfaction. Monitoring real interactions can reveal failure modes that offline tests miss.</p>`,
+            `<p>The best deployments also have fallback paths. Some requests are better handled by a human, a deterministic workflow, or a conventional search interface. Good UX makes those transitions clear rather than pretending the AI can do everything.</p>`,
+            `<blockquote>The future of conversational AI is not a smarter text box; it is a reliable interface to useful software capabilities.</blockquote>`,
+            `<p>That is why building production conversational AI requires product thinking, backend engineering, security, evaluation, and model expertise working together.</p>`
+          ]}
         }
       },
       fa: {
@@ -684,16 +741,106 @@
         cert_desc:{1:'پایه‌ای محکم در سینتکس و منطق پایتون؛ تسلط بر حلقه‌ها، توابع و ساختارهای داده اصلی.',2:'بررسی عمیق OOP، دکوراتورها و Generatorها؛ نوشتن کد تمیز، مقیاس‌پذیر و بهینه.',3:'راهبردهای جستجو، Heuristic و ریاضیات AI؛ پیاده‌سازی الگوریتم‌های اصلی یادگیری ماشین از پایه.',4:'شبکه‌های عصبی پیشرفته شامل CNN، RNN و Transformer؛ طراحی معماری با TensorFlow و Keras.',5:'مدل‌سازی آماری، آماده‌سازی داده و ارائه بینش؛ استخراج نتایج از مجموعه‌داده‌های پیچیده.',6:'طراحی APIهای امن، RESTful و مقیاس‌پذیر و استقرار endpointهای سریع برای مدل‌های AI.'},
         cert_title:{1:'پایتون مقدماتی',2:'پایتون پیشرفته',3:'الگوریتم‌های هوش مصنوعی',4:'یادگیری عمیق',5:'علم داده',6:'توسعه پیشرفته API'},
         articles:{
-          1:{title:'صعود توقف‌ناپذیر پایتون',excerpt:'چرا همه، از برنامه‌نویسان تازه‌کار تا مهندسان شرکت‌های بزرگ، به پایتون علاقه‌مند شده‌اند؟',full:[`<p>پایتون از یک زبان ساده برای اسکریپت‌نویسی به یکی از ستون‌های اکوسیستم مدرن نرم‌افزار تبدیل شده است.</p>`,`<p>سادگی سینتکس، اکوسیستم گسترده و حضور عمیق در داده و هوش مصنوعی، پایتون را به پلی مناسب میان ایده و پیاده‌سازی تبدیل کرده است.</p>`,`<blockquote>پایتون یک ابزار عملی برای تبدیل منطق انسانی به اجرای ماشینی است.</blockquote>`,`<p>امروز TensorFlow، PyTorch، Keras، Django و FastAPI همگی بخش مهمی از اکوسیستم پایتون هستند.</p>`]},
-          2:{title:'علم داده: پیش‌بینی آینده',excerpt:'در جهانی غرق در داده، علم داده با آشکار کردن الگوها، داده خام را به بینش تبدیل می‌کند.',full:[`<p>داده خام به‌تنهایی ارزش محدودی دارد. ارزش زمانی شکل می‌گیرد که بتوان الگو، رابطه و سیگنال قابل استفاده را از آن استخراج کرد.</p>`,`<p>دانشمند داده مانند یک کارآگاه از آمار، بصری‌سازی، مدل‌سازی و یادگیری ماشین برای فهم مسئله استفاده می‌کند.</p>`,`<p>از سیستم‌های پیشنهادگر تا پیش‌بینی و تصمیم‌یارها، علم داده به تصمیم‌گیری ساختاریافته‌تر کمک می‌کند.</p>`]},
-          3:{title:'کامپیوترهای کوانتومی: شکستن مرزها',excerpt:'محاسبات کوانتومی یک مدل محاسباتی متفاوت بر پایه کیوبیت و پدیده‌های کوانتومی است.',full:[`<p>در محاسبات کلاسیک، اطلاعات با بیت نمایش داده می‌شوند. در محاسبات کوانتومی، کیوبیت‌ها امکان استفاده از ویژگی‌هایی مانند برهم‌نهی و درهم‌تنیدگی را فراهم می‌کنند.</p>`,`<p>این به معنی سریع‌تر شدن همه مسائل نیست، اما برای برخی کلاس‌های مسئله رویکردهای محاسباتی تازه‌ای ایجاد می‌کند.</p>`,`<blockquote>کامپیوتر کوانتومی فقط نسخه سریع‌تر کامپیوتر کلاسیک نیست؛ یک مدل محاسباتی متفاوت است.</blockquote>`,`<p>شبیه‌سازی شیمی، بهینه‌سازی و رمزنگاری از حوزه‌های مورد توجه هستند.</p>`]},
-          4:{title:'دنیای عجیب فیزیک کوانتوم',excerpt:'درهم‌تنیدگی کوانتومی یکی از مفاهیمی است که شهود کلاسیک ما را به چالش می‌کشد.',full:[`<p>در مقیاس‌های بسیار کوچک، شهود روزمره دیگر راهنمای مطمئنی برای توصیف طبیعت نیست.</p>`,`<p>درهم‌تنیدگی کوانتومی همبستگی‌هایی ایجاد می‌کند که با متغیرهای محلی کلاسیک توضیح داده نمی‌شوند و به‌صورت آزمایشگاهی بررسی شده‌اند.</p>`,`<p>این مفاهیم پایه‌ای برای بخش‌هایی از علم اطلاعات کوانتومی، ارتباطات کوانتومی و اندازه‌گیری دقیق هستند.</p>`]},
-          5:{title:'چرا همه باید برنامه‌نویسی یاد بگیرند',excerpt:'برای بهره بردن از برنامه‌نویسی لازم نیست مهندس نرم‌افزار شوید؛ این مهارت شیوه حل مسئله را تقویت می‌کند.',full:[`<p>برنامه‌نویسی روشی برای بیان راه‌حل‌ها به‌شکل دقیق و تکرارپذیر است و این نگرش فراتر از دنیای نرم‌افزار کاربرد دارد.</p>`,`<p>یادگیری کدنویسی تمرین تجزیه مسئله است: یک مشکل بزرگ را به گام‌های کوچک، منطقی و قابل آزمون تقسیم می‌کنید.</p>`,`<p>یک تحلیل‌گر می‌تواند گزارش‌های تکراری را خودکار کند؛ یک پژوهشگر می‌تواند داده‌ها را پردازش کند. کدنویسی فناوری را از ابزار مصرفی به ابزار ساختن تبدیل می‌کند.</p>`]},
-          6:{title:'چگونه علم داده اقتصاد را بازشکل می‌دهد',excerpt:'داده و الگوریتم‌ها اندازه‌گیری و تحلیل اقتصادی را سریع‌تر و جزئی‌تر کرده‌اند.',full:[`<p>در کنار گزارش‌های رسمی و شاخص‌های تاریخی، داده‌های پرتکرار می‌توانند دید تازه‌ای از روندهای اقتصادی ارائه دهند.</p>`,`<p>قیمت‌ها، حمل‌ونقل، تصاویر ماهواره‌ای و داده‌های دیگر می‌توانند برای ساخت شاخص‌ها و مدل‌های تحلیلی استفاده شوند.</p>`,`<p>هدف پیش‌بینی کامل نیست؛ بلکه ساخت یک مبنای شواهدی غنی‌تر برای تصمیم‌گیری است.</p>`]},
-          7:{title:'هوش مصنوعی نامرئی در زندگی روزمره',excerpt:'هوش مصنوعی همین حالا در گوشی، مسیریابی، پیشنهادها و تشخیص تقلب حضور دارد.',full:[`<p>بسیاری از مردم بدون آنکه نامش را بدانند، هر روز از سیستم‌های AI استفاده می‌کنند: تشخیص چهره، تکمیل متن، پیشنهاد محتوا و تشخیص ناهنجاری.</p>`,`<p>یک AI خوب می‌تواند پشت یک رابط ساده پنهان بماند و پیچیدگی استنتاج را از کاربر دور کند.</p>`,`<blockquote>بهترین هوش مصنوعی اغلب همان چیزی است که طبیعی وارد جریان کار می‌شود.</blockquote>`,`<p>به همین دلیل مهندسی AI فقط انتخاب مدل نیست؛ طراحی نرم‌افزار، داده، ابزار و نظارت هم اهمیت دارد.</p>`]},
-          8:{title:'الگوریتم تریدینگ: ماشین‌ها در وال استریت',excerpt:'معاملات الگوریتمی نشان می‌دهد نرم‌افزار چگونه می‌تواند داده بازار را تحلیل و راهبردها را اجرا کند.',full:[`<p>بازارهای مالی مدرن وابستگی زیادی به سیستم‌های خودکار دارند. الگوریتم‌ها می‌توانند حجم زیادی از داده را پردازش و براساس قواعد مشخص عمل کنند.</p>`,`<p>یادگیری ماشین ممکن است در پیش‌بینی، طبقه‌بندی، تحلیل احساسات یا تشخیص ناهنجاری استفاده شود، اما پیش‌بینی مالی همچنان ذاتاً دشوار و نامطمئن است.</p>`,`<p>سیستم‌های حرفه‌ای نیازمند ارزیابی، مدیریت ریسک، مانیتورینگ و کنترل‌های مناسب هستند؛ سرعت به‌تنهایی کافی نیست.</p>`]},
-          9:{title:'یادگیری تقویتی در رباتیک',excerpt:'یادگیری تقویتی یکی از روش‌های آموزش رفتارهای پیچیده ربات‌ها از طریق تعامل با محیط است.',full:[`<p>در یادگیری تقویتی، عامل با محیط تعامل می‌کند و پاداش دریافت می‌کند؛ سپس سیاستی برای بیشینه کردن پاداش تجمعی می‌آموزد.</p>`,`<p>شبیه‌سازی امکان میلیون‌ها تعامل را بدون آسیب به سخت‌افزار فراهم می‌کند. بعد از آن می‌توان انتقال به دنیای واقعی را بررسی کرد.</p>`,`<p>با این حال، شکاف میان شبیه‌سازی و واقعیت همچنان یک مسئله مهم مهندسی است.</p>`]},
-          10:{title:'انقلاب چت‌بات در کسب‌وکار آنلاین',excerpt:'هوش مصنوعی مکالمه‌ای شیوه ارائه پشتیبانی، بازیابی اطلاعات و اتوماسیون را تغییر داده است.',full:[`<p>سیستم‌های پشتیبانی سنتی معمولاً به صف و منوهای ثابت وابسته‌اند. مدل‌های زبانی امکان تعامل طبیعی‌تری را ایجاد کرده‌اند.</p>`,`<p>یک چت‌بات متصل به ابزارهای کسب‌وکار می‌تواند سؤال‌ها را پاسخ دهد، اطلاعات را بازیابی کند و بخشی از جریان‌های کاری را خودکار سازد.</p>`,`<p>چالش واقعی فقط تولید متن نیست؛ زمین‌دار کردن پاسخ، کنترل ابزارها، حفاظت از داده، ارزیابی کیفیت و مانیتورینگ رفتار در محیط تولید اهمیت حیاتی دارند.</p>`]}
+          1:{title:'صعود توقف‌ناپذیر پایتون',excerpt:'چرا پایتون به یکی از اثرگذارترین زبان‌های برنامه‌نویسی در نرم‌افزار، علم داده و هوش مصنوعی تبدیل شده است؟',full:[
+            `<p>پایتون فقط یک زبان ساده نیست؛ دلیل اثرگذاری آن ترکیب یک زبان نسبتاً خوانا با اکوسیستمی بسیار گسترده است. این ترکیب هزینه تبدیل یک ایده به نمونه اولیه را کاهش می‌دهد و در عین حال امکان ساخت نرم‌افزارهای جدی را فراهم می‌کند.</p>`,
+            `<p>سادگی سینتکس باعث می‌شود بخش بیشتری از توجه توسعه‌دهنده روی مسئله، ساختار داده، الگوریتم، آزمایش و طراحی سیستم قرار بگیرد. کدی که سریع‌تر خوانده و بررسی شود، برای تیم‌ها نیز قابل نگهداری‌تر است.</p>`,
+            `<h3>قدرت واقعی در اکوسیستم است</h3><p>NumPy و Pandas برای محاسبات و داده، PyTorch و TensorFlow برای یادگیری عمیق و FastAPI، Flask و Django برای ساخت سرویس‌های وب، مجموعه‌ای از ابزارهای به‌هم‌پیوسته ایجاد کرده‌اند. این یعنی یک زبان می‌تواند بخش بزرگی از چرخه توسعه را پوشش دهد.</p>`,
+            `<p>در یک پروژه هوش مصنوعی، معمولاً فقط مدل کافی نیست. آماده‌سازی داده، ارزیابی، API، احراز هویت، پایگاه داده، logging، پردازش غیرهمگام و استقرار نیز لازم است. پایتون در بسیاری از این لایه‌ها حضور دارد و همین موضوع مسیر آزمایش تا محصول را کوتاه می‌کند.</p>`,
+            `<h3>پایتون و مهندسی AI</h3><p>مزیت پایتون لزوماً حداکثر سرعت خام نیست. در کارهای خاص، زبان‌های سطح پایین‌تر می‌توانند کنترل بیشتری روی حافظه و اجرا بدهند. نقطه قوت پایتون اغلب orchestration است: اتصال بخش‌های پرسرعت به یک لایه نرم‌افزاری خوانا و قابل نگهداری.</p>`,
+            `<p>به همین دلیل یادگیری پایتون فقط یادگیری syntax نیست؛ یادگیری شیوه ساخت راه‌حل، تست فرضیات و تبدیل آزمایش به سیستم نیز هست.</p>`,
+            `<blockquote>ابزار خوب فاصله میان ایده، آزمایش و محصول قابل اعتماد را کم می‌کند.</blockquote>`,
+            `<p>درس مهم‌تر از خود زبان این است که ابزارهایی را انتخاب کنیم که سرعت تکرار را افزایش دهند، بدون اینکه انضباط مهندسی قربانی شود.</p>`
+          ]},
+          2:{title:'علم داده: تبدیل داده به تصمیم',excerpt:'علم داده فقط ساخت مدل نیست؛ فرایندی برای تبدیل اطلاعات خام و نامنظم به شواهد قابل اتکا برای تصمیم‌گیری است.',full:[
+            `<p>داشتن حجم زیادی از داده به‌تنهایی مزیت نیست. چالش اصلی این است که از داده، اطلاعاتی استخراج کنیم که بتواند یک تصمیم واقعی را بهتر کند.</p>`,
+            `<p>فرایند خوب از تعریف مسئله شروع می‌شود: چه چیزی باید پیش‌بینی شود؟ چه خروجی‌ای ارزش دارد؟ خطا چه هزینه‌ای دارد؟ بدون این مرحله ممکن است مدل پیچیده‌ای بسازیم که به پرسش اشتباه پاسخ می‌دهد.</p>`,
+            `<h3>از داده خام تا سیگنال</h3><p>داده واقعی پر از مقدار گمشده، قالب ناسازگار، duplicate، outlier و خطای اندازه‌گیری است. پاکسازی بنابراین یک کار تزئینی نیست؛ بخشی از منطق تحلیل است.</p>`,
+            `<p>تحلیل اکتشافی به ما کمک می‌کند پیش از مدل‌سازی، توزیع‌ها، روابط، الگوهای زمانی و مشکلات احتمالی داده را ببینیم. نمودارها و آمار توصیفی در این مرحله نقش یک ابزار کشف مسئله را دارند.</p>`,
+            `<h3>مدل باید با مسئله هماهنگ باشد</h3><p>برای طبقه‌بندی، رگرسیون، خوشه‌بندی، recommendation، forecasting یا anomaly detection، فرضیات و معیارهای ارزیابی متفاوت‌اند. معیار خوب باید با هزینه واقعی خطا ارتباط داشته باشد.</p>`,
+            `<p>مثلاً accuracy در داده نامتوازن ممکن است گمراه‌کننده باشد و برای داده زمانی نمی‌توان همیشه از split تصادفی استفاده کرد. ارزیابی درست بخشی از مهندسی مدل است.</p>`,
+            `<blockquote>بهترین مدل الزاماً پیچیده‌ترین مدل نیست؛ مدلی است که در محدودیت‌های واقعی ارزش قابل اعتماد ایجاد کند.</blockquote>`,
+            `<p>علم داده در مرز آمار، برنامه‌نویسی و دانش حوزه قرار دارد و هدفش تبدیل عددها به تصمیم بهتر است.</p>`
+          ]},
+          3:{title:'کامپیوترهای کوانتومی: یک مدل محاسباتی متفاوت',excerpt:'محاسبات کوانتومی صرفاً «کامپیوتر سریع‌تر» نیست؛ روشی متفاوت برای نمایش، دستکاری و اندازه‌گیری اطلاعات است.',full:[
+            `<p>در کامپیوترهای کلاسیک اطلاعات با بیت نمایش داده می‌شود. در سیستم‌های کوانتومی از کیوبیت استفاده می‌شود و همین تفاوت، مدل محاسباتی جدیدی ایجاد می‌کند.</p>`,
+            `<p>پدیده‌هایی مانند برهم‌نهی و درهم‌تنیدگی پایه بسیاری از الگوریتم‌های کوانتومی هستند. اما این مفاهیم به معنی آن نیستند که هر مسئله‌ای به صورت نمایی سریع‌تر حل می‌شود.</p>`,
+            `<h3>چرا توضیح «همه مسیرها را همزمان امتحان می‌کند» کافی نیست؟</h3><p>قدرت الگوریتم کوانتومی از کنترل دامنه‌ها و تداخل آن‌ها به دست می‌آید. الگوریتم باید طوری طراحی شود که هنگام اندازه‌گیری، پاسخ‌های مطلوب احتمال بیشتری داشته باشند.</p>`,
+            `<p>بنابراین مزیت کوانتومی به کلاس خاصی از مسائل مربوط است و نیاز به الگوریتم مناسب، سخت‌افزار مناسب و شرایط اجرایی کنترل‌شده دارد.</p>`,
+            `<h3>چالش مهندسی</h3><p>کیوبیت‌ها نسبت به نویز و محیط حساس‌اند. مهندسی سیستم‌های کوانتومی به کنترل سخت‌افزار، طراحی الگوریتم، compiler، تصحیح خطا و مدیریت محدودیت‌های فیزیکی وابسته است.</p>`,
+            `<p>همین پیوند میان فیزیک و نرم‌افزار، کوانتوم را برای مهندسان جذاب می‌کند. آینده احتمالاً شامل همکاری سیستم‌های کلاسیک و کوانتومی خواهد بود، نه جایگزینی کامل یکی با دیگری.</p>`,
+            `<blockquote>کامپیوتر کوانتومی بهتر است به‌عنوان یک لایه محاسباتی جدید در کنار محاسبات کلاسیک دیده شود.</blockquote>`,
+            `<p>هدف واقعی، پیدا کردن مسئله‌هایی است که این مدل جدید بتواند برای آن‌ها ارزش محاسباتی واقعی ایجاد کند.</p>`
+          ]},
+          4:{title:'منطق عجیب فیزیک کوانتوم',excerpt:'فیزیک کوانتوم با شهود روزمره سازگار نیست، اما پایه‌ای دقیق و آزمایش‌شده برای فناوری‌های مدرن است.',full:[
+            `<p>زندگی روزمره ما را به این عادت داده که اشیا ویژگی‌های مشخصی داشته باشند. در فیزیک کوانتوم، توصیف یک سیستم معمولاً با حالت، احتمال، observable و نتیجه اندازه‌گیری انجام می‌شود.</p>`,
+            `<p>درهم‌تنیدگی یکی از معروف‌ترین مثال‌هاست. دو سیستم می‌توانند در یک حالت مشترک قرار بگیرند و نتایج اندازه‌گیری آن‌ها همبستگی‌هایی نشان دهد که با تصویر کلاسیک ساده قابل توضیح نیست.</p>`,
+            `<h3>درهم‌تنیدگی به معنی پیام‌رسانی سریع‌تر از نور نیست</h3><p>این پدیده بیشتر درباره ساختار همبستگی‌های کوانتومی است تا انتقال پیام معمولی. این تفاوت برای فهم درست اینترنت و ارتباطات کوانتومی مهم است.</p>`,
+            `<p>ایده‌های کوانتومی امروز در فناوری‌های واقعی نیز نقش دارند: ساعت‌های اتمی، اندازه‌گیری دقیق، برخی ادوات نیمه‌رسانا و حوزه‌های در حال توسعه مثل ارتباطات و محاسبات کوانتومی.</p>`,
+            `<h3>درس مهندسی</h3><p>علم لازم نیست مطابق شهود روزمره باشد؛ کافی است مدل‌هایش پیش‌بینی دقیق و قابل آزمایش ارائه کنند. تاریخ فیزیک کوانتوم نمونه‌ای روشن از همین اصل است.</p>`,
+            `<p>برای یک مهندس، هدف درک ابزار ریاضی و محدودیت‌های سیستم است، نه مجبور کردن طبیعت به رفتاری که برای ما intuitive باشد.</p>`,
+            `<blockquote>عجیب بودن با تصادفی بودن یکی نیست؛ یک سیستم عجیب می‌تواند کاملاً دقیق و قابل اندازه‌گیری باشد.</blockquote>`,
+            `<p>همین نگاه باعث می‌شود مفاهیم کوانتومی از موضوعی صرفاً فلسفی به بستری برای فناوری تبدیل شوند.</p>`
+          ]},
+          5:{title:'چرا همه باید برنامه‌نویسی یاد بگیرند',excerpt:'برنامه‌نویسی فقط syntax نیست؛ تمرینی برای تفکر ساختاریافته، اتوماسیون و ساختن با فناوری است.',full:[
+            `<p>برای بهره‌بردن از برنامه‌نویسی لازم نیست مهندس نرم‌افزار شوید. کدنویسی روشی برای تبدیل یک فرایند به دستورهای دقیق و تکرارپذیر است و در بسیاری از حوزه‌ها کاربرد دارد.</p>`,
+            `<p>اولین مهارت مهم، شکستن مسئله است. یک مسئله بزرگ را به بخش‌های کوچک تقسیم می‌کنید، هر بخش را آزمایش می‌کنید و بعد آن‌ها را ترکیب می‌کنید. این ذهنیت بیرون از برنامه‌نویسی هم بسیار مفید است.</p>`,
+            `<h3>اتوماسیون به‌عنوان ضریب توان</h3><p>پاکسازی فایل‌ها، ساخت گزارش، پردازش داده یا تغییر نام صدها فایل می‌تواند کاری تکراری باشد. یک اسکریپت کوچک می‌تواند این کار را از «وظیفه هفتگی» به «فرایند خودکار» تبدیل کند.</p>`,
+            `<p>کدنویسی همچنین شما را مجبور می‌کند edge caseها را جدی بگیرید: اگر داده ناقص باشد چه؟ اگر فرمت ورودی تغییر کند چه؟ اگر فرایند دوبار اجرا شود چه؟ سیستم خوب برای شکست هم طراحی می‌شود.</p>`,
+            `<h3>از مصرف‌کننده به سازنده</h3><p>وقتی منطق کد را می‌فهمید، ابزارهای دیجیتال را بهتر ارزیابی می‌کنید و کنترل بیشتری روی workflow خود دارید. می‌توانید بخش‌هایی از کار را خودکار کنید و با تیم فنی دقیق‌تر ارتباط بگیرید.</p>`,
+            `<p>برای شروع لازم نیست صدها دستور حفظ کنید. یک زبان را انتخاب کنید و با متغیر، شرط، حلقه، تابع، ساختار داده، فایل و تست پیش بروید؛ سپس یک پروژه واقعی کوچک بسازید.</p>`,
+            `<blockquote>هدف یادگیری کدنویسی سریع‌تر تایپ کردن نیست؛ دقیق‌تر فکر کردن درباره راه‌حل است.</blockquote>`,
+            `<p>این مهارت چه در پژوهش، چه در کسب‌وکار و چه در توسعه محصول، ظرفیت ساختن و حل مسئله را بیشتر می‌کند.</p>`
+          ]},
+          6:{title:'چگونه علم داده اقتصاد را بازشکل می‌دهد',excerpt:'تحلیل اقتصادی امروز می‌تواند در کنار شاخص‌های سنتی از داده‌های پرتکرار، یادگیری ماشین و زیرساخت محاسباتی استفاده کند.',full:[
+            `<p>بسیاری از شاخص‌های اقتصادی با تأخیر منتشر می‌شوند، در حالی که خود اقتصاد هر لحظه در حال تغییر است. داده‌های پرتکرار می‌توانند دید نزدیک‌تری از وضعیت جاری فراهم کنند.</p>`,
+            `<p>قیمت‌ها، حمل‌ونقل، آگهی‌های شغلی، تصاویر ماهواره‌ای و رفتارهای دیجیتال می‌توانند به‌عنوان سیگنال‌های مکمل استفاده شوند. این داده‌ها جایگزین آمار رسمی نیستند، اما resolution بیشتری فراهم می‌کنند.</p>`,
+            `<h3>Nowcasting یعنی دیدن زمان حال</h3><p>مدل‌های آماری و یادگیری ماشین می‌توانند چند سیگنال ضعیف را کنار هم بگذارند تا تصویری از وضعیت فعلی بسازند. کیفیت چنین سیستمی به پایداری داده و روش اعتبارسنجی وابسته است.</p>`,
+            `<p>یادگیری ماشین روابط غیرخطی را نیز می‌تواند مدل کند، اما داده اقتصادی با تغییر سیاست، ساختار و رفتار بازیگران تغییر می‌کند. بنابراین مدل موفق گذشته لزوماً در آینده موفق نیست.</p>`,
+            `<h3>پیش‌بینی مساوی قطعیت نیست</h3><p>یک forecast نتیجه‌ای مشروط به داده‌های موجود است. سیستم حرفه‌ای باید عدم‌قطعیت، stress test، پایش و بازآموزی را جدی بگیرد.</p>`,
+            `<p>در تحلیل اقتصادی، شفافیت هم اهمیت دارد چون خروجی‌ها می‌توانند روی سیاست و تصمیم‌های مالی اثر بگذارند. مدل باید شواهد را روشن‌تر کند، نه اینکه حس کاذب دقت ایجاد کند.</p>`,
+            `<blockquote>داده بهتر دید اقتصادی را افزایش می‌دهد، اما دید بیشتر به معنی پیش‌بینی کامل نیست.</blockquote>`,
+            `<p>ترکیب دانش حوزه، زیرساخت داده، آمار و مهندسی مدل احتمالاً مهم‌ترین بخش نسل آینده سیستم‌های تحلیلی اقتصادی خواهد بود.</p>`
+          ]},
+          7:{title:'هوش مصنوعی نامرئی در زندگی روزمره',excerpt:'AI همین حالا در جستجو، پیشنهاد محتوا، مسیریابی، امنیت و ابزارهای زبانی حضور دارد؛ اغلب بدون اینکه کاربر مدل را ببیند.',full:[
+            `<p>وقتی نام هوش مصنوعی مطرح می‌شود، بسیاری به ربات‌های آینده فکر می‌کنند. اما بخش بزرگی از AI امروز پشت رابط‌هایی ساده و عادی قرار دارد.</p>`,
+            `<p>Autocomplete، پیشنهاد محتوا، مسیریابی، تشخیص تقلب و دسته‌بندی تصویر نمونه‌هایی از سیستم‌هایی هستند که inference را پشت تجربه کاربر پنهان می‌کنند.</p>`,
+            `<h3>چرا AI خوب نامرئی است؟</h3><p>کاربر معمولاً نمی‌خواهد embedding، model version یا pipeline را ببیند. او یک نتیجه مفید و سریع می‌خواهد. بنابراین بخشی از موفقیت AI به طراحی تعامل خوب وابسته است.</p>`,
+            `<p>یک مدل دقیق ممکن است در محصول شکست بخورد اگر latency زیاد باشد، داده‌ها ناسازگار باشند، خطاها قابل بازیابی نباشند یا کاربر نفهمد سیستم چه زمانی مطمئن نیست.</p>`,
+            `<h3>مهندسی پشت پرده</h3><p>سیستم تولیدی می‌تواند شامل preprocessing، inference، cache، logging، rate limiting، امنیت، ارزیابی و fallback باشد؛ در حالی که رابط کاربر فقط یک دکمه است.</p>`,
+            `<p>اعتماد نیز مهم است. کاربر باید بداند چه چیزی پیشنهاد شده، چه چیزی قطعی است و چه زمانی نیاز به بررسی انسانی وجود دارد. طراحی مسئولانه بخشی از UX و مهندسی سیستم است.</p>`,
+            `<blockquote>بهترین قابلیت AI اغلب شبیه یک تجربه نرم‌افزاری بهتر است، نه یک نمایش تکنولوژیک.</blockquote>`,
+            `<p>به همین دلیل آینده محصولات AI به اندازه مدل‌ها به product design و software engineering وابسته خواهد بود.</p>`
+          ]},
+          8:{title:'الگوریتم تریدینگ: جایی که نرم‌افزار با بازار برخورد می‌کند',excerpt:'معاملات الگوریتمی هم قدرت اتوماسیون را نشان می‌دهد و هم محدودیت‌های مدل در محیطی پرنویز و رقابتی را.',full:[
+            `<p>بازارهای مالی مدرن تا حد زیادی خودکار هستند. نرم‌افزار داده بازار را دریافت می‌کند، شاخص‌ها را محاسبه می‌کند و طبق قواعد مشخص سفارش ارسال می‌کند.</p>`,
+            `<p>این سیستم‌ها از قوانین ساده تا مدل‌های آماری و یادگیری ماشین متغیرند. بعضی برای execution، بعضی market making و بعضی برای پیدا کردن الگو در داده طراحی می‌شوند.</p>`,
+            `<h3>جایگاه یادگیری ماشین</h3><p>ML می‌تواند در پیش‌بینی، طبقه‌بندی، تشخیص ناهنجاری یا تحلیل sentiment استفاده شود. اما بازار noisy، non-stationary و رقابتی است و سایر بازیگران هم به سیگنال‌ها واکنش نشان می‌دهند.</p>`,
+            `<p>در نتیجه overfitting، leakage، نگاه به آینده و نادیده گرفتن هزینه تراکنش می‌تواند backtest را غیرواقعی کند. عملکرد تاریخی تضمین عملکرد آینده نیست.</p>`,
+            `<h3>محدودیت اصلی: مهندسی</h3><p>سیستم جدی نیازمند data pipeline قابل اعتماد، کنترل ریسک، logging، monitoring و رفتار deterministic در بخش‌های حساس است. سرعت فقط یکی از عوامل است.</p>`,
+            `<p>این حوزه نمونه خوبی است از اینکه مدل فقط یک component است. تصمیم واقعی نتیجه تعامل مدل، داده، قوانین، محدودیت‌ها و معماری سیستم است.</p>`,
+            `<blockquote>سیگنال خوب زمانی ارزشمند است که سیستم اطراف آن بتواند با ایمنی و ثبات از آن استفاده کند.</blockquote>`,
+            `<p>همین اصل در بسیاری از کاربردهای دیگر AI نیز صادق است: ارزیابی باید شرایط واقعی استفاده را شبیه‌سازی کند.</p>`
+          ]},
+          9:{title:'یادگیری تقویتی در رباتیک',excerpt:'یادگیری تقویتی به ربات اجازه می‌دهد از تعامل با محیط سیاست یاد بگیرد؛ شبیه‌سازی و طراحی پاداش در مرکز این فرایند هستند.',full:[
+            `<p>برخی رفتارهای رباتیک را می‌توان با کنترلرهای دقیق طراحی کرد، اما برای محیط‌های پیچیده گاهی بیان تمام قوانین به شکل دستی دشوار می‌شود.</p>`,
+            `<p>Reinforcement Learning مسئله را به تعامل agent و environment تبدیل می‌کند. عامل action انجام می‌دهد، نتیجه را می‌بیند و reward دریافت می‌کند؛ سپس به‌تدریج policy را یاد می‌گیرد.</p>`,
+            `<h3>چرا شبیه‌سازی مهم است؟</h3><p>آزمایش روی سخت‌افزار واقعی گران و گاهی خطرناک است. شبیه‌ساز می‌تواند تعداد بسیار زیادی episode اجرا کند و محیطی برای آزمون ایده‌ها فراهم کند.</p>`,
+            `<p>اما طراحی پاداش دشوار است. اگر reward اشتباه باشد، عامل ممکن است راهی پیدا کند که از نظر عددی پاداش را زیاد کند ولی برخلاف هدف واقعی باشد. بنابراین constraint و evaluation اهمیت زیادی دارند.</p>`,
+            `<h3>از شبیه‌سازی تا واقعیت</h3><p>دنیای واقعی نویز سنسور، محدودیت actuator و dynamics ناقص دارد. به همین دلیل روش‌هایی مثل domain randomization، calibration و استقرار مرحله‌ای برای کاهش شکاف استفاده می‌شوند.</p>`,
+            `<p>سیستم‌های ترکیبی نیز مهم‌اند؛ policy یادگرفته‌شده می‌تواند کنار controllerهای کلاسیک و safety layer کار کند. هدف این نیست که یک تکنیک همه مسئله را حل کند.</p>`,
+            `<blockquote>یادگیری رفتار ایجاد می‌کند؛ مهندسی آن رفتار را قابل اعتماد می‌کند.</blockquote>`,
+            `<p>این ترکیب یادگیری، کنترل، ادراک و ایمنی است که رباتیک را به یکی از چالش‌برانگیزترین حوزه‌های AI تبدیل می‌کند.</p>`
+          ]},
+          10:{title:'انقلاب چت‌بات در کسب‌وکار آنلاین',excerpt:'هوش مصنوعی مکالمه‌ای می‌تواند پشتیبانی، بازیابی اطلاعات و workflowها را خودکار کند؛ اما محصول واقعی چیزی فراتر از یک جعبه چت است.',full:[
+            `<p>پشتیبانی سنتی معمولاً به فرم، ticket، تماس و منوهای ثابت وابسته است. این روش‌ها مفیدند، اما در برابر توضیح‌های غیرساختاریافته کاربران محدودیت دارند.</p>`,
+            `<p>مدل‌های زبانی بزرگ امکان تعامل طبیعی‌تر را فراهم کرده‌اند. یک سیستم مکالمه‌ای می‌تواند context را نگه دارد، سؤال را بازنویسی کند، اطلاعات را خلاصه کند و کاربر را مرحله‌به‌مرحله هدایت کند.</p>`,
+            `<h3>از chatbot تا system</h3><p>چت‌بات کاربردی باید به سرویس‌های واقعی وصل شود: catalog، حساب کاربری، مستندات، database و API. مدل در اینجا بیشتر نقش orchestration layer را دارد.</p>`,
+            `<p>در نتیجه grounding، محدود کردن tool access، حفاظت از داده و ثبت رویدادها ضروری است. مدل نباید صرفاً به‌خاطر تولید یک پاسخ خوب اجازه انجام هر عملی را داشته باشد.</p>`,
+            `<h3>ارزیابی و کیفیت</h3><p>علاوه بر تست‌های سنتی، باید factuality، relevance، latency، رفتار در خطا، tool correctness و satisfaction بررسی شوند. مانیتورینگ تعاملات واقعی نیز failure modeهای پنهان را آشکار می‌کند.</p>`,
+            `<p>fallback نیز بخشی از UX است. بعضی درخواست‌ها باید به انسان، search یا workflow قطعی منتقل شوند. سیستم خوب این انتقال را شفاف می‌کند.</p>`,
+            `<blockquote>آینده conversational AI یک جعبه متن باهوش‌تر نیست؛ یک رابط قابل اعتماد برای دسترسی به قابلیت‌های نرم‌افزاری است.</blockquote>`,
+            `<p>به همین دلیل ساخت AI مکالمه‌ای در محیط واقعی نیازمند ترکیب product thinking، backend، امنیت، ارزیابی و تخصص مدل است.</p>`
+          ]}
         }
       }
     };

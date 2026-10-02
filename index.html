@@ -4,12 +4,25 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Mohammad Mahdi Omidvar | AI Engineer & Data Scientist — PyQubit</title>
-  <meta name="description" content="Official portfolio of Mohammad Mahdi Omidvar (PyQubit) — AI Engineer & Data Scientist building intelligent systems with Python, Machine Learning, Deep Learning, NLP, Computer Vision, Generative AI, RAG, AI Agents and production-oriented AI architecture.">
+  <meta name="description" content="Official bilingual portfolio of Mohammad Mahdi Omidvar (PyQubit), AI Engineer & Data Scientist — مهندس هوش مصنوعی و متخصص علم داده — Python, Machine Learning, Deep Learning, NLP, Computer Vision, Generative AI, RAG and AI Agents.">
   <meta name="keywords" content="Mohammad Mahdi Omidvar, محمد مهدی امیدوار, PyQubit, AI Engineer, Data Scientist, Python, Machine Learning, Deep Learning, NLP, Computer Vision, Generative AI, RAG, AI Agents">
   <meta name="author" content="Mohammad Mahdi Omidvar (PyQubit)">
   <meta name="robots" content="index, follow">
+
+  <link rel="canonical" href="https://pyqubit.github.io/">
+  <link rel="alternate" hreflang="en" href="https://pyqubit.github.io/?lang=en">
+  <link rel="alternate" hreflang="fa" href="https://pyqubit.github.io/?lang=fa">
+  <link rel="alternate" hreflang="x-default" href="https://pyqubit.github.io/">
+  <meta name="language" content="English, Persian">
+  <meta name="geo.region" content="IR">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Mohammad Mahdi Omidvar | AI Engineer & Data Scientist — PyQubit">
+  <meta name="twitter:description" content="AI Engineer & Data Scientist portfolio — Python, Machine Learning, Deep Learning, NLP, Computer Vision, Generative AI, RAG and AI Agents.">
+  <meta name="twitter:image" content="assets/main.png">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="fa_IR">
   <meta name="theme-color" content="#0b0f14">
-  <link rel="shortcut icon" href="1.png" type="image/png">
+  <link rel="icon" href="assets/main.png" type="image/png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Vazirmatn:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -19,7 +32,7 @@
   <meta property="og:title" content="Mohammad Mahdi Omidvar | AI Engineer & Data Scientist">
   <meta property="og:description" content="Building intelligent systems with Python, Machine Learning, Deep Learning, NLP, Computer Vision and Generative AI.">
   <meta property="og:url" content="https://pyqubit.github.io/">
-  <meta property="og:image" content="https://pyqubit.github.io/1.png">
+  <meta property="og:image" content="assets/main.png">
 
   <script type="application/ld+json">
   {
@@ -40,6 +53,18 @@
       "Computer Vision","Generative AI","RAG","AI Agents","Data Science",
       "Python","AI APIs","MLOps"
     ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"WebSite",
+    "name":"PyQubit — Mohammad Mahdi Omidvar",
+    "url":"https://pyqubit.github.io/",
+    "inLanguage":["en","fa"],
+    "description":"Bilingual portfolio of Mohammad Mahdi Omidvar, AI Engineer and Data Scientist.",
+    "publisher":{"@type":"Person","name":"Mohammad Mahdi Omidvar","alternateName":"PyQubit"}
   }
   </script>
 
@@ -280,8 +305,7 @@
     .cert-info p{color:var(--text-2);font-size:.81rem}
 
     /* Articles */
-    .articles-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-    .article-card{border:1px solid var(--border);border-radius:17px;overflow:hidden;background:rgba(12,16,22,.86);cursor:pointer;transition:.22s ease;display:flex;flex-direction:column}
+        .article-card{border:1px solid var(--border);border-radius:17px;overflow:hidden;background:rgba(12,16,22,.86);cursor:pointer;transition:.22s ease;display:flex;flex-direction:column}
     .article-card:hover{transform:translateY(-4px);border-color:var(--border-strong)}
     .article-cover{height:190px;overflow:hidden;background:#091016}
     .article-cover img{width:100%;height:100%;object-fit:cover;transition:.4s ease}
@@ -326,7 +350,7 @@
       .hero-mini{right:-6px}
       html[lang="fa"] .hero-mini{right:auto;left:-6px}
       .about-grid,.award-grid,.learning-grid{grid-template-columns:1fr}
-      .project-grid,.articles-grid{grid-template-columns:repeat(2,1fr)}
+      .project-grid{grid-template-columns:repeat(2,1fr)}
       .cert-grid{grid-template-columns:repeat(3,1fr)}
     }
     @media (max-width:820px){
@@ -341,7 +365,7 @@
       section{padding:70px 0}
       .hero{padding-top:38px}
       .hero h1{font-size:2.8rem}
-      .project-grid,.articles-grid,.cert-grid{grid-template-columns:1fr}
+      .project-grid,.cert-grid{grid-template-columns:1fr}
       .focus-grid{grid-template-columns:1fr}
       .connect-grid{grid-template-columns:1fr}
       .award-media{grid-template-columns:1fr}
@@ -350,13 +374,121 @@
       .section-head{display:block}
       .section-subtitle{font-size:.92rem}
     }
+
+    /* Mobile-first refinements */
+    @media (max-width:640px){
+      :root{--container:calc(100% - 24px);--radius:14px;--radius-lg:18px}
+      body{font-size:15px;line-height:1.8}
+      nav{padding-top:env(safe-area-inset-top)}
+      .nav-inner{min-height:64px;gap:8px}
+      .brand{min-width:0;gap:8px}
+      .brand-logo{width:38px;height:38px;flex-basis:38px}
+      .brand-text strong{font-size:.9rem}
+      .brand-text span{font-size:.58rem;letter-spacing:.04em;white-space:nowrap}
+      .menu-toggle{min-width:46px;min-height:46px}
+      main{padding-top:64px}
+      section{padding:58px 0}
+      .hero{min-height:auto;padding-top:30px;gap:28px}
+      .hero-visual{width:100%}
+      .hero-frame{width:min(330px,92vw);padding:7px;border-radius:20px}
+      .hero-frame::before{inset:9px;border-radius:15px}
+      .hero-frame img{max-height:360px;border-radius:14px}
+      .hero-mini{right:-4px;bottom:12px;padding:9px 11px;border-radius:11px;max-width:165px}
+      html[lang="fa"] .hero-mini{right:auto;left:-4px}
+      .hero-mini strong{font-size:.78rem}
+      .hero-mini span{font-size:.66rem}
+      .eyebrow{font-size:.68rem;margin-bottom:14px;padding:6px 10px}
+      .hero h1{font-size:clamp(2.25rem,12vw,3.1rem);margin-bottom:15px}
+      .hero-role{font-size:1.05rem;margin-bottom:12px}
+      .hero-desc{font-size:.9rem;margin-bottom:20px}
+      .hero-actions{width:100%;display:grid;grid-template-columns:1fr 1fr;gap:8px}
+      .hero-actions .btn{width:100%;min-height:46px;padding:9px 10px;font-size:.78rem}
+      .hero-actions .btn:first-child{grid-column:1/-1}
+      .section-head{margin-bottom:24px}
+      .section-kicker{font-size:.66rem}
+      .section-title{font-size:clamp(1.75rem,8vw,2.25rem)}
+      .section-subtitle{font-size:.85rem;line-height:1.85}
+      .card-pad{padding:18px}
+      .about-copy p{font-size:.9rem}
+      .focus-grid{grid-template-columns:1fr}
+      .stats{gap:10px;margin-bottom:14px}
+      .stat-card{padding:18px}
+      .stat-card strong{font-size:2.2rem}
+      .stat-card small{font-size:.64rem}
+      .skills-grid,.expertise-grid,.learning-grid{gap:10px}
+      .skill-card,.expertise-card{padding:18px}
+      .skill-card h3{font-size:1rem;margin-bottom:15px}
+      .skill-points li{font-size:.75rem;padding:8px 9px}
+      .chips{gap:6px}
+      .chip{font-size:.7rem;padding:6px 8px}
+      .project-toolbar{margin-bottom:13px}
+      .filters{width:100%;overflow-x:auto;flex-wrap:nowrap;padding-bottom:5px;scrollbar-width:none}
+      .filters::-webkit-scrollbar{display:none}
+      .filter{flex:0 0 auto;min-height:42px;padding:8px 11px;font-size:.72rem}
+      .project-grid,.articles-grid,.cert-grid{grid-template-columns:1fr;gap:10px}
+      .project-card{padding:18px;border-radius:15px}
+      .project-card:hover{transform:none}
+      .project-card h3{font-size:1.02rem}
+      .project-card p{font-size:.78rem}
+      .project-list li{font-size:.72rem}
+      .project-actions{display:grid;grid-template-columns:1fr 1fr}
+      .project-actions .btn{width:100%;font-size:.7rem;min-height:42px}
+      .arch{font-size:.65rem}
+      .table-wrap{border-radius:13px}
+      table{min-width:600px}
+      th,td{padding:10px 11px;font-size:.72rem}
+      .award-grid{gap:16px}
+      .award-info h3{font-size:1.45rem}
+      .award-info h4{font-size:.8rem}
+      .award-media{grid-template-columns:1fr;gap:9px}
+      .award-media img{height:230px}
+      .connect-grid{grid-template-columns:1fr;gap:8px}
+      .connect-card{padding:15px}
+      .modal{padding:8px}
+      .modal-dialog{width:100%;max-height:94dvh;border-radius:15px}
+      .modal-content{padding:18px}
+      .modal-content h2{font-size:1.45rem}
+      .lang-btn{width:46px;height:46px;bottom:calc(14px + env(safe-area-inset-bottom));left:14px}
+      html[lang="fa"] .lang-btn{left:auto;right:14px}
+      footer{padding:45px 0 25px}
+      .social{width:42px;height:42px}
+    }
+    @media (max-width:380px){
+      .hero-actions{grid-template-columns:1fr}
+      .hero-actions .btn:first-child{grid-column:auto}
+      .brand-text span{display:none}
+      .project-actions{grid-template-columns:1fr}
+      .hero h1{font-size:2.2rem}
+    }
+
     @media (prefers-reduced-motion:reduce){
       html{scroll-behavior:auto}
       *,*::before,*::after{animation:none!important;transition:none!important}
       .reveal{opacity:1;transform:none}
     }
   </style>
-</head>
+
+  <meta name="keywords" content="مهندس هوش مصنوعی, متخصص علم داده, هوش مصنوعی, یادگیری ماشین, یادگیری عمیق, پردازش زبان طبیعی, بینایی ماشین, هوش مصنوعی مولد, RAG, Python, PyTorch, TensorFlow, AI Engineer, Data Scientist, Machine Learning, Deep Learning, NLP, Computer Vision, Generative AI, Mohammad Mahdi Omidvar, PyQubit">
+  <meta name="author" content="Mohammad Mahdi Omidvar">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="googlebot" content="index, follow">
+  <meta name="theme-color" content="#080c11">
+  <meta property="og:site_name" content="PyQubit — Mohammad Mahdi Omidvar">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fa_IR">
+  <meta property="og:locale:alternate" content="en_US">
+  
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@graph":[
+      {"@type":"Person","@id":"https://pyqubit.github.io/#person","name":"Mohammad Mahdi Omidvar","alternateName":["محمد مهدی امیدوار","MmdxDev","PyQubit"],"url":"https://pyqubit.github.io/","jobTitle":"AI Engineer & Data Scientist","description":"مهندس هوش مصنوعی و متخصص علم داده با تمرکز بر یادگیری ماشین، یادگیری عمیق، NLP، بینایی ماشین، هوش مصنوعی مولد و سیستم‌های کاربردی AI.","sameAs":["https://github.com/PyQubit","https://www.linkedin.com/in/MmdxDev","https://t.me/MmdxDev","https://instagram.com/MmdxDev"]},
+      {"@type":"WebSite","@id":"https://pyqubit.github.io/#website","url":"https://pyqubit.github.io/","name":"PyQubit — Mohammad Mahdi Omidvar","publisher":{"@id":"https://pyqubit.github.io/#person"},"inLanguage":["fa-IR","en-US"]},
+      {"@type":"ProfilePage","url":"https://pyqubit.github.io/","mainEntity":{"@id":"https://pyqubit.github.io/#person"},"inLanguage":["fa-IR","en-US"]}
+    ]
+  }
+  </script>
+  </head>
 <body>
   <a class="skip-link" href="#main-content">Skip to main content</a>
   <div class="ambient"></div>
@@ -365,7 +497,7 @@
   <nav id="nav">
     <div class="container nav-inner">
       <a class="brand" href="#hero" aria-label="PyQubit home">
-        <img src="https://avatars.githubusercontent.com/u/229774530?s=60&v=4" alt="PyQubit logo" class="brand-logo" width="40" height="40" loading="eager">
+        <img src="main.png" onerror="this.onerror=null;this.src='https://raw.githubusercontent.com/PyQubit/PyQubit.github.io/main/main.png'" alt="PyQubit logo — Mohammad Mahdi Omidvar AI Engineer" class="brand-logo" width="40" height="40" loading="eager">
         <span class="brand-text"><strong>PyQubit</strong><span>Mohammad Mahdi Omidvar</span></span>
       </a>
       <ul class="nav-links">
@@ -375,7 +507,6 @@
         <li><a href="#expertise"><i class="fa-solid fa-brain"></i><span data-i18n="nav_expertise">Expertise</span></a></li>
         <li><a href="#projects"><i class="fa-solid fa-code-branch"></i><span data-i18n="nav_projects">Projects</span></a></li>
         <li><a href="#certificates"><i class="fa-solid fa-award"></i><span data-i18n="nav_certs">Certificates</span></a></li>
-        <li><a href="#articles"><i class="fa-solid fa-book-open"></i><span data-i18n="nav_articles">Articles</span></a></li>
       </ul>
       <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open menu" aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
     </div>
@@ -391,7 +522,6 @@
     <a href="#projects"><i class="fa-solid fa-code-branch"></i><span data-i18n="nav_projects">Projects</span></a>
     <a href="#coverage"><i class="fa-solid fa-table-list"></i><span data-i18n="nav_coverage">Coverage</span></a>
     <a href="#certificates"><i class="fa-solid fa-award"></i><span data-i18n="nav_certs">Certificates</span></a>
-    <a href="#articles"><i class="fa-solid fa-book-open"></i><span data-i18n="nav_articles">Articles</span></a>
     <a href="#connect"><i class="fa-solid fa-link"></i><span data-i18n="nav_connect">Connect</span></a>
   </aside>
 
@@ -463,7 +593,7 @@
     <section id="skills" class="container">
       <div class="section-head reveal"><div><div class="section-kicker">03 — Core AI Expertise</div><h2 class="section-title" data-i18n="title_skills">Core AI Expertise</h2><p class="section-subtitle" data-i18n="skills_sub">A broad technical foundation across classical machine learning, deep learning, language, vision, speech, and intelligent systems.</p></div></div>
       <div class="stats">
-        <div class="stat-card reveal"><strong><span>21</span></strong><small data-i18n="stat_projects">AI Projects</small></div>
+        <div class="stat-card reveal"><strong><span>22</span></strong><small data-i18n="stat_projects">AI Projects</small></div>
         <div class="stat-card reveal"><strong><span>12</span></strong><small data-i18n="stat_focus">Areas of Focus</small></div>
         <div class="stat-card reveal"><strong><span>🥇</span></strong><small data-i18n="stat_medal">INNOVERSE 2025 Gold Medal</small></div>
       </div>
@@ -502,7 +632,7 @@
 
     <!-- PROJECTS -->
     <section id="projects" class="container">
-      <div class="section-head reveal"><div><div class="section-kicker">06 — Portfolio</div><h2 class="section-title" data-i18n="title_projects">AI Project Portfolio</h2><p class="section-subtitle" data-i18n="projects_sub">A collection of 21 AI, Machine Learning, Deep Learning, Data Science, and AI Engineering projects covering research, applied AI, intelligent applications, and production-oriented systems.</p></div></div>
+      <div class="section-head reveal"><div><div class="section-kicker">06 — Portfolio</div><h2 class="section-title" data-i18n="title_projects">AI Project Portfolio</h2><p class="section-subtitle" data-i18n="projects_sub">A collection of 22 AI, Machine Learning, Deep Learning, Data Science, and AI Engineering projects covering research, applied AI, intelligent applications, and production-oriented systems.</p></div></div>
       <div class="project-toolbar reveal"><div class="filters" id="filters"></div></div>
       <div class="project-grid" id="projectGrid"></div>
     </section>
@@ -534,14 +664,7 @@
       <div class="section-head reveal"><div><div class="section-kicker">10 — Credentials</div><h2 class="section-title" data-i18n="title_certs">Professional Certificates</h2></div></div>
       <div class="cert-grid" id="certGrid"></div>
     </section>
-
-    <!-- ARTICLES -->
-    <section id="articles" class="container">
-      <div class="section-head reveal"><div><div class="section-kicker">11 — Insights</div><h2 class="section-title" data-i18n="title_articles">Insights & Articles</h2><p class="section-subtitle" data-i18n="articles_sub">Technical and conceptual notes covering programming, data, AI, quantum computing, robotics, and conversational systems.</p></div></div>
-      <div class="articles-grid" id="articleGrid"></div>
-    </section>
-
-    <!-- CONNECT -->
+<!-- CONNECT -->
     <section id="connect" class="container">
       <div class="section-head reveal"><div><div class="section-kicker">12 — Connect</div><h2 class="section-title" data-i18n="title_connect">Connect</h2><p class="section-subtitle" data-i18n="connect_sub">Interested in AI Engineering, Machine Learning, Deep Learning, NLP, Computer Vision, Generative AI, or practical AI systems?</p></div></div>
       <div class="connect-grid reveal">
@@ -590,7 +713,7 @@
   <script>
     const translations = {
       en: {
-        nav_home:'Home', nav_about:'About', nav_skills:'Skills', nav_expertise:'Expertise', nav_achieve:'Recognition', nav_projects:'Projects', nav_coverage:'Coverage', nav_certs:'Certificates', nav_articles:'Articles', nav_connect:'Connect',
+        nav_home:'Home', nav_about:'About', nav_skills:'Skills', nav_expertise:'Expertise', nav_achieve:'Recognition', nav_projects:'Projects', nav_coverage:'Coverage', nav_certs:'Certificates', nav_connect:'Connect',
         hero_badge:'Building Intelligent Systems',
         hero_title:'Mohammad Mahdi<br><span class="gradient-text">Omidvar</span>',
         hero_role:'AI Engineer & Data Scientist',
@@ -601,14 +724,15 @@
         about_p2:'My work spans the complete AI development lifecycle — from <strong>data preparation and model development</strong> to AI-powered applications, APIs, deployment, evaluation, and production-oriented architecture.',
         about_p3:"I'm particularly interested in combining modern AI techniques with software engineering to build systems that are not only accurate, but also <strong>usable, scalable, maintainable, and deployable.</strong>", focus_title:'Areas of Focus',
         title_recognition:'Recognition', award_section:'AI Section — Gold Medal Winner', award_desc:'Recognized at INNOVERSE 2025 for an AI project developed as part of a multidisciplinary team.', team_label:'Team:', team_list:'Mohammad Mahdi Omidvar · Mahyar Alizadeh · Arad Chizari · Sogol Tarnabi',
-        title_skills:'Core AI Expertise', skills_sub:'A broad technical foundation across classical machine learning, deep learning, language, vision, speech, and intelligent systems.', stat_projects:'AI Projects', stat_focus:'Areas of Focus', stat_medal:'INNOVERSE 2025 Gold Medal',
+        title_skills:'Core AI Expertise', skills_sub:'A broad technical foundation across classical machine learning, deep learning, language, vision, speech, and intelligent systems.', stat_projects:'AI Projects (22)', stat_focus:'Areas of Focus', stat_medal:'INNOVERSE 2025 Gold Medal',
         skill_ml_title:'Machine Learning', skill_dl_title:'Deep Learning', skill_nlp_title:'Natural Language Processing', skill_cv_title:'Computer Vision', skill_speech_title:'Speech & Audio AI',
         title_advanced:'Advanced AI Engineering', adv_1_title:'Generative AI', adv_1_desc:'Large Language Models (LLMs), Prompt Engineering, Context Engineering, AI Application Architecture, Model/API Integration, and Multimodal AI.', adv_2_title:'Retrieval & Knowledge Systems', adv_2_desc:'RAG Architecture, Vector Search, Semantic Search, Embeddings, Knowledge Bases, Document Retrieval, and Retrieval Pipelines.', adv_3_title:'AI Agents', adv_3_desc:'Tool-Using Agents, Agent Workflows, Multi-Agent Architectures, Task Decomposition, and AI-Orchestrated Systems.', adv_4_title:'Production AI', adv_4_desc:'AI APIs, Model Serving, FastAPI, Backend Architecture, Inference Pipelines, Evaluation, Monitoring, Experiment Tracking, Deployment, and MLOps Concepts.',
         title_stack:'Technology Stack', tech_lang:'Languages', tech_ml:'Machine Learning & Data Science', tech_ai:'AI & NLP', tech_backend:'Backend & APIs', tech_db:'Databases', tech_tools:'Developer Tools',
-        title_projects:'AI Project Portfolio', projects_sub:'A collection of 21 AI, Machine Learning, Deep Learning, Data Science, and AI Engineering projects covering research, applied AI, intelligent applications, and production-oriented systems.',
+        title_projects:'AI Project Portfolio', projects_sub:'A collection of 22 AI, Machine Learning, Deep Learning, Data Science, and AI Engineering projects covering research, applied AI, intelligent applications, and production-oriented systems.',
+        project_22_sub:'Brain-Computer Interface Typing Concept', project_22_desc:'A brain-computer interface concept for converting intentional neural activity into text, enabling hands-free typing through thought-driven interaction.', project_22_features:'Brain-Computer Interface (BCI)|Neural Signal Processing|Thought-to-Text Concept|Intent Classification|Real-Time Signal Pipeline|Assistive Human–Computer Interaction', project_22_focus:'BCI · Neural Signal Processing · AI · Human–Computer Interaction',
         title_coverage:'Project Coverage', title_philosophy:'Engineering Philosophy', philosophy_intro:'I aim to build AI systems that go beyond experimentation. My development approach focuses on connecting AI research, software engineering, and real-world products.', philosophy_goal:'The goal is to bridge the gap between <strong>AI research, software engineering, and real-world products.</strong>',
         title_research:'Current Learning & Research', github_title:'GitHub Activity', github_desc:'My GitHub profile documents the development of AI systems, experiments, research projects, and production-oriented applications. Rather than relying on third-party dynamic statistics, this profile focuses on projects, technical depth, and verifiable work.',
-        title_certs:'Professional Certificates', title_articles:'Insights & Articles', articles_sub:'Technical and conceptual notes covering programming, data, AI, quantum computing, robotics, and conversational systems.', title_connect:'Connect', connect_sub:'Interested in AI Engineering, Machine Learning, Deep Learning, NLP, Computer Vision, Generative AI, or practical AI systems?', featured_title:'Building intelligent systems — from models to products.', featured_desc:'If you\'re interested in AI Engineering, Machine Learning, Deep Learning, NLP, Computer Vision, Generative AI, or practical AI systems, explore my work.', featured_btn:'Explore My Work', footer_desc:'AI Engineer & Data Scientist', footer_rights:'All Rights Reserved.',
+        title_certs:'Professional Certificates', title_connect:'Connect', connect_sub:'Interested in AI Engineering, Machine Learning, Deep Learning, NLP, Computer Vision, Generative AI, or practical AI systems?', featured_title:'Building intelligent systems — from models to products.', featured_desc:'If you\'re interested in AI Engineering, Machine Learning, Deep Learning, NLP, Computer Vision, Generative AI, or practical AI systems, explore my work.', featured_btn:'Explore My Work', footer_desc:'AI Engineer & Data Scientist', footer_rights:'All Rights Reserved.',
         filters:{all:'All',ai:'AI',ml:'Machine Learning',nlp:'NLP',vision:'Computer Vision',speech:'Speech',engineering:'AI Engineering'},
         categories:{ai:'AI',ml:'Machine Learning',nlp:'NLP',vision:'Computer Vision',speech:'Speech & Audio AI',engineering:'AI Engineering'},
         project_label:'Repository', details:'Details', close:'Close', view:'View',
@@ -725,7 +849,7 @@
         }
       },
       fa: {
-        nav_home:'خانه', nav_about:'درباره من', nav_skills:'مهارت‌ها', nav_expertise:'تخصص', nav_achieve:'افتخارات', nav_projects:'پروژه‌ها', nav_coverage:'پوشش پروژه‌ها', nav_certs:'مدارک', nav_articles:'مقالات', nav_connect:'ارتباط',
+        nav_home:'خانه', nav_about:'درباره من', nav_skills:'مهارت‌ها', nav_expertise:'تخصص', nav_achieve:'افتخارات', nav_projects:'پروژه‌ها', nav_coverage:'پوشش پروژه‌ها', nav_certs:'مدارک', nav_connect:'ارتباط',
         hero_badge:'ساخت سیستم‌های هوشمند', hero_title:'محمد مهدی<br><span class="gradient-text">امیدوار</span>', hero_role:'مهندس هوش مصنوعی و متخصص علم داده', hero_desc:'ساخت سیستم‌های هوشمند با Python، یادگیری ماشین، یادگیری عمیق، پردازش زبان طبیعی، بینایی ماشین و هوش مصنوعی مولد.', hero_award:'مدال طلا — بخش هوش مصنوعی', btn_projects:'مشاهده پروژه‌ها', btn_contact:'ارتباط با من', btn_repo:'مشاهده پروژه',
         title_about:'درباره من', about_sub:'تمرکز بر تبدیل مدل‌ها و الگوریتم‌ها به سیستم‌های نرم‌افزاری کاربردی، قابل نگهداری و آماده استقرار.',
         about_p1:'من <strong>مهندس هوش مصنوعی و متخصص علم داده</strong> هستم و روی طراحی و ساخت سیستم‌های نرم‌افزاری هوشمند با کاربردهای عملی تمرکز دارم.',
@@ -736,7 +860,7 @@
         title_advanced:'مهندسی پیشرفته هوش مصنوعی', adv_1_title:'هوش مصنوعی مولد', adv_1_desc:'مدل‌های زبانی بزرگ، Prompt Engineering، Context Engineering، معماری اپلیکیشن‌های AI، یکپارچه‌سازی مدل و API و هوش مصنوعی چندوجهی.', adv_2_title:'سیستم‌های بازیابی و دانش', adv_2_desc:'معماری RAG، جستجوی برداری، جستجوی معنایی، Embedding، پایگاه دانش، بازیابی اسناد و Pipelineهای Retrieval.', adv_3_title:'عامل‌های هوش مصنوعی', adv_3_desc:'Agentهای ابزارمحور، گردش‌کار Agentها، معماری چندعاملی، تجزیه وظایف و سیستم‌های ارکستراسیون‌شده با هوش مصنوعی.', adv_4_title:'هوش مصنوعی Production', adv_4_desc:'APIهای هوش مصنوعی، Model Serving، FastAPI، معماری Backend، Pipeline استنتاج، ارزیابی، مانیتورینگ، Experiment Tracking، استقرار و مفاهیم MLOps.',
         title_stack:'پشته فناوری', tech_lang:'زبان‌ها', tech_ml:'یادگیری ماشین و علم داده', tech_ai:'هوش مصنوعی و NLP', tech_backend:'Backend و API', tech_db:'پایگاه‌های داده', tech_tools:'ابزارهای توسعه',
         title_projects:'پورتفولیوی پروژه‌های هوش مصنوعی', projects_sub:'مجموعه‌ای از ۲۱ پروژه در حوزه هوش مصنوعی، یادگیری ماشین، یادگیری عمیق، علم داده و مهندسی AI که پژوهش، هوش مصنوعی کاربردی، اپلیکیشن‌های هوشمند و سیستم‌های نزدیک به محیط تولید را پوشش می‌دهد.', title_coverage:'پوشش پروژه‌ها', title_philosophy:'فلسفه مهندسی', philosophy_intro:'هدف من ساخت سیستم‌های هوش مصنوعی فراتر از آزمایش است. رویکرد توسعه من بر اتصال پژوهش AI، مهندسی نرم‌افزار و محصولات واقعی تمرکز دارد.', philosophy_goal:'هدف، پر کردن فاصله میان <strong>پژوهش هوش مصنوعی، مهندسی نرم‌افزار و محصولات واقعی</strong> است.',
-        title_research:'یادگیری و پژوهش فعلی', github_title:'فعالیت GitHub', github_desc:'پروفایل GitHub من روند توسعه سیستم‌های AI، آزمایش‌ها، پروژه‌های پژوهشی و اپلیکیشن‌های نزدیک به تولید را مستند می‌کند. این پروفایل به‌جای اتکا به آمارهای دینامیک شخص‌ثالث، بر پروژه‌ها، عمق فنی و کار قابل بررسی تمرکز دارد.', title_certs:'گواهینامه‌های تخصصی', title_articles:'مقالات و یادداشت‌ها', articles_sub:'یادداشت‌های فنی و مفهومی درباره برنامه‌نویسی، داده، هوش مصنوعی، محاسبات کوانتومی، رباتیک و سیستم‌های مکالمه‌ای.', title_connect:'ارتباط', connect_sub:'اگر به مهندسی هوش مصنوعی، یادگیری ماشین، یادگیری عمیق، NLP، بینایی ماشین، هوش مصنوعی مولد یا سیستم‌های AI کاربردی علاقه‌مندید، پروژه‌های من را بررسی کنید.', featured_title:'ساخت سیستم‌های هوشمند — از مدل تا محصول.', featured_desc:'برای مشاهده پروژه‌ها و تجربه‌های من در مهندسی AI، یادگیری ماشین، یادگیری عمیق، NLP، بینایی ماشین، هوش مصنوعی مولد و سیستم‌های کاربردی، وارد GitHub شوید.', featured_btn:'مشاهده پروژه‌ها', footer_desc:'مهندس هوش مصنوعی و متخصص علم داده', footer_rights:'تمامی حقوق محفوظ است.',
+        title_research:'یادگیری و پژوهش فعلی', github_title:'فعالیت GitHub', github_desc:'پروفایل GitHub من روند توسعه سیستم‌های AI، آزمایش‌ها، پروژه‌های پژوهشی و اپلیکیشن‌های نزدیک به تولید را مستند می‌کند. این پروفایل به‌جای اتکا به آمارهای دینامیک شخص‌ثالث، بر پروژه‌ها، عمق فنی و کار قابل بررسی تمرکز دارد.', title_certs:'گواهینامه‌های تخصصی', title_connect:'ارتباط', connect_sub:'اگر به مهندسی هوش مصنوعی، یادگیری ماشین، یادگیری عمیق، NLP، بینایی ماشین، هوش مصنوعی مولد یا سیستم‌های AI کاربردی علاقه‌مندید، پروژه‌های من را بررسی کنید.', featured_title:'ساخت سیستم‌های هوشمند — از مدل تا محصول.', featured_desc:'برای مشاهده پروژه‌ها و تجربه‌های من در مهندسی AI، یادگیری ماشین، یادگیری عمیق، NLP، بینایی ماشین، هوش مصنوعی مولد و سیستم‌های کاربردی، وارد GitHub شوید.', featured_btn:'مشاهده پروژه‌ها', footer_desc:'مهندس هوش مصنوعی و متخصص علم داده', footer_rights:'تمامی حقوق محفوظ است.',
         filters:{all:'همه',ai:'AI',ml:'یادگیری ماشین',nlp:'NLP',vision:'بینایی ماشین',speech:'گفتار',engineering:'مهندسی AI'}, categories:{ai:'هوش مصنوعی',ml:'یادگیری ماشین',nlp:'NLP',vision:'بینایی ماشین',speech:'هوش مصنوعی صوت و گفتار',engineering:'مهندسی AI'}, project_label:'Repository', details:'جزئیات', close:'بستن', view:'مشاهده',
         cert_desc:{1:'پایه‌ای محکم در سینتکس و منطق پایتون؛ تسلط بر حلقه‌ها، توابع و ساختارهای داده اصلی.',2:'بررسی عمیق OOP، دکوراتورها و Generatorها؛ نوشتن کد تمیز، مقیاس‌پذیر و بهینه.',3:'راهبردهای جستجو، Heuristic و ریاضیات AI؛ پیاده‌سازی الگوریتم‌های اصلی یادگیری ماشین از پایه.',4:'شبکه‌های عصبی پیشرفته شامل CNN، RNN و Transformer؛ طراحی معماری با TensorFlow و Keras.',5:'مدل‌سازی آماری، آماده‌سازی داده و ارائه بینش؛ استخراج نتایج از مجموعه‌داده‌های پیچیده.',6:'طراحی APIهای امن، RESTful و مقیاس‌پذیر و استقرار endpointهای سریع برای مدل‌های AI.'},
         cert_title:{1:'پایتون مقدماتی',2:'پایتون پیشرفته',3:'الگوریتم‌های هوش مصنوعی',4:'یادگیری عمیق',5:'علم داده',6:'توسعه پیشرفته API'},
@@ -878,11 +1002,12 @@
       {no:'18',icon:'🎙️',name:'Speech-to-Text Platform',desc:'An AI-powered speech recognition platform designed to convert spoken language into machine-readable text.',features:['Automatic Speech Recognition','Audio Preprocessing','Speech Segmentation','Transcription','Language Processing','AI Inference'],focus:'Speech AI · NLP · Audio Processing',cat:['speech','nlp']},
       {no:'19',icon:'🧪',name:'ML Experiment Tracking Platform',desc:'A system designed to organize machine learning experiments and make model development more reproducible.',features:['Experiment Tracking','Model Versioning','Hyperparameter Logging','Metrics Tracking','Dataset Tracking','Reproducibility','Model Comparison'],focus:'MLOps · Machine Learning · Experiment Management',cat:['engineering','ml']},
       {no:'20',icon:'⚙️',name:'Production AI Model Platform',desc:'A production-oriented platform for serving and managing AI models through APIs.',arch:`Client\n  ↓\nAPI Gateway\n  ↓\nAI Service\n  ↓\nModel Inference\n  ↓\nEvaluation / Monitoring\n  ↓\nResponse`,features:['Model Serving','FastAPI','REST APIs','Inference Pipelines','Model Management','Monitoring','Production Architecture'],focus:'AI Engineering · Backend · MLOps · Model Serving',cat:['engineering']},
-      {no:'21',icon:'🏗️',name:'End-to-End AI SaaS',desc:'An end-to-end AI product architecture combining AI models, backend services, user management, APIs, and production-oriented infrastructure.',arch:`User\n  ↓\nFrontend / Client\n  ↓\nBackend API\n  ↓\nAuthentication & User Management\n  ↓\nAI Orchestration Layer\n  ↓\nModel / LLM\n  ↓\nDatabase\n  ↓\nMonitoring & Analytics`,features:['AI Product Development','Generative AI','Backend Engineering','APIs','Authentication','Database Architecture','Model Integration','Deployment','Monitoring'],focus:'AI SaaS · Generative AI · Backend · Production AI',cat:['ai','engineering']}
+      {no:'21',icon:'🏗️',name:'End-to-End AI SaaS',desc:'An end-to-end AI product architecture combining AI models, backend services, user management, APIs, and production-oriented infrastructure.',arch:`User\n  ↓\nFrontend / Client\n  ↓\nBackend API\n  ↓\nAuthentication & User Management\n  ↓\nAI Orchestration Layer\n  ↓\nModel / LLM\n  ↓\nDatabase\n  ↓\nMonitoring & Analytics`,features:['AI Product Development','Generative AI','Backend Engineering','APIs','Authentication','Database Architecture','Model Integration','Deployment','Monitoring'],focus:'AI SaaS · Generative AI · Backend · Production AI',cat:['ai','engineering']},
+      {no:'22',icon:'🧠⌨️',name:'Thought-to-Text Typing Device',sub:'Brain-Computer Interface Typing Concept',desc:'A brain-computer interface concept for converting intentional neural activity into text, enabling hands-free typing through thought-driven interaction.',features:['Brain-Computer Interface (BCI)','Neural Signal Processing','Thought-to-Text Concept','Intent Classification','Real-Time Signal Pipeline','Assistive Human–Computer Interaction'],focus:'BCI · Neural Signal Processing · AI · Human–Computer Interaction',cat:['ai','engineering','nlp']}
     ];
 
     const coverage = [
-      ['01','Innoverse 2025','🧠 Multimodal AI'],['02','Advanced Audio Processing','🎙️ Speech & Audio AI'],['03','Speech Emotion Recognition','🗣️ Speech AI'],['04','AsanAi','🌱 Multimodal Generative AI'],['05','CbcAi','🩺 Conversational AI'],['06','Data Science Analytics Platform','📊 Data Science'],['07','Time-Series Forecasting','📈 Predictive ML'],['08','Real-World Data Cleaning & EDA','🧹 Data Science'],['09','Fraud Detection System','🛡️ Applied ML'],['10','Recommendation Engine','🎯 Recommendation Systems'],['11','Persian Transformer NLP','📝 NLP'],['12','Persian RAG Knowledge Base','🔎 RAG'],['13','Persian Semantic Search','🧠 Semantic Search'],['14','Document Intelligence System','📄 Document AI'],['15','Computer Vision Object Detection','👁️ Computer Vision'],['16','Visual Search Engine','🔍 Visual Search'],['17','Multi-Agent Research System','🧩 Agentic AI'],['18','Speech-to-Text Platform','🎙️ Speech AI'],['19','ML Experiment Tracking Platform','🧪 MLOps'],['20','Production AI Model Platform','⚙️ AI Engineering'],['21','End-to-End AI SaaS','🏗️ AI Product Engineering']
+      ['01','Innoverse 2025','🧠 Multimodal AI'],['02','Advanced Audio Processing','🎙️ Speech & Audio AI'],['03','Speech Emotion Recognition','🗣️ Speech AI'],['04','AsanAi','🌱 Multimodal Generative AI'],['05','CbcAi','🩺 Conversational AI'],['06','Data Science Analytics Platform','📊 Data Science'],['07','Time-Series Forecasting','📈 Predictive ML'],['08','Real-World Data Cleaning & EDA','🧹 Data Science'],['09','Fraud Detection System','🛡️ Applied ML'],['10','Recommendation Engine','🎯 Recommendation Systems'],['11','Persian Transformer NLP','📝 NLP'],['12','Persian RAG Knowledge Base','🔎 RAG'],['13','Persian Semantic Search','🧠 Semantic Search'],['14','Document Intelligence System','📄 Document AI'],['15','Computer Vision Object Detection','👁️ Computer Vision'],['16','Visual Search Engine','🔍 Visual Search'],['17','Multi-Agent Research System','🧩 Agentic AI'],['18','Speech-to-Text Platform','🎙️ Speech AI'],['19','ML Experiment Tracking Platform','🧪 MLOps'],['20','Production AI Model Platform','⚙️ AI Engineering'],['21','End-to-End AI SaaS','🏗️ AI Product Engineering'],['22','Thought-to-Text Typing Device','🧠 Brain-Computer Interface / AI']
     ];
 
     const philosophy = ['Problem Definition','Data & Requirements','Exploration & Analysis','Model Development','Evaluation','AI Application','API / Backend','Deployment','Monitoring & Iteration'];
@@ -890,20 +1015,9 @@
     const certs = [
       {id:1,img:'py.png'},{id:2,img:'pyad.png'},{id:3,img:'al.png'},{id:4,img:'dl.png'},{id:5,img:'ds.png'},{id:6,img:'api.png'}
     ];
-    const articleImages = [
-      'https://www.mygreatlearning.com/blog/wp-content/uploads/2021/02/iStock-1284202542.jpg',
-      'https://www.dasca.org/Content/images/main/data-science-tools-img.jpg',
-      'https://eu-images.contentstack.com/v3/assets/blt3d4d54955bda84c0/bltf008542ca27415c5/654ce3af81b3fe040a250624/IBM-quantum-computing-cooling-unit-1024x771.jpg?width=1280&auto=webp&quality=80&disable=upscale',
-      'https://physicsworld.com/wp-content/uploads/2023/12/atom-web-129757751-Shutterstock_Roman-Sigaev.jpg',
-      'https://sphero.com/cdn/shop/articles/coding_languages_1024x.png?v=1619126283',
-      'https://www.chitkara.edu.in/blogs/wp-content/uploads/2023/09/Utilizing-Data-Science-and-Analytics.jpg',
-      'https://manlybattery.com/wp-content/uploads/2024/01/Optimus-Gen2-humanoid-robot-Tesla.webp',
-      'https://www.anabatic.com/wp-content/uploads/2025/06/pengertian-trading-saham.webp',
-      'https://humanoidroboticstechnology.com/wp-content/uploads/2025/02/top-humanoid-robots-of-2026.jpg',
-      'https://images-cdn.openxcell.com/wp-content/uploads/2024/11/26123116/What-is-an-AI-Chatbot_-1024x639.webp'
-    ];
 
-    let currentLang = localStorage.getItem('pyqubit-lang') || 'en';
+    const urlLang = new URLSearchParams(location.search).get('lang');
+    let currentLang = (urlLang==='fa'||urlLang==='en') ? urlLang : (localStorage.getItem('pyqubit-lang') || 'en');
     let currentFilter = 'all';
     const $ = s => document.querySelector(s);
     const $$ = s => [...document.querySelectorAll(s)];
@@ -912,9 +1026,14 @@
       const t = translations[currentLang];
       document.documentElement.lang = currentLang;
       document.documentElement.dir = currentLang === 'fa' ? 'rtl' : 'ltr';
-      document.title = currentLang === 'fa' ? 'محمد مهدی امیدوار | مهندس هوش مصنوعی و متخصص علم داده — PyQubit' : 'Mohammad Mahdi Omidvar | AI Engineer & Data Scientist — PyQubit';
+      document.title = currentLang === 'fa' ? 'محمد مهدی امیدوار | مهندس هوش مصنوعی و متخصص علم داده | PyQubit' : 'Mohammad Mahdi Omidvar | AI Engineer & Data Scientist | PyQubit';
+      const metaDescription=document.querySelector('meta[name=description]'); if(metaDescription) metaDescription.setAttribute('content', currentLang==='fa' ? 'نمونه‌کار رسمی محمد مهدی امیدوار (MmdxDev)؛ مهندس هوش مصنوعی و متخصص علم داده با تمرکز بر یادگیری ماشین، یادگیری عمیق، NLP، بینایی ماشین، هوش مصنوعی مولد، RAG و توسعه سیستم‌های AI.' : 'Official portfolio of Mohammad Mahdi Omidvar (MmdxDev), AI Engineer and Data Scientist focused on Machine Learning, Deep Learning, NLP, Computer Vision, Generative AI, RAG and production AI systems.');
+      const desc = currentLang==='fa'
+        ? 'وب‌سایت رسمی محمد مهدی امیدوار (PyQubit)، مهندس هوش مصنوعی و متخصص علم داده؛ یادگیری ماشین، یادگیری عمیق، NLP، بینایی ماشین، هوش مصنوعی مولد، RAG و عامل‌های هوش مصنوعی.'
+        : 'Official portfolio of Mohammad Mahdi Omidvar (PyQubit), AI Engineer & Data Scientist specializing in Machine Learning, Deep Learning, NLP, Computer Vision, Generative AI, RAG and AI Agents.';
+      document.querySelector('meta[name="description"]').setAttribute('content', desc);
       $$('[data-i18n]').forEach(el => { const key=el.dataset.i18n; if(t[key] !== undefined) el.innerHTML=t[key]; });
-      renderFocus(); renderSkills(); renderFilters(); renderProjects(); renderCoverage(); renderTimeline(); renderResearch(); renderCerts(); renderArticles();
+      renderFocus(); renderSkills(); renderFilters(); renderProjects(); renderCoverage(); renderTimeline(); renderResearch(); renderCerts();
       $('.lang-btn').setAttribute('aria-label', currentLang === 'fa' ? 'Switch to English' : 'تغییر به فارسی');
     }
 
@@ -942,11 +1061,11 @@
     function renderProjects(){
       const t=translations[currentLang];
       $('#projectGrid').innerHTML=projects.filter(p=>currentFilter==='all'||p.cat.includes(currentFilter)).map(p=>{
-        const features=p.features?`<h4>${currentLang==='fa'?'ویژگی‌ها':'Key Features'}</h4><ul class="project-list">${p.features.map(x=>`<li>${translateProjectFeature(x)}</li>`).join('')}</ul>`:'';
+        const features=p.features?`<h4>${currentLang==='fa'?'ویژگی‌ها':'Key Features'}</h4><ul class="project-list">${p.features.map(x=>`<li>${p.no==='22'&&currentLang==='fa'?(project22Fa.features[p.features.indexOf(x)]||x):translateProjectFeature(x)}</li>`).join('')}</ul>`:'';
         const arch=p.arch?`<div class="arch"><pre>${escapeHtml(p.arch)}</pre></div>`:'';
         const repo=p.repo?`<a class="btn btn-primary" href="${p.repo}" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i>${currentLang==='fa'?'Repository':'Repository'} →</a>`:'';
         const details=`<button class="btn btn-ghost project-details" data-project="${p.no}" type="button"><i class="fa-solid fa-maximize"></i>${t.details}</button>`;
-        return `<article class="project-card ${p.featured?'featured':''} reveal visible" data-category="${p.cat.join(' ')}"><div class="project-no">${p.no}</div><div class="project-icon">${p.icon}</div><h3>${p.name}</h3>${p.sub?`<div class="project-sub">${translateProjectSub(p.sub)}</div>`:''}<p>${translateProjectDesc(p.desc)}</p>${features}${arch}<div class="project-focus"><strong>${currentLang==='fa'?'Focus:':'Focus:'}</strong> ${translateFocusLine(p.focus)}</div><div class="project-actions">${repo}${details}</div></article>`;
+        return `<article class="project-card ${p.featured?'featured':''} reveal visible" data-category="${p.cat.join(' ')}"><div class="project-no">${p.no}</div><div class="project-icon">${p.icon}</div><h3>${p.no==='22' && currentLang==='fa'?'دستگاه تایپ با فکر':p.name}</h3>${p.sub?`<div class="project-sub">${p.no==='22'&&currentLang==='fa'?project22Fa.sub:translateProjectSub(p.sub)}</div>`:''}<p>${p.no==='22'&&currentLang==='fa'?project22Fa.desc:translateProjectDesc(p.desc)}</p>${features}${arch}<div class="project-focus"><strong>${currentLang==='fa'?'Focus:':'Focus:'}</strong> ${translateFocusLine(p.focus)}</div><div class="project-actions">${repo}${details}</div></article>`;
       }).join('');
       $$('.project-details').forEach(btn=>btn.addEventListener('click',()=>openProject(btn.dataset.project)));
     }
@@ -954,6 +1073,12 @@
     function translateProjectFeature(v){return currentLang==='fa'?(featureFa[v]||v):v}
     const subFa={'Smart Agriculture Multimodal AI Assistant':'دستیار چندوجهی هوش مصنوعی کشاورزی هوشمند','Conversational Medical AI Assistant':'دستیار پزشکی هوش مصنوعی مکالمه‌ای','Emotion-to-Art Multimodal AI':'هوش مصنوعی چندوجهی تبدیل احساس به هنر'};
     function translateProjectSub(v){return currentLang==='fa'?(subFa[v]||v):v}
+    const project22Fa={
+      sub:'مفهوم دستگاه تایپ با رابط مغز و رایانه',
+      desc:'مفهومی از رابط مغز و رایانه برای تبدیل فعالیت عصبی هدفمند به متن و فراهم‌کردن تایپ بدون استفاده از دست.',
+      features:['رابط مغز و رایانه (BCI)','پردازش سیگنال عصبی','مفهوم تبدیل فکر به متن','طبقه‌بندی قصد','Pipeline پردازش بلادرنگ','تعامل انسان و رایانه برای کمک‌رسانی'],
+      focus:'BCI · پردازش سیگنال عصبی · هوش مصنوعی · تعامل انسان و رایانه'
+    };
     const descFa={
       'A multimodal AI system combining emotion recognition and generative visual concepts to transform emotional information into artistic outputs.':'سیستمی چندوجهی که تشخیص احساسات و مفاهیم بصری مولد را برای تبدیل اطلاعات احساسی به خروجی‌های هنری ترکیب می‌کند.',
       'A deep-learning-based audio processing project exploring speech and audio classification pipelines.':'پروژه‌ای مبتنی بر یادگیری عمیق برای بررسی Pipelineهای پردازش و طبقه‌بندی گفتار و صوت.',
@@ -998,19 +1123,6 @@
       const t=translations[currentLang];
       $('#certGrid').innerHTML=certs.map(c=>`<article class="cert-item reveal visible"><div class="cert-image"><img src="${c.img}" alt="${t.cert_title[c.id]}" loading="lazy"></div><div class="cert-info"><h3>${t.cert_title[c.id]}</h3><p>${t.cert_desc[c.id]}</p></div></article>`).join('');
     }
-    function renderArticles(){
-      const data=translations[currentLang].articles;
-      $('#articleGrid').innerHTML=Object.entries(data).map(([id,a])=>`<article class="article-card reveal visible" data-article="${id}"><div class="article-cover"><img src="${articleImages[Number(id)-1]}" alt="${a.title}" loading="lazy"></div><div class="article-body"><h3>${a.title}</h3><p>${a.excerpt}</p><div class="article-more"><span>${currentLang==='fa'?'مطالعه کامل مقاله':'Read Full Article'}</span><i class="fa-solid fa-arrow-right"></i></div></div></article>`).join('');
-      $$('.article-card').forEach(card=>card.addEventListener('click',()=>openArticle(card.dataset.article)));
-    }
-
-    function openProject(no){
-      const p=projects.find(x=>x.no===no); if(!p)return;
-      $('#modalType').textContent=currentLang==='fa'?'جزئیات پروژه':'Project Details';
-      $('#modalContent').innerHTML=`<div class="section-kicker">${p.no}</div><h2>${p.icon} ${p.name}</h2>${p.sub?`<p><strong>${translateProjectSub(p.sub)}</strong></p>`:''}<p>${translateProjectDesc(p.desc)}</p>${p.features?`<h3>${currentLang==='fa'?'ویژگی‌های کلیدی':'Key Features'}</h3><ul class="project-list" style="margin-top:10px">${p.features.map(x=>`<li>${translateProjectFeature(x)}</li>`).join('')}</ul>`:''}${p.arch?`<div class="arch" style="margin-top:18px"><pre>${escapeHtml(p.arch)}</pre></div>`:''}<p style="margin-top:18px"><strong>${currentLang==='fa'?'تمرکز:':'Focus:'}</strong> ${translateFocusLine(p.focus)}</p>${p.repo?`<a class="btn btn-primary" style="margin-top:8px" href="${p.repo}" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i>Repository</a>`:''}`;
-      openModal();
-    }
-    function openArticle(id){const a=translations[currentLang].articles[id]; $('#modalType').textContent=currentLang==='fa'?'مقاله':'Article'; $('#modalContent').innerHTML=`<div class="section-kicker">Insight ${id}</div><h2>${a.title}</h2>${a.full.join('')}`;openModal()}
     let lastFocused=null;
     function openModal(){const m=$('#contentModal');lastFocused=document.activeElement;m.classList.add('active');m.setAttribute('aria-hidden','false');document.body.style.overflow='hidden';$('#modalClose').focus()}
     function closeModal(){const m=$('#contentModal');m.classList.remove('active');m.setAttribute('aria-hidden','true');document.body.style.overflow='';if(lastFocused&&typeof lastFocused.focus==='function')lastFocused.focus()}

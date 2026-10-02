@@ -9,6 +9,9 @@
   <meta name="author" content="Mohammad Mahdi Omidvar | محمد مهدی امیدوار">
   <meta name="robots" content="index, follow">
 
+  <link rel="icon" type="image/png" href="1.png">
+  <link rel="shortcut icon" type="image/png" href="1.png">
+  <link rel="apple-touch-icon" href="1.png">
   <link rel="canonical" href="https://pyqubit.github.io/">
   <link rel="alternate" hreflang="en" href="https://pyqubit.github.io/?lang=en">
   <link rel="alternate" hreflang="fa" href="https://pyqubit.github.io/?lang=fa">
@@ -466,6 +469,645 @@
       *,*::before,*::after{animation:none!important;transition:none!important}
       .reveal{opacity:1;transform:none}
     }
+
+    /* ============================================================
+       RESPONSIVE SYSTEM v2
+       Fixes mobile overflow, grid min-width issues, compact layout,
+       touch targets, RTL/LTR behavior, and mobile modal/sidebar UX.
+       ============================================================ */
+
+    html, body {
+      width: 100%;
+      max-width: 100%;
+      overflow-x: clip;
+    }
+
+    /* Critical: grid/flex children must be allowed to shrink. */
+    .container,
+    .hero > *,
+    .about-grid > *,
+    .award-grid > *,
+    .skills-grid > *,
+    .expertise-grid > *,
+    .learning-grid > *,
+    .connect-grid > *,
+    .project-card,
+    .cert-item,
+    .skill-card,
+    .glass-card,
+    .tech-group,
+    .section-head > div {
+      min-width: 0;
+    }
+
+    /* Long technical labels should wrap instead of expanding the viewport. */
+    h1, h2, h3, h4, p, li, td, th,
+    .chip, .filter, .focus-item, .project-sub,
+    .project-focus, .connect-card strong, .team-box span,
+    .award-tag, .modal-content, .article-body {
+      overflow-wrap: anywhere;
+      word-break: normal;
+    }
+
+    .btn,
+    .filter {
+      white-space: normal;
+      text-align: center;
+    }
+
+    .project-actions {
+      min-width: 0;
+    }
+
+    .project-actions .btn {
+      min-width: 0;
+    }
+
+    .arch {
+      max-width: 100%;
+      overscroll-behavior-inline: contain;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .arch pre {
+      max-width: max-content;
+      min-width: 0;
+    }
+
+    .table-wrap {
+      max-width: 100%;
+      overscroll-behavior-inline: contain;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .hero-mini {
+      right: 12px;
+      left: auto;
+      bottom: 12px;
+      max-width: calc(100% - 24px);
+    }
+
+    html[lang="fa"] .hero-mini {
+      right: auto;
+      left: 12px;
+    }
+
+    /* Keep the page usable when the mobile menu is open. */
+    body.mobile-menu-open {
+      overflow: hidden;
+      touch-action: none;
+    }
+
+    .mobile-sidebar {
+      padding-bottom: max(22px, env(safe-area-inset-bottom));
+      overscroll-behavior: contain;
+      overflow-y: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    @media (max-width: 1024px) {
+      .container {
+        width: min(100% - 28px, 980px);
+      }
+
+      section {
+        padding-block: 76px;
+      }
+
+      .hero {
+        gap: 42px;
+      }
+
+      .hero-frame {
+        width: min(440px, 82vw);
+      }
+
+      .about-grid,
+      .award-grid,
+      .learning-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .about-grid,
+      .award-grid {
+        gap: 16px;
+      }
+
+      .project-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .cert-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        width: min(100% - 24px, 720px);
+      }
+
+      nav {
+        padding-top: env(safe-area-inset-top);
+      }
+
+      .nav-inner {
+        min-height: 64px;
+      }
+
+      .nav-links {
+        display: none;
+      }
+
+      .menu-toggle {
+        display: grid;
+        place-items: center;
+        flex: 0 0 46px;
+        width: 46px;
+        min-width: 46px;
+        min-height: 46px;
+        padding: 0;
+      }
+
+      main {
+        padding-top: 64px;
+      }
+
+      .hero {
+        grid-template-columns: 1fr;
+        min-height: auto;
+        padding-top: 34px;
+        gap: 28px;
+        text-align: center;
+      }
+
+      .hero-copy {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-width: 0;
+      }
+
+      .hero-visual {
+        width: 100%;
+        min-width: 0;
+        order: 0;
+      }
+
+      .hero-frame {
+        width: min(100%, 390px);
+        padding: 7px;
+        border-radius: 20px;
+      }
+
+      .hero-frame::before {
+        inset: 9px;
+        border-radius: 15px;
+      }
+
+      .hero-frame img {
+        width: 100%;
+        height: auto;
+        max-height: 420px;
+        object-fit: contain;
+        border-radius: 14px;
+      }
+
+      .hero h1 {
+        max-width: 100%;
+        font-size: clamp(2.15rem, 10vw, 3.4rem);
+        line-height: 1.05;
+        letter-spacing: -0.04em;
+      }
+
+      html[lang="fa"] .hero h1 {
+        letter-spacing: 0;
+        line-height: 1.18;
+      }
+
+      .hero-desc {
+        max-width: 680px;
+        font-size: .92rem;
+      }
+
+      .hero-actions {
+        width: min(100%, 560px);
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 8px;
+      }
+
+      .hero-actions .btn {
+        width: 100%;
+        min-width: 0;
+        min-height: 46px;
+        padding: 9px 10px;
+      }
+
+      .hero-actions .btn:first-child {
+        grid-column: 1 / -1;
+      }
+
+      .section-head {
+        display: block;
+        margin-bottom: 26px;
+      }
+
+      .section-title {
+        font-size: clamp(1.8rem, 7.5vw, 2.45rem);
+      }
+
+      .section-subtitle {
+        max-width: 100%;
+        font-size: .88rem;
+      }
+
+      .skills-grid,
+      .expertise-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .stats {
+        grid-template-columns: 1fr;
+      }
+
+      .award-media {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .award-media img {
+        height: 260px;
+      }
+
+      .project-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .cert-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .connect-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .mobile-sidebar {
+        width: min(320px, 88vw);
+      }
+
+      .modal {
+        padding: 8px;
+        align-items: center;
+      }
+
+      .modal-dialog {
+        width: 100%;
+        max-width: 720px;
+        max-height: calc(100dvh - 16px);
+        border-radius: 15px;
+      }
+
+      .modal-content {
+        padding: 18px;
+      }
+
+      .modal-content h2 {
+        font-size: clamp(1.35rem, 6vw, 1.8rem);
+      }
+    }
+
+    @media (max-width: 480px) {
+      :root {
+        --container: calc(100% - 20px);
+      }
+
+      body {
+        font-size: 15px;
+        line-height: 1.78;
+      }
+
+      section {
+        padding-block: 54px;
+      }
+
+      .container {
+        width: calc(100% - 20px);
+      }
+
+      .nav-inner {
+        gap: 6px;
+      }
+
+      .brand {
+        gap: 7px;
+      }
+
+      .brand-logo {
+        width: 36px;
+        height: 36px;
+        flex-basis: 36px;
+      }
+
+      .brand-text strong {
+        font-size: .88rem;
+      }
+
+      .brand-text span {
+        display: none;
+      }
+
+      .menu-toggle {
+        flex-basis: 44px;
+        width: 44px;
+        min-width: 44px;
+        min-height: 44px;
+      }
+
+      .hero {
+        padding-top: 26px;
+        gap: 24px;
+      }
+
+      .eyebrow {
+        max-width: 100%;
+        padding: 6px 9px;
+        font-size: .66rem;
+      }
+
+      .hero h1 {
+        font-size: clamp(2rem, 10.8vw, 2.85rem);
+        margin-bottom: 13px;
+      }
+
+      .hero-role {
+        font-size: 1rem;
+        margin-bottom: 10px;
+      }
+
+      .hero-desc {
+        font-size: .86rem;
+        margin-bottom: 18px;
+      }
+
+      .hero-actions {
+        grid-template-columns: 1fr 1fr;
+        gap: 7px;
+      }
+
+      .hero-actions .btn {
+        min-height: 44px;
+        padding-inline: 8px;
+        font-size: .75rem;
+        gap: 6px;
+      }
+
+      .hero-frame {
+        width: min(100%, 340px);
+      }
+
+      .hero-frame img {
+        max-height: 350px;
+      }
+
+      .hero-mini {
+        right: 10px;
+        left: auto;
+        bottom: 10px;
+        padding: 8px 10px;
+        border-radius: 10px;
+        max-width: calc(100% - 20px);
+      }
+
+      html[lang="fa"] .hero-mini {
+        right: auto;
+        left: 10px;
+      }
+
+      .hero-mini strong {
+        font-size: .72rem;
+      }
+
+      .hero-mini span {
+        font-size: .62rem;
+      }
+
+      .section-kicker {
+        font-size: .62rem;
+      }
+
+      .section-title {
+        font-size: clamp(1.7rem, 8.2vw, 2.15rem);
+      }
+
+      .section-subtitle {
+        font-size: .82rem;
+      }
+
+      .card-pad {
+        padding: 16px;
+      }
+
+      .about-copy p {
+        font-size: .86rem;
+      }
+
+      .focus-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .stat-card {
+        padding: 16px;
+      }
+
+      .stat-card strong {
+        font-size: 2rem;
+      }
+
+      .skill-card,
+      .expertise-card {
+        padding: 16px;
+      }
+
+      .skill-points li {
+        font-size: .74rem;
+        padding: 8px;
+      }
+
+      .chips {
+        gap: 6px;
+      }
+
+      .chip {
+        font-size: .68rem;
+        padding: 6px 8px;
+      }
+
+      .filters {
+        width: calc(100vw - 20px);
+        max-width: 100%;
+      }
+
+      .filter {
+        min-height: 40px;
+        padding: 8px 10px;
+        font-size: .7rem;
+      }
+
+      .project-card {
+        padding: 16px;
+      }
+
+      .project-card h3 {
+        font-size: .99rem;
+      }
+
+      .project-sub {
+        font-size: .78rem;
+      }
+
+      .project-card p {
+        font-size: .76rem;
+      }
+
+      .project-list li {
+        font-size: .7rem;
+      }
+
+      .project-actions {
+        grid-template-columns: 1fr 1fr;
+        gap: 7px;
+      }
+
+      .project-actions .btn {
+        min-height: 42px;
+        padding: 8px;
+        font-size: .68rem;
+      }
+
+      .award-media {
+        grid-template-columns: 1fr;
+      }
+
+      .award-media img {
+        height: 220px;
+      }
+
+      .award-info h3 {
+        font-size: 1.35rem;
+      }
+
+      .award-info h4 {
+        font-size: .76rem;
+        letter-spacing: .03em;
+      }
+
+      .team-box {
+        padding: 14px;
+      }
+
+      .table-wrap {
+        border-radius: 12px;
+      }
+
+      table {
+        min-width: 560px;
+      }
+
+      th, td {
+        padding: 9px 10px;
+        font-size: .7rem;
+      }
+
+      .connect-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .connect-card {
+        padding: 14px;
+      }
+
+      .modal-dialog {
+        max-height: calc(100dvh - 12px);
+      }
+
+      .modal-top {
+        padding: 10px 12px;
+      }
+
+      .modal-content {
+        padding: 15px;
+      }
+
+      .modal-content p {
+        font-size: .88rem;
+      }
+
+      .lang-btn {
+        width: 44px;
+        height: 44px;
+        bottom: calc(10px + env(safe-area-inset-bottom));
+        left: 10px;
+      }
+
+      html[lang="fa"] .lang-btn {
+        left: auto;
+        right: 10px;
+      }
+    }
+
+    @media (max-width: 360px) {
+      .container {
+        width: calc(100% - 16px);
+      }
+
+      .hero-actions,
+      .project-actions {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-actions .btn:first-child {
+        grid-column: auto;
+      }
+
+      .hero h1 {
+        font-size: 1.95rem;
+      }
+
+      .hero-frame {
+        width: min(100%, 310px);
+      }
+
+      .award-info h3 {
+        font-size: 1.25rem;
+      }
+
+      .section-title {
+        font-size: 1.65rem;
+      }
+
+      .card-pad {
+        padding: 14px;
+      }
+    }
+
+    @media (hover: none) and (pointer: coarse) {
+      .btn:hover,
+      .project-card:hover,
+      .cert-item:hover,
+      .connect-card:hover {
+        transform: none;
+      }
+
+      .btn,
+      .filter,
+      .menu-toggle,
+      .lang-btn,
+      .modal-close,
+      .mobile-sidebar a {
+        -webkit-tap-highlight-color: transparent;
+      }
+    }
+
   </style>
 
   <meta name="keywords" content="مهندس هوش مصنوعی, متخصص علم داده, هوش مصنوعی, یادگیری ماشین, یادگیری عمیق, پردازش زبان طبیعی, بینایی ماشین, هوش مصنوعی مولد, RAG, Python, PyTorch, TensorFlow, AI Engineer, Data Scientist, Machine Learning, Deep Learning, NLP, Computer Vision, Generative AI, Mohammad Mahdi Omidvar, PyQubit">
@@ -498,7 +1140,7 @@
     <div class="container nav-inner">
       <a class="brand" href="#hero" aria-label="PyQubit home">
         <img src="main.png" onerror="this.onerror=null;this.src='https://raw.githubusercontent.com/PyQubit/PyQubit.github.io/main/main.png'" alt="PyQubit logo — Mohammad Mahdi Omidvar AI Engineer" class="brand-logo" width="40" height="40" loading="eager">
-        <span class="brand-text"><strong>PyQubit</strong><span>Mohammad Mahdi Omidvar</span></span>
+        <span class="brand-text"><strong>MmdxDev</strong><span>Mohammad Mahdi Omidvar</span></span>
       </a>
       <ul class="nav-links">
         <li><a href="#hero"><i class="fa-solid fa-house"></i><span data-i18n="nav_home">Home</span></a></li>
@@ -1146,7 +1788,7 @@
 
     const nav=$('#nav'); window.addEventListener('scroll',()=>nav.classList.toggle('scrolled',scrollY>20),{passive:true});
     const menu=$('#mobileSidebar'), backdrop=$('#backdrop'), toggle=$('#menuToggle');
-    function setMenu(open){menu.classList.toggle('active',open);backdrop.classList.toggle('active',open);toggle.setAttribute('aria-expanded',String(open));toggle.innerHTML=open?'<i class="fa-solid fa-xmark"></i>':'<i class="fa-solid fa-bars"></i>';}
+    function setMenu(open){menu.classList.toggle('active',open);backdrop.classList.toggle('active',open);document.body.classList.toggle('mobile-menu-open',open);toggle.setAttribute('aria-expanded',String(open));toggle.setAttribute('aria-label',open?(currentLang==='fa'?'بستن منو':'Close menu'):(currentLang==='fa'?'باز کردن منو':'Open menu'));toggle.innerHTML=open?'<i class="fa-solid fa-xmark"></i>':'<i class="fa-solid fa-bars"></i>';}
     toggle.addEventListener('click',()=>setMenu(!menu.classList.contains('active'))); backdrop.addEventListener('click',()=>setMenu(false)); menu.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>setMenu(false)));
 
     const observer = new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('visible');observer.unobserve(entry.target)}}),{threshold:.08});
@@ -1166,4 +1808,5 @@
     setTextContent(); observeReveals();
   </script>
 </body>
+</html>
 </html>
